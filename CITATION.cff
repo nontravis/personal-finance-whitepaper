@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "Three-Pillar Personal Finance Whitepaper"
+message: "If you use or reference this work, please cite it as below."
+type: dataset
+authors:
+  - family-names: Doungsodsri
+    given-names: Nonthawit
+    website: "https://nonthawit.com"
+abstract: >-
+  A free, multilingual personal finance whitepaper teaching a simple
+  three-pillar system — Cashflow management, Investment, and Savings
+  (value preservation) — built on the foundational equation
+  Income − Expenses = Freedom Fund. Available in Thai, English, Spanish,
+  Indonesian, Simplified Chinese, and Japanese.
+keywords:
+  - personal finance
+  - financial literacy
+  - financial freedom
+  - investing
+  - budgeting
+  - money management
+license: CC-BY-4.0
+version: 1.0.0
+date-released: "2026-06-03"
+url: "https://github.com/nontravis/personal-finance-whitepaper"
+repository-code: "https://github.com/nontravis/personal-finance-whitepaper"
