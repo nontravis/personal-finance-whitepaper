@@ -116,6 +116,7 @@ function page(lang){
 <meta name="description" content="${esc(t.lede)}">
 <meta name="author" content="Nonthawit Doungsodsri">
 <link rel="canonical" href="${canonical}">
+<link rel="icon" href="${ROOT}/favicon.svg" type="image/svg+xml">
 ${hreflang}
 <meta property="og:type" content="website">
 <meta property="og:title" content="${esc(t.title)}">
