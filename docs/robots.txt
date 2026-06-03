@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nontravis.github.io/personal-finance-whitepaper/sitemap.xml
