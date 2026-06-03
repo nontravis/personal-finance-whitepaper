@@ -1,0 +1,34 @@
+# Three-Pillar Personal Finance Whitepaper
+
+> A free, multilingual personal-finance whitepaper by Nonthawit Doungsodsri. It teaches a simple, lifelong system for building personal finances on one foundational equation — Income − Expenses = Freedom Fund — and three pillars that work together: Cashflow, Investment, and Savings (value preservation). Available in six languages under CC BY 4.0.
+
+Core idea: long-term financial success comes from discipline and following a simple system consistently for five to ten years or more, not from sophisticated strategy. The "Freedom Fund" (money left after expenses) must always flow into the Investment and Savings pillars; the remaining allocation is the reader's to design. DCA (Dollar-Cost Averaging) is offered as one beginner-friendly way to invest, among others.
+
+## Read the whitepaper (PDF)
+
+- [Thai (ไทย)](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-th.pdf): full whitepaper, Thai
+- [English](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-en.pdf): full whitepaper, English
+- [Spanish (Español)](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-es.pdf): full whitepaper, Spanish
+- [Indonesian (Bahasa Indonesia)](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-id.pdf): full whitepaper, Indonesian
+- [Simplified Chinese (简体中文)](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-zh.pdf): full whitepaper, Simplified Chinese
+- [Japanese (日本語)](https://nontravis.github.io/personal-finance-whitepaper/whitepaper-ja.pdf): full whitepaper, Japanese
+
+## Web summary pages
+
+- [English landing](https://nontravis.github.io/personal-finance-whitepaper/): overview of the three-pillar system with download links
+- [Thai landing](https://nontravis.github.io/personal-finance-whitepaper/th/): Thai overview
+- [Spanish landing](https://nontravis.github.io/personal-finance-whitepaper/es/): Spanish overview
+- [Indonesian landing](https://nontravis.github.io/personal-finance-whitepaper/id/): Indonesian overview
+- [Chinese landing](https://nontravis.github.io/personal-finance-whitepaper/zh/): Simplified Chinese overview
+- [Japanese landing](https://nontravis.github.io/personal-finance-whitepaper/ja/): Japanese overview
+
+## Project
+
+- [GitHub repository](https://github.com/nontravis/personal-finance-whitepaper): source (LaTeX), build tooling, all editions
+- [License (CC BY 4.0)](https://github.com/nontravis/personal-finance-whitepaper/blob/main/LICENSE): share and adapt with attribution
+- [Author](https://nonthawit.com): Nonthawit Doungsodsri
+
+## Optional
+
+- [Sitemap](https://nontravis.github.io/personal-finance-whitepaper/sitemap.xml): all pages and PDFs
+- [Font licenses](https://github.com/nontravis/personal-finance-whitepaper/blob/main/latex/fonts/LICENSES/NOTICE.md): bundled fonts are third-party (SIL OFL, GUST, SIPA), not CC BY 4.0
