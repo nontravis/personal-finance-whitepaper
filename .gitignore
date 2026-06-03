@@ -1,0 +1,6 @@
+*.log
+# build artifacts
+latex/*.aux
+latex/*.log
+latex/build.log
+.DS_Store

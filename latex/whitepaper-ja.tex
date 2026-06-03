@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper,twocolumn]{article}
+\usepackage[a4paper,margin=2cm,columnsep=0.7cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Path=fonts/, Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\usepackage{xeCJK}
+\setCJKmainfont{NotoSerifCJKjp}[Path=fonts/, Extension=.otf, UprightFont=*-Regular, BoldFont=*-Bold]
+\xeCJKsetup{AutoFakeSlant=true}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage[table]{xcolor}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\definecolor{accent}{HTML}{000000}
+\titleformat{\section}{\color{accent}\bfseries\large}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.4ex plus .2ex}{0.3ex}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\title{\vspace{-1.5em}\bfseries\color{accent}\Large パーソナルファイナンス・システムの基盤：3本の柱}
+\author{}
+\date{}
+
+\begin{document}
+
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \vspace{-3.8em}
+    \begin{center}
+      \small Nonthawit Doungsodsri\\
+      nonthawit.com\\
+      2026年6月3日\\
+      バージョン 1.0.0
+    \end{center}
+    \vspace{0.5em}
+    \begin{quote}
+      \normalsize\textbf{要旨}　——　本稿は、個人の財務を構築するためのシンプルかつ堅牢なフレームワーク、すなわち「3本の柱システム」——キャッシュフロー管理（Cashflow）、投資（Investment）、貯蓄・価値保全（Savings）——を提示する。その中心的主張は、長期的な財務的成功は洗練された戦略から生まれるのではなく、\textbf{規律}と自らのシステムを5〜10年以上にわたって一貫して実行し続けることから生まれる、というものである。
+    \end{quote}
+    \vspace{1em}
+  \end{@twocolumnfalse}
+]
+
+\section{はじめに}
+パーソナルファイナンス（個人財務管理）とは、自分のお金を人生の目標に沿って管理することである。多くの人にとって問題は収入が少ないことではなく、稼いだお金を管理するための明確な\textit{システム}を持っていないことにある。本稿では、生涯にわたって活用できる具体的なシステムを提示する。その基盤となるのは、ただ一つの根本方程式である。
+
+\begin{center}
+{\setlength{\fboxsep}{10pt}\fbox{$\displaystyle \text{収入} \;-\; \text{支出} \;=\; \text{自由資金}$}}
+\end{center}
+
+「自由資金」とは、経済的自由を実現するための原材料である。結果がマイナスであれば、まずそれをプラスに転じることが第一の目標となる。プラスであれば、次の問いはその「自由資金」をいかに配分するかである。本稿の答えは、自由資金をキャッシュフロー管理・投資・貯蓄という、互いに連携する3本の柱へと振り向けることである。各柱にはそれぞれ固有の役割と目標があり、以下に順を追って説明する。
+
+\section{柱1 —— キャッシュフロー管理（Cashflow）}
+\textbf{定義.} キャッシュフロー管理とは、収入と支出を継続的に記録することによって、毎月どれだけのお金が流入・流出しているかを把握することである。複雑なツールは不要であり、シンプルなノートやアプリで十分である。鍵となるのは洗練さではなく、継続性である。
+
+\textbf{目標.} 毎月の真の「自由資金」——投資と貯蓄にどれだけ充てられるかを示す数字——を把握することである。この数字がなければ、あらゆる計画は推測に過ぎない。この柱こそ、他の柱が立脚する\textit{土台}である。
+
+\textbf{実践.} 習慣になるまで毎日または毎週記録し、月末の合計を振り返り、必須支出と任意支出を分け、第2・第3の柱へ進む前に「自由資金」を確実にプラスの状態に保つことを目標とする。
+
+\section{柱2 —— 投資（Investment）}
+\textbf{定義.} 投資とは、自由資金を長期的なリターンへと振り向け、お金に自分の代わりに働かせることである。現金を遊ばせておくのとは異なり、投資されたお金は時間とともに複利（compounding）によって成長する可能性を持つ。
+
+\textbf{目標.} 貯蓄だけよりも速く資産を増やし、経済的自由に近づくリターンを生み出すことである。重要な原則は\textbf{自分が徹底的に理解しているものにのみ投資する}ことである。資産を理解せずに流行に乗って投資することは、制御不能なリスクへの扉を開くことになる。
+
+\textbf{実践.} 急いではならない。投資は木を植えるようなものであり、強制的に成長させることはできない。まず理解が深まるまで学習し、その後\textbf{DCA}（Dollar-Cost Averaging）——価格の変動に関わらず毎月一定額で資産を買い続ける方法——を活用する。この手法は感情を意思決定から排除し、持続可能な投資規律を築く。初心者に最も適したアプローチである。ただし、DCAは投資を始める多くの方法のうちの一つに過ぎない。一括投資（lump-sum）、資産配分の見直し（rebalancing）、割安株への投資（value investing）など、他のアプローチも存在し、それぞれに強みがあり、異なる状況に適している。読者は自身の目標と気質に合った方法を研究・選択すべきである。
+
+\section{柱3 —— 貯蓄（価値の保全）（Savings）}
+\textbf{定義.} ここでいう貯蓄とは、現金を積み上げることではなく、生活のリスクを軽減するために\textbf{価値保全資産}を保有することを指す。遊ばせたままの現金はインフレ（inflation）によって毎年購買力を失う。良い貯蓄とは、お金の価値が目減りしないよう守るものでなければならない。
+
+\textbf{目標.} 安全性と緩衝帯を構築し、予期せぬ事態が発生した際に価値を保った資産を拠り所にできるようにすることである。この柱が「守り」を担い、投資の柱が「攻め」を担う。
+
+\textbf{実践.} 特定の資産に固執するのではなく、インフレへの耐性、適度な流動性、広い受容性など、価値保全に優れた\textbf{特性}によって選択する。現時点での例としては、金、インデックスファンド（index fund）、債券（bond）、あるいはリスク移転のための保険などが挙げられるが、これらは時代とともに変化し得る。したがって読者は、その時点で利用可能な選択肢を自ら研究し、リスクが一つの資産に集中しないよう分散し、投資と同様に安定した貯蓄率を維持することが求められる。
+
+\section{配分と規律}
+3本の柱を理解した上で、実践的な問いは「自由資金」をどのように各柱へ分配するかである。3本の柱は互いに独立したものではなく、図~\ref{fig:pillars}に示すように、経済的自由という一つの目標を支えるために協働する。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[font=\small]
+  \fill[accent!18] (-0.2,2.1) rectangle (6.4,2.5);
+  \draw[accent] (-0.2,2.1) rectangle (6.4,2.5);
+  \node[accent] at (3.1,2.3) {\bfseries 経済的自由};
+  \foreach \x/\lbl in {0/Cashflow, 2.2/Investment, 4.4/Savings} {
+    \fill[accent!15] (\x,0) rectangle (\x+1.6,2.0);
+    \draw[accent] (\x,0) rectangle (\x+1.6,2.0);
+    \node[accent,align=center] at (\x+0.8,1.0) {\bfseries \lbl};
+  }
+  \draw[accent,line width=1pt] (-0.4,0) -- (6.6,0);
+\end{tikzpicture}
+\caption{経済的自由を支える3本の柱。}
+\label{fig:pillars}
+\end{figure}
+
+\textbf{配分の例.} 月収250{,}000 円で必須支出が150{,}000 円とすると、自由資金は100{,}000 円となる。この自由資金を表~\ref{tab:alloc}のように30/40/30の割合で分配することができる。強調すべきは、30/40/30という数字はあくまで説明のための例示であり、公式ではないという点である。収入・義務・目標・リスク許容度は人それぞれ異なり、ある人に適した割合が別の人には適さないこともある。読者は自身の実際の状況から独自の割合を設計すべきである。省くことができないのは、自由資金が常に\textbf{投資}と\textbf{貯蓄}の柱へ流れ込まなければならないという点であり、この2本の柱はいかなる計画にも含まれなければならない必須要素である。割合の大小や、残余（任意支出やその他の目標など）の配分方法については、読者が自分の生活に合わせて自由に設計してよい。
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrr}
+\toprule
+\rowcolor{accent!15}
+\textbf{配分先} & \textbf{割合} & \textbf{金額（円）} \\
+\midrule
+投資   & 30\% & 30{,}000 \\
+貯蓄   & 40\% & 40{,}000 \\
+自由支出 & 30\% & 30{,}000 \\
+\midrule
+\textbf{自由資金合計} & \textbf{100\%} & \textbf{100{,}000} \\
+\bottomrule
+\end{tabular}
+\caption{自由資金100,000円の配分例（説明用）。}
+\label{tab:alloc}
+\end{table}
+
+\textbf{規律こそが核心である.} いかなる配分を選択するにせよ、成功の決定要因は割合でも複雑な戦略でもなく、\textbf{自らのシステムを5〜10年以上にわたって一貫して実行し続けること}である。DCAと継続的な貯蓄の力は、時間と複利に働いてもらうことで初めて明確に現れる。システムを持つことの最も深い恩恵は、感情の影響を弱めることにある——上昇相場における強欲も、変動相場における恐怖も、長期的な財務の真の敵である。システムに従って行動するとき、意思決定は瞬間的な感情ではなく、原則の上に立つ。早く始めて一貫性を保つ者は、賢明であっても始めては止め止めては始めを繰り返す者に必ず勝る。
+
+\section{結論}
+堅固な個人財務を築くには、高度な金融知識や秘密の戦略は必要ない。理解しやすいシステムと、実際に実行可能な規律があれば十分である。3本の柱——自由資金を把握するためのキャッシュフロー管理、お金に働かせるための投資、リスクを軽減するための貯蓄——が一貫して連携することで、財務的な生活の質を道中ずっと着実に高めていく。
+
+読者に持ち帰ってほしい原則はこれである：\textbf{「シンプルなシステムから始め、それを一貫して続けよ。」}時間と一貫性は、すべての投資家にとって最も強力な同盟者である。
+
+\vspace{1em}
+\noindent\rule{\linewidth}{0.4pt}\\
+{\small\raggedright 本書は \textbf{Nonthawit Doungsodsri} の著作であり —— 公共の利益のために公開されている。詳しくは nonthawit.com を参照。\par}
+
+\end{document}
