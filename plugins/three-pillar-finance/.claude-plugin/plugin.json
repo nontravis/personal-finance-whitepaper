@@ -1,0 +1,9 @@
+{
+  "name": "three-pillar-finance",
+  "description": "A reasoning lens that makes any capable AI advise through the Three-Pillar personal-finance system (Income - Expenses = Freedom Fund; Cashflow, Investment, Savings; discipline over strategy).",
+  "author": {
+    "name": "Nonthawit Doungsodsri"
+  },
+  "homepage": "https://github.com/nontravis/personal-finance-whitepaper",
+  "license": "CC-BY-4.0"
+}
