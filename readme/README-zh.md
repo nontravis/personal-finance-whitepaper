@@ -58,29 +58,67 @@
 
 ## 🤖 在你的 AI 中使用此框架
 
-本白皮书同样以 **AI skill** 的形式发布——一个推理镜头，让任何有能力的 AI 都能通过三支柱体系（`收入 − 支出 = 自由基金`，分配至 Cashflow / Investment / Savings，以纪律优先于策略）提供建议。两个版本，同一来源：供能读取文件的 agent 使用的 [`skill/`](../skill/) 文件夹，以及可粘贴进任意聊天机器人的单文件 [`three-pillar-lens.md`](../three-pillar-lens.md)。
+本白皮书同样以 **AI skill** 的形式发布——一个推理镜头，让任何有能力的 AI 都能通过三支柱体系（`收入 − 支出 = 自由基金`，分配至 Cashflow / Investment / Savings，以纪律优先于策略）提供建议。同一来源，两种安装方式：**Auto**（一条命令，适用于 Claude Code 和 CLI agent）或 **Manual**（粘贴一个文件，适用于任何聊天机器人）。
 
-| 平台 | 加载方式 | 行为 |
-|---|---|---|
-| Claude Code | 复制 `skill/` 文件夹 | 讨论理财话题时自动生效 |
-| claude.ai (Project) | 粘贴 `three-pillar-lens.md` | 在该 Project 中始终生效 |
-| ChatGPT | 粘贴 `three-pillar-lens.md` | 在该上下文中始终生效 |
-| Gemini | 粘贴 `three-pillar-lens.md` | 在该 Gem 中始终生效 |
-| Any API / CLI agent | 置于 system prompt 开头 | 始终生效 |
+### ⚡ Auto install（一条命令）
 
-<details><summary><b>Claude Code</b></summary>
+<details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
-1. 下载或克隆本仓库。
-2. 将 `skill/` 文件夹复制到项目中的 `.claude/skills/three-pillar-finance/`，或复制到 `~/.claude/skills/three-pillar-finance/` 以供所有项目使用。
-3. 启动会话。当你讨论预算、储蓄或投资时，镜头将自动生效。
+安装：
+
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
+
+更新至最新版本：
+
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
+
+该 plugin 不锁定版本，因此每次推送到本仓库都会作为最新版本提供。
 
 </details>
 
-<details><summary><b>claude.ai (Project)</b></summary>
+<details><summary><b>Claude Code — degit（不使用 marketplace）</b></summary>
+
+安装：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+更新至最新版本——加上 `--force` 重新运行：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents（Gemini CLI、Copilot CLI）</b></summary>
+
+将 skill 放入 agent 的 adapter 目录或 `AGENTS.md`：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+更新：加上 `--force` 重新运行。
+
+</details>
+
+### ✋ Manual install（复制粘贴）
+
+对于无法读取文件的聊天机器人，将单个平铺文件
+[`three-pillar-lens.md`](../three-pillar-lens.md) 直接粘贴进去。如需日后更新，重新复制并替换已粘贴的内容即可。
+
+<details><summary><b>claude.ai（Project）</b></summary>
 
 1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 在 claude.ai 中创建或打开一个 Project。
-3. 将其粘贴到 Project 的 custom instructions 中。该 Project 中的每个对话都将使用此镜头。
+2. 创建或打开一个 Project，将其粘贴到 Project 的 custom instructions 中。
 
 </details>
 
@@ -98,10 +136,9 @@
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Any API / app</b></summary>
 
-1. 将 [`three-pillar-lens.md`](../three-pillar-lens.md) 置于 system prompt 的开头。
-2. 对于支持文件工具的 CLI agent（Gemini CLI、Copilot CLI），将其放入 agent 的 adapter 目录或 `AGENTS.md` 中。
+将 [`three-pillar-lens.md`](../three-pillar-lens.md) 置于 system prompt 的开头。
 
 </details>
 

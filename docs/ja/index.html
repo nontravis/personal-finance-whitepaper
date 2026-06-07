@@ -138,13 +138,14 @@
   </div>
   <div class="sechead"><h2>AIで使う</h2></div>
   <div class="use">
-    <p>この白書は AI skill としても提供されています —— あらゆる有能な AI が適用できる推論レンズです。ファイルを一枚貼るか、skill フォルダをそのまま置くだけ。</p>
-    <details><summary><b>Claude Code</b></summary><p>skill/ フォルダを .claude/skills/ にコピーする。お金の話をすると自動で適用される。</p></details>
-    <details><summary><b>claude.ai</b></summary><p>three-pillar-lens.md を Project のカスタム指示に貼り付ける。</p></details>
-    <details><summary><b>ChatGPT</b></summary><p>three-pillar-lens.md を Custom Instructions、Project、または GPT に貼り付ける。</p></details>
-    <details><summary><b>Gemini</b></summary><p>three-pillar-lens.md を Gem または Saved Info に貼り付ける。</p></details>
-    <details><summary><b>Any API / CLI agent</b></summary><p>three-pillar-lens.md を system prompt の先頭に付加するか、AGENTS.md に追加する。</p></details>
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">GitHub で skill を入手</a></p>
+    <p>この白書は AI skill としても提供されています —— あらゆる有能な AI が適用できる推論レンズです。コマンド一つでインストールするか、ファイルを一枚貼るだけ。</p>
+    <p><b>⚡ 自動インストール（コマンド一つ）</b></p>
+    <details><summary><b>Claude Code — plugin</b></summary><p><code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>、次に <code>/plugin install three-pillar-finance@nontravis</code>。更新: <code>/plugin marketplace update nontravis</code>、次に <code>/reload-plugins</code>。</p></details>
+    <details><summary><b>Claude Code — degit</b></summary><p><code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新: <code>--force</code> を付けて再実行。</p></details>
+    <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>skill/ フォルダを agent のアダプタディレクトリまたは AGENTS.md に配置する。更新は <code>--force</code> を付けて再実行。</p></details>
+    <p><b>✋ 手動インストール（copy-paste）</b></p>
+    <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>three-pillar-lens.md を Project のカスタム指示、Custom Instructions、Gem、または system prompt に貼り付ける。更新するには最新ファイルを貼り直す。</p></details>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">GitHub で完全ガイドを見る</a></p>
     <p><small>教育的フレームワークであり、個別の財務アドバイスではありません。</small></p>
   </div>
   <div class="sechead"><h2>たった一つの原則</h2></div>

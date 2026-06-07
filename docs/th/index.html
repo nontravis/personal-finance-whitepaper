@@ -138,13 +138,14 @@
   </div>
   <div class="sechead"><h2>ใช้งานใน AI ของคุณ</h2></div>
   <div class="use">
-    <p>ไวต์เปเปอร์นี้มาพร้อมกับ AI skill — เลนส์ให้เหตุผลที่ AI ที่มีความสามารถทุกตัวนำไปใช้ได้ วางไฟล์เดียว หรือวาง skill folder ลงไปได้เลย</p>
-    <details><summary><b>Claude Code</b></summary><p>คัดลอกโฟลเดอร์ skill/ ไปไว้ใน .claude/skills/ มันจะทำงานอัตโนมัติเมื่อคุณพูดถึงเรื่องเงิน</p></details>
-    <details><summary><b>claude.ai</b></summary><p>วาง three-pillar-lens.md ลงใน custom instructions ของ Project</p></details>
-    <details><summary><b>ChatGPT</b></summary><p>วาง three-pillar-lens.md ลงใน Custom Instructions, Project หรือ GPT</p></details>
-    <details><summary><b>Gemini</b></summary><p>วาง three-pillar-lens.md ลงใน Gem หรือ Saved Info</p></details>
-    <details><summary><b>Any API / CLI agent</b></summary><p>แนบ three-pillar-lens.md ไว้ต้น system prompt หรือเพิ่มใน AGENTS.md</p></details>
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">รับ skill บน GitHub</a></p>
+    <p>ไวต์เปเปอร์นี้มาพร้อมกับ AI skill — เลนส์ให้เหตุผลที่ AI ที่มีความสามารถทุกตัวนำไปใช้ได้ ติดตั้งด้วยคำสั่งเดียว หรือวางไฟล์เดียว</p>
+    <p><b>⚡ ติดตั้งอัตโนมัติ (หนึ่งคำสั่ง)</b></p>
+    <details><summary><b>Claude Code — plugin</b></summary><p><code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> แล้ว <code>/plugin install three-pillar-finance@nontravis</code>. อัปเดต: <code>/plugin marketplace update nontravis</code> แล้ว <code>/reload-plugins</code>.</p></details>
+    <details><summary><b>Claude Code — degit</b></summary><p><code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. อัปเดต: รันคำสั่งเดิมพร้อม <code>--force</code>.</p></details>
+    <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>วาง skill/ folder ลงในไดเรกทอรี adapter ของ agent หรือ AGENTS.md แล้วอัปเดตด้วย <code>--force</code>.</p></details>
+    <p><b>✋ ติดตั้งแบบ manual (copy-paste)</b></p>
+    <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>วาง three-pillar-lens.md ลงใน Project, Custom Instructions, Gem หรือ system prompt หากต้องการอัปเดต ให้วางไฟล์ล่าสุดทับ</p></details>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">ดูคู่มือเต็มบน GitHub</a></p>
     <p><small>กรอบแนวคิดเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล</small></p>
   </div>
   <div class="sechead"><h2>หลักการเดียว</h2></div>

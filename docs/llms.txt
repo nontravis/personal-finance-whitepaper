@@ -26,8 +26,10 @@ Core idea: long-term financial success comes from discipline and following a sim
 
 The whitepaper is also packaged as an AI "reasoning lens" skill that makes any capable AI advise through the Three-Pillar System (Income − Expenses = Freedom Fund; Cashflow, Investment, Savings; discipline over strategy).
 
-- [Skill folder (SKILL.md + references)](https://github.com/nontravis/personal-finance-whitepaper/tree/main/skill): for AI agents that can read files; auto-applies on personal-finance topics.
-- [Portable single-file lens](https://raw.githubusercontent.com/nontravis/personal-finance-whitepaper/main/three-pillar-lens.md): paste into any chatbot's system prompt or custom instructions (ChatGPT, Gemini, Claude, and others).
+- Auto-install in Claude Code (plugin): run `/plugin marketplace add nontravis/personal-finance-whitepaper` then `/plugin install three-pillar-finance@nontravis`. Update with `/plugin marketplace update nontravis` then `/reload-plugins`.
+- Auto-install in Claude Code (degit one-liner): `npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance` (add `--force` to update).
+- [Skill folder (SKILL.md + references)](https://github.com/nontravis/personal-finance-whitepaper/tree/main/skill): for AI agents that read files.
+- [Portable single-file lens](https://raw.githubusercontent.com/nontravis/personal-finance-whitepaper/main/three-pillar-lens.md): paste into any chatbot's system prompt or custom instructions; re-paste to update.
 
 ## Project
 

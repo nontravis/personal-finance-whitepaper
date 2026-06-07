@@ -138,13 +138,14 @@
   </div>
   <div class="sechead"><h2>在你的 AI 中使用</h2></div>
   <div class="use">
-    <p>本白皮书同时提供 AI skill —— 一套推理框架，任何有能力的 AI 都可以应用。粘贴一个文件，或直接放入 skill 文件夹。</p>
-    <details><summary><b>Claude Code</b></summary><p>将 skill/ 文件夹复制到 .claude/skills/。当你讨论理财时，它会自动生效。</p></details>
-    <details><summary><b>claude.ai</b></summary><p>将 three-pillar-lens.md 粘贴到 Project 的自定义指令中。</p></details>
-    <details><summary><b>ChatGPT</b></summary><p>将 three-pillar-lens.md 粘贴到 Custom Instructions、Project 或 GPT 中。</p></details>
-    <details><summary><b>Gemini</b></summary><p>将 three-pillar-lens.md 粘贴到 Gem 或 Saved Info 中。</p></details>
-    <details><summary><b>Any API / CLI agent</b></summary><p>将 three-pillar-lens.md 作为 system prompt 前置，或添加到 AGENTS.md。</p></details>
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">在 GitHub 获取 skill</a></p>
+    <p>本白皮书同时提供 AI skill —— 一套推理框架，任何有能力的 AI 都可以应用。一条命令即可安装，或粘贴一个文件。</p>
+    <p><b>⚡ 自动安装（一条命令）</b></p>
+    <details><summary><b>Claude Code — plugin</b></summary><p><code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>，然后 <code>/plugin install three-pillar-finance@nontravis</code>。更新：<code>/plugin marketplace update nontravis</code>，然后 <code>/reload-plugins</code>。</p></details>
+    <details><summary><b>Claude Code — degit</b></summary><p><code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新：加上 <code>--force</code> 重新运行。</p></details>
+    <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>将 skill/ 文件夹复制到 agent 的适配器目录或 AGENTS.md；加上 <code>--force</code> 更新。</p></details>
+    <p><b>✋ 手动安装（copy-paste）</b></p>
+    <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>将 three-pillar-lens.md 粘贴到 Project、Custom Instructions、Gem 或 system prompt 中。如需更新，重新粘贴最新文件。</p></details>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">在 GitHub 查看完整指南</a></p>
     <p><small>教育性框架，不构成个性化财务建议。</small></p>
   </div>
   <div class="sechead"><h2>唯一的原则</h2></div>

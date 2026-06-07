@@ -1,0 +1,14 @@
+{
+  "name": "nontravis",
+  "owner": {
+    "name": "Nonthawit Doungsodsri",
+    "url": "https://nonthawit.com"
+  },
+  "plugins": [
+    {
+      "name": "three-pillar-finance",
+      "source": "./plugins/three-pillar-finance",
+      "description": "A reasoning lens that makes any capable AI advise through the Three-Pillar personal-finance system."
+    }
+  ]
+}
