@@ -58,36 +58,74 @@ Kemudian salurkan "Dana Kebebasan" ke dalam **3 pilar** yang bekerja bersama-sam
 
 ## 🤖 Gunakan Kerangka Ini di AI-mu
 
-Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang membuat AI mana pun memberikan saran melalui Sistem Tiga Pilar (`Pendapatan − Pengeluaran = Dana Kebebasan`, dialokasikan ke Cashflow / Investment / Savings, dengan disiplin di atas strategi). Dua versi, satu sumber: folder [`skill/`](../skill/) untuk agen yang dapat membaca file, dan [`three-pillar-lens.md`](../three-pillar-lens.md) — satu file yang ditempelkan ke chatbot mana pun.
+Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang membuat AI mana pun memberikan saran melalui Sistem Tiga Pilar (`Pendapatan − Pengeluaran = Dana Kebebasan`, dialokasikan ke Cashflow / Investment / Savings, dengan disiplin di atas strategi). Satu sumber, dua gaya instalasi: **Auto** (satu perintah, untuk Claude Code dan CLI agent) atau **Manual** (tempel satu file, untuk chatbot apa pun).
 
-| Platform | Cara memuatnya | Perilaku |
-|---|---|---|
-| Claude Code | Salin folder `skill/` | Aktif otomatis saat membahas topik keuangan |
-| claude.ai (Project) | Tempel `three-pillar-lens.md` | Selalu aktif untuk Project tersebut |
-| ChatGPT | Tempel `three-pillar-lens.md` | Selalu aktif dalam konteks tersebut |
-| Gemini | Tempel `three-pillar-lens.md` | Selalu aktif untuk Gem tersebut |
-| Any API / CLI agent | Tambahkan di awal system prompt | Selalu aktif |
+### ⚡ Auto install (satu perintah)
 
-<details><summary><b>Claude Code</b></summary>
+<details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
-1. Unduh atau clone repositori ini.
-2. Salin folder `skill/` ke `.claude/skills/three-pillar-finance/` di proyekmu, atau `~/.claude/skills/three-pillar-finance/` untuk semua proyek.
-3. Mulai sesi. Saat kamu membahas anggaran, tabungan, atau investasi, lensa akan diterapkan secara otomatis.
+Instal:
+
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
+
+Perbarui ke versi terbaru:
+
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
+
+Plugin ini tidak memiliki versi tetap, sehingga setiap push ke repo ini akan ditawarkan sebagai versi terbaru.
 
 </details>
+
+<details><summary><b>Claude Code — degit (tanpa marketplace)</b></summary>
+
+Instal:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+Perbarui ke versi terbaru — jalankan ulang dengan `--force`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary>
+
+Letakkan skill ke direktori adapter agen atau di `AGENTS.md`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+Perbarui: jalankan ulang dengan `--force`.
+
+</details>
+
+### ✋ Manual install (salin-tempel)
+
+Untuk chatbot yang tidak dapat membaca file, tempelkan satu file datar
+[`three-pillar-lens.md`](../three-pillar-lens.md). Untuk memperbarui nanti, salin ulang dan ganti blok yang telah ditempel.
 
 <details><summary><b>claude.ai (Project)</b></summary>
 
 1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Di claude.ai, buat atau buka sebuah Project.
-3. Tempelkan ke custom instructions Project tersebut. Setiap chat di Project itu akan menggunakan lensa ini.
+2. Buat atau buka sebuah Project, lalu tempelkan ke custom instructions Project tersebut.
 
 </details>
 
 <details><summary><b>ChatGPT</b></summary>
 
 1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Tempelkan ke Pengaturan ▸ Personalisasi ▸ Custom Instructions, atau ke instruksi sebuah Project, atau ke pengetahuan custom GPT.
+2. Tempelkan ke Pengaturan ▸ Personalisasi ▸ Custom Instructions, instruksi sebuah Project, atau pengetahuan custom GPT.
 
 </details>
 
@@ -98,10 +136,9 @@ Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang m
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Any API / app</b></summary>
 
-1. Tambahkan [`three-pillar-lens.md`](../three-pillar-lens.md) di awal system prompt-mu.
-2. Untuk CLI agent berbasis file (Gemini CLI, Copilot CLI), letakkan di direktori adapter agen atau di `AGENTS.md`.
+Tambahkan [`three-pillar-lens.md`](../three-pillar-lens.md) di awal system prompt.
 
 </details>
 

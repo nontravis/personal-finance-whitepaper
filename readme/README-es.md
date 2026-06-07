@@ -58,36 +58,74 @@ Luego distribuyes ese "Fondo de Libertad" en **3 pilares** que trabajan juntos:
 
 ## 🤖 Usa el marco en tu IA
 
-Este whitepaper también se distribuye como una **skill de IA** — una lente de razonamiento que hace que cualquier IA capaz asesore a través del Sistema de Tres Pilares (`Ingresos − Gastos = Fondo de Libertad`, distribuido entre Cashflow / Investment / Savings, con disciplina sobre estrategia). Dos versiones, una sola fuente: la carpeta [`skill/`](../skill/) para agentes que leen archivos, y [`three-pillar-lens.md`](../three-pillar-lens.md) — un único archivo que pegas en cualquier chatbot.
+Este whitepaper también se distribuye como una **skill de IA** — una lente de razonamiento que hace que cualquier IA capaz asesore a través del Sistema de Tres Pilares (`Ingresos − Gastos = Fondo de Libertad`, distribuido entre Cashflow / Investment / Savings, con disciplina sobre estrategia). Una sola fuente, dos estilos de instalación: **Auto** (un comando, para Claude Code y agentes CLI) o **Manual** (pega un archivo, para cualquier chatbot).
 
-| Plataforma | Cómo se carga | Comportamiento |
-|---|---|---|
-| Claude Code | Copia la carpeta `skill/` | Se activa automáticamente con temas de dinero |
-| claude.ai (Project) | Pega `three-pillar-lens.md` | Siempre activo para ese Project |
-| ChatGPT | Pega `three-pillar-lens.md` | Siempre activo en ese contexto |
-| Gemini | Pega `three-pillar-lens.md` | Siempre activo para ese Gem |
-| Any API / CLI agent | Antepón como system prompt | Siempre activo |
+### ⚡ Auto install (un comando)
 
-<details><summary><b>Claude Code</b></summary>
+<details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
-1. Descarga o clona este repositorio.
-2. Copia la carpeta `skill/` en `.claude/skills/three-pillar-finance/` dentro de tu proyecto, o en `~/.claude/skills/three-pillar-finance/` para todos los proyectos.
-3. Inicia una sesión. Cuando hables de presupuesto, ahorro o inversión, la lente se aplica automáticamente.
+Instalar:
+
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
+
+Actualizar a la última versión:
+
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
+
+El plugin no tiene versión fija, por lo que cada push a este repositorio se ofrece como la versión más reciente.
 
 </details>
+
+<details><summary><b>Claude Code — degit (sin marketplace)</b></summary>
+
+Instalar:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+Actualizar a la última versión — vuelve a ejecutar con `--force`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary>
+
+Coloca la skill en el directorio adaptador del agente o en `AGENTS.md`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+Actualizar: vuelve a ejecutar con `--force`.
+
+</details>
+
+### ✋ Manual install (copiar y pegar)
+
+Para chatbots que no pueden leer archivos, pega el archivo plano único
+[`three-pillar-lens.md`](../three-pillar-lens.md). Para actualizar más adelante, vuelve a copiarlo y reemplaza el bloque pegado.
 
 <details><summary><b>claude.ai (Project)</b></summary>
 
 1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
-2. En claude.ai, crea o abre un Project.
-3. Pégalo en las custom instructions del Project. Todos los chats de ese Project usarán la lente.
+2. Crea o abre un Project, y pégalo en las custom instructions del Project.
 
 </details>
 
 <details><summary><b>ChatGPT</b></summary>
 
 1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
-2. Pégalo en Configuración ▸ Personalización ▸ Custom Instructions, o en las instrucciones de un Project, o en el conocimiento de un GPT personalizado.
+2. Pégalo en Configuración ▸ Personalización ▸ Custom Instructions, en las instrucciones de un Project, o en el conocimiento de un GPT personalizado.
 
 </details>
 
@@ -98,10 +136,9 @@ Este whitepaper también se distribuye como una **skill de IA** — una lente de
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Any API / app</b></summary>
 
-1. Antepón [`three-pillar-lens.md`](../three-pillar-lens.md) a tu system prompt.
-2. Para agentes CLI con herramientas de archivo (Gemini CLI, Copilot CLI), colócalo en el directorio adaptador del agente o en `AGENTS.md`.
+Antepón [`three-pillar-lens.md`](../three-pillar-lens.md) como system prompt.
 
 </details>
 

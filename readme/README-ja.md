@@ -58,36 +58,74 @@
 
 ## 🤖 AI でこのフレームワークを使う
 
-本ホワイトペーパーは **AI skill** としても提供されています。三支柱システム（`収入 − 支出 = 自由基金`、Cashflow / Investment / Savings に配分し、戦略よりも規律を重視）を通じて、あらゆる高性能 AI が助言できるようにする推論レンズです。ソースは一つ、バージョンは二つ：ファイルを読み込めるエージェント向けの [`skill/`](../skill/) フォルダーと、任意のチャットボットに貼り付けられる単一ファイル [`three-pillar-lens.md`](../three-pillar-lens.md) です。
+本ホワイトペーパーは **AI skill** としても提供されています。三支柱システム（`収入 − 支出 = 自由基金`、Cashflow / Investment / Savings に配分し、戦略よりも規律を重視）を通じて、あらゆる高性能 AI が助言できるようにする推論レンズです。ソースは一つ、インストール方法は二つ：**Auto**（コマンド一つ、Claude Code および CLI エージェント向け）または **Manual**（ファイルを一つ貼り付け、あらゆるチャットボット向け）。
 
-| プラットフォーム | 読み込み方法 | 動作 |
-|---|---|---|
-| Claude Code | `skill/` フォルダーをコピー | お金の話題で自動的に適用 |
-| claude.ai (Project) | `three-pillar-lens.md` を貼り付け | その Project で常時有効 |
-| ChatGPT | `three-pillar-lens.md` を貼り付け | そのコンテキストで常時有効 |
-| Gemini | `three-pillar-lens.md` を貼り付け | その Gem で常時有効 |
-| Any API / CLI agent | system prompt の先頭に追加 | 常時有効 |
+### ⚡ Auto install（コマンド一つ）
 
-<details><summary><b>Claude Code</b></summary>
+<details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
-1. このリポジトリをダウンロードまたはクローンします。
-2. `skill/` フォルダーをプロジェクトの `.claude/skills/three-pillar-finance/`、またはすべてのプロジェクトで使う場合は `~/.claude/skills/three-pillar-finance/` にコピーします。
-3. セッションを開始します。予算、貯蓄、投資について話すと、レンズが自動的に適用されます。
+インストール：
+
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
+
+最新版に更新：
+
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
+
+このプラグインはバージョンを固定していないため、このリポジトリへのプッシュのたびに最新版として提供されます。
 
 </details>
 
-<details><summary><b>claude.ai (Project)</b></summary>
+<details><summary><b>Claude Code — degit（marketplace を使わない場合）</b></summary>
+
+インストール：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+最新版に更新 — `--force` を付けて再実行：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents（Gemini CLI、Copilot CLI）</b></summary>
+
+エージェントのアダプターディレクトリまたは `AGENTS.md` に skill を配置：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+更新：`--force` を付けて再実行。
+
+</details>
+
+### ✋ Manual install（コピー＆ペースト）
+
+ファイルを読み込めないチャットボットには、単一のフラットファイル
+[`three-pillar-lens.md`](../three-pillar-lens.md) をそのまま貼り付けてください。後で更新する場合は、再度コピーして貼り付け済みのブロックを置き換えてください。
+
+<details><summary><b>claude.ai（Project）</b></summary>
 
 1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. claude.ai で Project を作成または開きます。
-3. Project の custom instructions に貼り付けます。その Project のすべてのチャットでレンズが使われます。
+2. Project を作成または開き、Project の custom instructions に貼り付けます。
 
 </details>
 
 <details><summary><b>ChatGPT</b></summary>
 
 1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. 設定 ▸ パーソナライズ ▸ Custom Instructions、または Project の指示、もしくはカスタム GPT のナレッジに貼り付けます。
+2. 設定 ▸ パーソナライズ ▸ Custom Instructions、Project の指示、またはカスタム GPT のナレッジに貼り付けます。
 
 </details>
 
@@ -98,10 +136,9 @@
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Any API / app</b></summary>
 
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を system prompt の先頭に追加します。
-2. ファイルツール対応の CLI エージェント（Gemini CLI、Copilot CLI）の場合は、エージェントのアダプターディレクトリまたは `AGENTS.md` に配置します。
+[`three-pillar-lens.md`](../three-pillar-lens.md) を system prompt の先頭に追加します。
 
 </details>
 
