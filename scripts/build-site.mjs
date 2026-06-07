@@ -235,19 +235,19 @@ ${hreflang}
   .langbtn[aria-current="true"]{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
   a{color:inherit;}
   .kicker{ font-size:.74rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--faint); margin:0 0 16px; }
-  h1{ font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.1; font-weight:700; letter-spacing:-.02em; margin:0; overflow-wrap:break-word; }
+  h1{ font-family:var(--hand,var(--sans)); font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.12; font-weight:700; letter-spacing:-.01em; margin:0; overflow-wrap:break-word; }
   .lede{ font-size:clamp(1.05rem,2.4vw,1.26rem); color:var(--muted); max-width:50ch; margin:18px 0 0; }
   .rule{ height:1px; background:var(--line-strong); border:0; margin:34px 0; }
   .sechead{ display:flex; align-items:center; gap:18px; margin:46px 0 24px; }
   .sechead h2{ font-size:.82rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); white-space:nowrap; margin:0; }
   .sechead::after{ content:""; flex:1; height:1px; background:var(--line); }
   .eq{ display:flex; justify-content:center; margin:6px 0 4px; }
-  .eq span{ border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
+  .eq span{ font-family:var(--hand,var(--sans)); border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
   .pillars{ display:grid; grid-template-columns:1fr; }
   .pillar{ padding:22px 0; border-top:1px solid var(--line); }
   .pillar:first-child{ border-top:0; }
   .pnum{ font-size:.78rem; font-weight:600; letter-spacing:.16em; color:var(--faint); }
-  .pillar h3{ font-size:1.2rem; margin:6px 0 6px; font-weight:700; }
+  .pillar h3{ font-family:var(--hand,var(--sans)); font-size:1.28rem; margin:6px 0 6px; font-weight:700; }
   .pillar p{ margin:0; color:var(--muted); }
   @media(min-width:720px){ .pillars{ grid-template-columns:repeat(3,1fr); column-gap:34px; } .pillar{ border-top:0; border-left:1px solid var(--line); padding:4px 0 4px 26px; } .pillar:first-child{ padding-left:0; border-left:0; } }
   .dl{ list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
@@ -261,7 +261,17 @@ ${hreflang}
   .dl a:hover .get{ color:var(--ink); }
   .ico{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .use p{ margin:0 0 18px; } .use b{ font-weight:600; }
-  blockquote{ margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.35; letter-spacing:-.01em; }
+  .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
+  .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .benefits{ margin:0; }
+  .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+  .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
+  .benefits li::before{ content:"✓"; position:absolute; left:2px; top:11px; color:var(--ink); font-weight:700; }
+  .benefits .bfoot{ margin:16px 0 0; font-weight:600; color:var(--ink); }
+  .wayhead{ font-family:var(--hand,var(--sans)); font-size:1.32rem; font-weight:700; margin:28px 0 14px; }
+  .warn{ margin:9px 0 0; font-size:.93rem; }
+  blockquote{ font-family:var(--hand,var(--sans)); margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.4; letter-spacing:0; }
   blockquote small{ display:block; margin-top:12px; font-size:.92rem; font-weight:400; color:var(--muted); letter-spacing:0; }
   .btn{ display:inline-flex; align-items:center; gap:9px; margin-top:30px; background:var(--ink); color:var(--paper); text-decoration:none; cursor:pointer; padding:13px 22px; border-radius:6px; font-weight:600; font-size:.98rem; transition:transform .18s ease, opacity .18s ease; }
   .btn:hover{ opacity:.88; transform:translateY(-1px); }
