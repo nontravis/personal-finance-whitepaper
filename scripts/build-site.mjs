@@ -230,11 +230,11 @@ function mark(text, key){
 }
 
 const HAND = {
-  en:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
-  es:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
-  id:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
-  th:{ fam:'Itim',          fams:['Itim','Shantell+Sans:wght@600;700'], subset:false },
-  ja:{ fam:'Klee One',      fams:['Klee+One:wght@600'], subset:true },
+  en:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@400;600;700'], subset:false },
+  es:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@400;600;700'], subset:false },
+  id:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@400;600;700'], subset:false },
+  th:{ fam:'Itim',          fams:['Itim','Shantell+Sans:wght@400;600;700'], subset:false },
+  ja:{ fam:'Klee One',      fams:['Klee+One:wght@400;600'], subset:true },
   zh:{ fam:'Ma Shan Zheng', fams:['Ma+Shan+Zheng'], subset:true },
 };
 
@@ -312,7 +312,7 @@ ${hreflang}
   html{ -webkit-text-size-adjust:100%; }
   body{ margin:0; font-family:var(--hand,var(--sans)); color:var(--ink); background:var(--desk);
     background-image:radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px); background-size:4px 4px;
-    line-height:1.62; font-size:17px; letter-spacing:.005em; padding:clamp(0px,4vw,56px) clamp(0px,4vw,40px); }
+    line-height:1.62; font-size:17px; letter-spacing:.005em; font-weight:400; font-synthesis:none; padding:clamp(0px,4vw,56px) clamp(0px,4vw,40px); }
   .sheet{ max-width:var(--maxw); margin:0 auto; background:var(--paper);
     box-shadow:0 1px 0 rgba(0,0,0,.04), 0 24px 60px -20px rgba(0,0,0,.35);
     padding:clamp(30px,6vw,80px) clamp(22px,6vw,84px); position:relative; border-radius:2px; }
@@ -367,9 +367,9 @@ ${hreflang}
   .chev svg{ width:15px; height:15px; stroke:var(--muted); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
   .use details[open] .chev{ transform:rotate(180deg); background:rgba(255,221,64,.55); }
   .use details[open] .chev svg{ stroke:var(--ink); }
-  .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
-  .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
-  .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-y{ color:var(--ink); background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-b{ color:var(--ink); background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
+  .hl-r{ color:var(--ink); background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
   .benefits{ margin:0; }
   .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
   .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
