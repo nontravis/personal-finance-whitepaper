@@ -100,13 +100,13 @@ El plugin no tiene versión fija, por lo que cada push a este repositorio se ofr
 Instalar:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance
 ```
 
 Actualizar a la última versión — vuelve a ejecutar con `--force`:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance --force
 ```
 
 </details>
@@ -116,7 +116,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pil
 Coloca la skill en el directorio adaptador del agente o en `AGENTS.md`:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ./.gemini/skills/three-pillar-finance
 ```
 
 Actualizar: vuelve a ejecutar con `--force`.
