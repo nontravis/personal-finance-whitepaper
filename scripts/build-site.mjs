@@ -221,6 +221,7 @@ const READROWS = [
 ];
 const DLICON = '<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg>';
 const esc = s => s.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+const CHEV = '<span class="chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>';
 
 function mark(text, key){
   if(!key) return text;
@@ -241,8 +242,14 @@ function fontHead(lang, t){
   const h = HAND[lang];
   const links = [`<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`];
   if (h.subset){
-    const display = [t.title, t.eq, t.p1t, t.p2t, t.p3t, t.quote].join('');
-    const chars = [...new Set(Array.from(display))].join('');
+    // collect every string rendered on the page (handwriting covers all body text),
+    // strip HTML tags, and always include the Latin/punctuation set so nothing tofus.
+    const collect = (v) => typeof v === 'string' ? v
+      : Array.isArray(v) ? v.map(collect).join('')
+      : (v && typeof v === 'object') ? Object.values(v).map(collect).join('') : '';
+    const ascii = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,:;!?()[]{}#@/\\\\-–—…&%+=*'\"";
+    const allText = collect(t).replace(/<[^>]*>/g, '') + ascii;
+    const chars = [...new Set(Array.from(allText))].join('');
     links.push(`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${h.fams[0]}&text=${encodeURIComponent(chars)}&display=swap">`);
   } else {
     const fam = h.fams.map(f => `family=${f}`).join('&');
@@ -303,7 +310,7 @@ ${hreflang}
     --sans:'Google Sans','Google Sans Text','Product Sans','DM Sans','Sarabun','Noto Sans SC','Noto Sans JP','PingFang SC','Hiragino Sans','Microsoft YaHei',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
   *{box-sizing:border-box;}
   html{ -webkit-text-size-adjust:100%; }
-  body{ margin:0; font-family:var(--sans); color:var(--ink); background:var(--desk);
+  body{ margin:0; font-family:var(--hand,var(--sans)); color:var(--ink); background:var(--desk);
     background-image:radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px); background-size:4px 4px;
     line-height:1.62; font-size:17px; letter-spacing:.005em; padding:clamp(0px,4vw,56px) clamp(0px,4vw,40px); }
   .sheet{ max-width:var(--maxw); margin:0 auto; background:var(--paper);
@@ -346,6 +353,20 @@ ${hreflang}
   .dl a:hover .get{ color:var(--ink); }
   .ico{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .use p{ margin:0 0 18px; } .use b{ font-weight:600; }
+  code,kbd,samp,pre{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .langbar,.langbtn,.dl,.dl *{ font-family:var(--sans); }
+  .use details{ border:1px solid var(--line); border-radius:10px; margin:0 0 10px; overflow:hidden; background:#fff; transition:border-color .18s, box-shadow .18s; }
+  .use details[open]{ border-color:var(--line-strong); box-shadow:0 6px 20px -12px rgba(0,0,0,.25); }
+  .use summary{ list-style:none; cursor:pointer; padding:14px 18px; font-weight:700; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .use summary::-webkit-details-marker{ display:none; }
+  .use summary:hover{ background:rgba(0,0,0,.025); }
+  .use .acbody{ padding:0 18px 14px; color:var(--muted); }
+  .use .acbody p{ margin:0; }
+  .use .acbody code{ font-size:.86em; background:rgba(0,0,0,.05); padding:.1em .35em; border-radius:4px; }
+  .chev{ flex:none; width:26px; height:26px; display:grid; place-items:center; border-radius:50%; background:rgba(0,0,0,.05); transition:transform .22s ease, background .18s; }
+  .chev svg{ width:15px; height:15px; stroke:var(--muted); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+  .use details[open] .chev{ transform:rotate(180deg); background:rgba(255,221,64,.55); }
+  .use details[open] .chev svg{ stroke:var(--ink); }
   .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
   .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
   .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
@@ -403,9 +424,9 @@ ${switcher}
   <div class="use">
     <p>${t.ai.lede}</p>
     <p><b>${t.ai.autoHead}</b></p>
-    ${t.ai.auto.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
+    ${t.ai.auto.map(x=>`<details><summary>${x.n}${CHEV}</summary><div class="acbody"><p>${x.s}</p></div></details>`).join('\n    ')}
     <p><b>${t.ai.manualHead}</b></p>
-    ${t.ai.manual.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
+    ${t.ai.manual.map(x=>`<details><summary>${x.n}${CHEV}</summary><div class="acbody"><p>${x.s}</p></div></details>`).join('\n    ')}
     <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-how-to-use-it" target="_blank" rel="noopener">${t.ai.repo}</a></p>
     <p><small>${t.ai.note}</small></p>
   </div>
