@@ -156,18 +156,6 @@ Bacaan 2 halaman. Cetak, tempel di tempat yang sering kamu lihat setiap hari, da
 
 ---
 
-## 🚀 Cara Menggunakannya
-
-**1. Cetak dan tempel di tempat yang sering kamu lihat** 🖨️
-Unduh PDF → cetak → tempel di samping meja kerja, depan cermin, atau pintu kulkas.
-Keuangan berubah lewat "melihat berulang kali" hingga menjadi kebiasaan.
-
-**2. Bagikan cara berpikir ini kepada orang yang kamu sayangi** ❤️
-Kirimkan tautan ini kepada keluarga, teman, atau siapa pun yang baru memulai.
-Salah satu hadiah terbaik adalah "sistem berpikir" yang menemaninya seumur hidup.
-
----
-
 ## 💡 Satu Prinsip yang Perlu Selalu Dibawa
 
 > **"Mulailah dengan sistem yang sederhana, lalu jalankan secara konsisten."**

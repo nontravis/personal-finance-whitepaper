@@ -156,18 +156,6 @@ Una lectura de 2 páginas. Imprímelo, ponlo donde lo veas cada día y compárte
 
 ---
 
-## 🚀 Cómo usarlo
-
-**1. Imprímelo y ponlo donde lo veas cada día** 🖨️
-Descarga el PDF → imprime → pégalo junto a tu escritorio, en el espejo o en la nevera.
-Las finanzas cambian gracias a la "exposición repetida" hasta que se convierte en hábito.
-
-**2. Comparte este mindset con las personas que quieres** ❤️
-Envía este enlace a tu familia, amigos o a alguien que está empezando.
-Uno de los mejores regalos es un "sistema de pensamiento" que los acompañe toda la vida.
-
----
-
 ## 💡 El único principio que vale recordar
 
 > **"Comienza con un sistema simple y aplícalo con constancia."**
