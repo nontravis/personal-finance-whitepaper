@@ -17,13 +17,22 @@ const T = {
   en:{ langlbl:'Language', seoTitle:'The Three-Pillar Personal Finance System — Nonthawit Doungsodsri',
     kicker:'Personal Finance Whitepaper · Free · CC BY 4.0', title:'The Three-Pillar Personal Finance System',
     lede:'Build lasting personal finances with one simple, lifelong system — explained in a short, free whitepaper. Available in six languages.',
-    eq:'Income − Expenses = Freedom Fund', pillarsHead:'The three pillars', readHead:'Read it now — free', howHead:'How to use it', principleHead:'The one principle',
+    eq:'Income − Expenses = Freedom Fund', pillarsHead:'The three pillars', readHead:'Read it now — free', howHead:'How to Use It', principleHead:'The one principle',
     p1t:'Cashflow', p1d:'Know what comes in and out — the foundation that reveals your true Freedom Fund.',
     p2t:'Investment', p2d:'Put money to work for you and grow it through compounding over time.',
     p3t:'Savings', p3d:"Hold value-preserving assets to beat inflation and reduce life's risks.", rd:'Read',
     use1b:'Print it and post it where you read every day.', use1t:'Finance changes through repeated exposure, until the system becomes a habit.',
     use2b:'Share this mindset with the people you love.', use2t:'One of the best gifts is a way of thinking that stays with someone for life.',
-    quote:'“Start with a simple system, then do it consistently.”', quoteSub:"Time and consistency are every investor's most powerful allies.", ghtext:'View on GitHub',
+    benefitsHead:'What installing this does to your AI', benefitsFoot:'Your prompts return sharper, more consistent, less generic financial guidance.',
+    benefits:[
+      'Anchors every answer on your real numbers — Income − Expenses = Freedom Fund — before advising.',
+      "Refuses hype: it won't endorse an asset you don't understand.",
+      'Always keeps both offense (Investment) and defense (Savings) in the plan.',
+      'Pushes discipline and a 5–10 year horizon over clever timing.',
+    ],
+    aiWayHead:'🤖 AI Way — install the skill', physWayHead:'📄 Physical Way — read the whitepaper',
+    p1k:'Freedom Fund', p2k:'compounding', p3k:'inflation', warn:'Invest only in what you understand.',
+    quote:'"Start with a simple system, then do it consistently."', quoteSub:"Time and consistency are every investor's most powerful allies.", ghtext:'View on GitHub',
     footLead:'By', footTail:'Released for the public good under',
     ai:{ head:'Use it in your AI',
       lede:'This whitepaper also ships as an AI skill — a reasoning lens any capable AI can apply. Install with one command, or paste one file.',
@@ -167,6 +176,12 @@ const READROWS = [
 ];
 const DLICON = '<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg>';
 const esc = s => s.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
+
+function mark(text, key){
+  if(!key) return text;
+  const i = text.indexOf(key);
+  return i < 0 ? text : text.slice(0,i) + `<span class="hl-b">${key}</span>` + text.slice(i + key.length);
+}
 
 const HAND = {
   en:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
