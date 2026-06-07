@@ -56,6 +56,28 @@ Then allocate that "Freedom Fund" across **3 pillars** that work together:
 
 ---
 
+## 🤖 Use the Framework in Your AI
+
+This whitepaper also ships as an **AI skill** — a reasoning lens that makes any capable AI advise
+through the Three-Pillar System. Two versions, one source:
+
+- **Agent / Claude** — point your tool at the [`skill/`](skill/) folder. It auto-applies the lens
+  when you discuss personal finance.
+- **Any chatbot (ChatGPT, Gemini, …)** — copy [`three-pillar-lens.md`](three-pillar-lens.md) and
+  paste it into the AI's system prompt, Custom Instructions, Project, or Gem.
+
+| Platform | How to load | Behavior |
+|---|---|---|
+| Claude Code / claude.ai | Use the `skill/` folder | Auto-fires on money topics |
+| Gemini CLI / Copilot CLI | Adapter dir or `AGENTS.md` | Auto-fires |
+| ChatGPT | Custom Instructions / Project / GPT knowledge | Always-on for that context |
+| Gemini (web) | Gem instructions / Saved Info | Always-on |
+| Any API or app | Prepend as system prompt | Always-on |
+
+> Educational framework, not personalized financial advice. It names no specific securities.
+
+---
+
 ## 📖 Read Now
 
 Choose your language — each file is a print-ready PDF:
