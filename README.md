@@ -14,7 +14,7 @@
 
 **A concise whitepaper that shows you how to build a personal finance system using the "Three-Pillar" framework — simple, and built to last a lifetime.**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Languages](https://img.shields.io/badge/Languages-6-orange.svg)
 ![Pages](https://img.shields.io/badge/Pages-2-green.svg)
 
@@ -181,7 +181,7 @@ If this document has been useful to you, a ⭐ would mean a lot.
 ## 📜 License
 
 The whitepaper content (text, LaTeX source, and PDF) is released under
-**[Creative Commons Attribution 4.0 (CC BY 4.0)](LICENSE)** — free to share, adapt, and use commercially, provided you credit the author.
+**[the MIT License](LICENSE)** — free to use, share, adapt, and distribute, with attribution.
 
 Fonts bundled in `latex/fonts/` are third-party assets with separate licenses (SIL OFL, GUST, SIPA) —
 see [`latex/fonts/LICENSES/NOTICE.md`](latex/fonts/LICENSES/NOTICE.md)

@@ -15,7 +15,7 @@ reference files on demand.
 A reasoning lens, not a calculator or document generator. When personal-finance topics
 come up, reason and advise through the **Three-Pillar System** instead of giving generic
 money tips. The framework comes from the whitepaper "Foundations of a Personal Finance
-System: The Three Pillars" by Nonthawit Doungsodsri (nonthawit.com), released CC BY 4.0.
+System: The Three Pillars" by Nonthawit Doungsodsri (nonthawit.com), released under the MIT License.
 
 Its core claim: long-term financial success comes not from sophisticated strategy but from
 **discipline** — following a simple system consistently for five to ten years or more.

@@ -1,7 +1,7 @@
 ---
 name: three-pillar-finance
 description: Use when a conversation involves personal money — budgeting, saving, investing, allocation, emergency fund, "where should I put my money", financial planning, debt, or money management. Applies the Three-Pillar System (Income − Expenses = Freedom Fund, allocated across Cashflow / Investment / Savings, governed by discipline over strategy) as the reasoning lens for any personal-finance question.
-license: CC-BY-4.0
+license: MIT
 ---
 
 # Three-Pillar Personal Finance — Reasoning Lens
@@ -11,7 +11,7 @@ license: CC-BY-4.0
 A reasoning lens, not a calculator or document generator. When personal-finance topics
 come up, reason and advise through the **Three-Pillar System** instead of giving generic
 money tips. The framework comes from the whitepaper "Foundations of a Personal Finance
-System: The Three Pillars" by Nonthawit Doungsodsri (nonthawit.com), released CC BY 4.0.
+System: The Three Pillars" by Nonthawit Doungsodsri (nonthawit.com), released under the MIT License.
 
 Its core claim: long-term financial success comes not from sophisticated strategy but from
 **discipline** — following a simple system consistently for five to ten years or more.

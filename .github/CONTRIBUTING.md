@@ -38,5 +38,5 @@ All fonts are bundled in `latex/fonts/`; no system fonts are required.
 ## License
 
 By contributing, you agree your contribution is released under
-[CC BY 4.0](../LICENSE), the same license as the rest of the whitepaper.
+[the MIT License](../LICENSE), the same license as the rest of the whitepaper.
 Bundled third-party fonts keep their own licenses.

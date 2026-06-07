@@ -14,7 +14,7 @@
 
 **Whitepaper ringkas yang mengajarkan cara membangun keuangan pribadi dengan "Sistem Tiga Pilar" yang sederhana dan bisa dipakai seumur hidup**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](../LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 ![Bahasa](https://img.shields.io/badge/Bahasa-6-orange.svg)
 ![Halaman](https://img.shields.io/badge/Halaman-2-green.svg)
 
@@ -181,7 +181,7 @@ Jika dokumen ini bermanfaat, mohon berikan ⭐ sebagai dukungan ya!
 ## 📜 Lisensi
 
 Konten whitepaper (teks, sumber LaTeX, dan PDF) dirilis di bawah
-**[Creative Commons Attribution 4.0 (CC BY 4.0)](../LICENSE)** — bebas dibagikan, dimodifikasi, dan digunakan secara komersial, asalkan mencantumkan kredit kepada penulis.
+**[MIT License](../LICENSE)** — bebas digunakan, dibagikan, dimodifikasi, dan didistribusikan, asalkan mencantumkan kredit kepada penulis.
 
 Font yang disertakan di `latex/fonts/` adalah milik pihak ketiga dengan lisensi terpisah (SIL OFL, GUST, SIPA) —
 lihat [`latex/fonts/LICENSES/NOTICE.md`](../latex/fonts/LICENSES/NOTICE.md).

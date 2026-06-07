@@ -54,12 +54,11 @@ and writes every PDF to the project root.
 ## License
 
 © 2026 Nonthawit Doungsodsri. The whitepaper — its text and the LaTeX source in this folder,
-and the generated PDFs — is licensed under **Creative Commons Attribution 4.0 International
-(CC BY 4.0)**; see `../LICENSE`. You may share and adapt it, including commercially, with
-attribution.
+and the generated PDFs — is licensed under **the MIT License**; see `../LICENSE`. You may
+use, share, and adapt it, including commercially, with attribution.
 
 The bundled fonts in `fonts/` are third-party and licensed separately (SIL OFL, GUST Font
-License, SIPA) — see `fonts/LICENSES/NOTICE.md`. CC BY 4.0 does **not** apply to them.
+License, SIPA) — see `fonts/LICENSES/NOTICE.md`. The MIT License does **not** apply to them.
 
 ## Adding a language
 
