@@ -56,11 +56,24 @@
 
 ---
 
-## 🤖 นำเฟรมเวิร์กไปใช้กับ AI ของคุณ
+## ✨ ติดตั้งแล้ว AI ของคุณจะเปลี่ยนไปอย่างไร
 
-ไวต์เปเปอร์นี้มาพร้อมกับ **AI skill** — เลนส์ความคิดที่ทำให้ AI ที่มีความสามารถสูงให้คำแนะนำผ่านระบบ 3 เสา (`รายรับ − รายจ่าย = ทุนสู่อิสรภาพ` กระจายเข้า Cashflow / Investment / Savings โดยเน้นวินัยมากกว่ากลยุทธ์) หนึ่งแหล่ง สองสไตล์การติดตั้ง: **Auto** (คำสั่งเดียว สำหรับ Claude Code และ CLI agent) หรือ **Manual** (วางไฟล์เดียว สำหรับ chatbot ทุกชนิด)
+เมื่อติดตั้ง skill แล้ว AI จะหยุดให้คำแนะนำทางการเงินแบบทั่วไป และเริ่มใช้เหตุผลผ่านระบบ 3 เสา:
 
-### ⚡ Auto install (คำสั่งเดียว)
+- ยึดทุกคำตอบบนตัวเลขจริงของคุณ — `รายรับ − รายจ่าย = ทุนสู่อิสรภาพ` — ก่อนให้คำแนะนำเสมอ
+- ปฏิเสธกระแสฮาโหล: จะไม่แนะนำสินทรัพย์ที่คุณไม่เข้าใจ
+- รักษาสมดุลทั้งฝ่ายรุก (**Investment**) และฝ่ายรับ (**Savings**) ไว้ในแผนเสมอ
+- เน้นวินัยและขอบฟ้า 5–10 ปี มากกว่าการจับจังหวะตลาดให้แม่นยำ
+
+**พรอมต์ของคุณจะได้รับคำแนะนำทางการเงินที่คมชัด สม่ำเสมอ และไม่ซ้ำแบบใครมากขึ้น**
+
+---
+
+## 🛠️ วิธีใช้งาน
+
+### 🤖 AI Way — ติดตั้ง skill
+
+ไวต์เปเปอร์นี้มาพร้อมกับ **AI skill** — เลนส์ความคิดสำหรับการให้เหตุผล รองรับสองสไตล์การติดตั้ง: **Auto** (คำสั่งเดียว สำหรับ Claude Code และ CLI agent) หรือ **Manual** (วางไฟล์เดียว สำหรับ chatbot ทุกชนิด)
 
 <details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
@@ -110,45 +123,17 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 
 </details>
 
-### ✋ Manual install (คัดลอก-วาง)
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (วางด้วยตนเอง)</b></summary>
 
-สำหรับ chatbot ที่อ่านไฟล์ไม่ได้ ให้วางไฟล์แบนเดียว
-[`three-pillar-lens.md`](../three-pillar-lens.md) ลงไปตรง ๆ หากต้องการอัปเดตภายหลัง ให้คัดลอกใหม่แล้วแทนที่บล็อกเดิม
-
-<details><summary><b>claude.ai (Project)</b></summary>
-
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. สร้างหรือเปิด Project แล้ววางลงใน custom instructions ของ Project
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. วางลงใน Settings ▸ Personalization ▸ Custom Instructions, instructions ของ Project, หรือ knowledge ของ custom GPT
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. วางลงใน instructions ของ Gem หรือใน Saved Info
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-เพิ่ม [`three-pillar-lens.md`](../three-pillar-lens.md) ไว้ต้น system prompt
+คัดลอก [`three-pillar-lens.md`](../three-pillar-lens.md) แล้ววางลงใน custom instructions ของ Project, ChatGPT Custom Instructions, Gem, หรือ system prompt หากต้องการอัปเดต ให้คัดลอกไฟล์ใหม่แล้วแทนที่บล็อกเดิม
 
 </details>
 
 > เฟรมเวิร์กเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล ไม่มีการระบุหลักทรัพย์เฉพาะเจาะจง
 
----
+### 📄 Physical Way — อ่านไวต์เปเปอร์
 
-## 📖 อ่านเลย
-
-เลือกภาษาของคุณ — แต่ละไฟล์เป็น PDF พร้อมปริ้นต์:
+อ่านจบใน 2 หน้า ปริ้นต์ แปะไว้ที่ที่คุณอ่านทุกวัน และแชร์ให้คนที่คุณรัก
 
 | ภาษา | ดาวน์โหลด |
 |---|---|

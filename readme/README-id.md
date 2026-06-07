@@ -56,11 +56,24 @@ Kemudian salurkan "Dana Kebebasan" ke dalam **3 pilar** yang bekerja bersama-sam
 
 ---
 
-## 🤖 Gunakan Kerangka Ini di AI-mu
+## ✨ Apa yang Berubah di AI-mu Setelah Menginstal Ini
 
-Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang membuat AI mana pun memberikan saran melalui Sistem Tiga Pilar (`Pendapatan − Pengeluaran = Dana Kebebasan`, dialokasikan ke Cashflow / Investment / Savings, dengan disiplin di atas strategi). Satu sumber, dua gaya instalasi: **Auto** (satu perintah, untuk Claude Code dan CLI agent) atau **Manual** (tempel satu file, untuk chatbot apa pun).
+Dengan skill terpasang, AI-mu berhenti memberi saran keuangan generik dan mulai bernalar melalui Sistem Tiga Pilar:
 
-### ⚡ Auto install (satu perintah)
+- Mendasarkan setiap jawaban pada angka nyatamu — `Pemasukan − Pengeluaran = Dana Kebebasan` — sebelum memberi saran.
+- Menolak hype: tidak akan merekomendasikan aset yang tidak kamu pahami.
+- Selalu menjaga keseimbangan antara serangan (**Investment**) dan pertahanan (**Savings**) dalam rencana.
+- Mengutamakan disiplin dan cakrawala 5–10 tahun daripada mencari timing yang sempurna.
+
+**Prompt-mu akan mendapat panduan keuangan yang lebih tajam, konsisten, dan tidak generik.**
+
+---
+
+## 🛠️ Cara Menggunakannya
+
+### 🤖 AI Way — instal skill-nya
+
+Whitepaper ini hadir sebagai **skill AI** — sebuah lensa penalaran. Dua gaya instalasi: **Auto** (satu perintah, untuk Claude Code dan CLI agent) atau **Manual** (tempel satu file, untuk chatbot apa pun).
 
 <details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
@@ -110,45 +123,17 @@ Perbarui: jalankan ulang dengan `--force`.
 
 </details>
 
-### ✋ Manual install (salin-tempel)
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (tempel manual)</b></summary>
 
-Untuk chatbot yang tidak dapat membaca file, tempelkan satu file datar
-[`three-pillar-lens.md`](../three-pillar-lens.md). Untuk memperbarui nanti, salin ulang dan ganti blok yang telah ditempel.
-
-<details><summary><b>claude.ai (Project)</b></summary>
-
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Buat atau buka sebuah Project, lalu tempelkan ke custom instructions Project tersebut.
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Tempelkan ke Pengaturan ▸ Personalisasi ▸ Custom Instructions, instruksi sebuah Project, atau pengetahuan custom GPT.
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Tempelkan ke instruksi sebuah Gem, atau ke Saved Info.
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-Tambahkan [`three-pillar-lens.md`](../three-pillar-lens.md) di awal system prompt.
+Salin [`three-pillar-lens.md`](../three-pillar-lens.md) dan tempelkan ke custom instructions Project, ChatGPT Custom Instructions, sebuah Gem, atau system prompt. Untuk memperbarui, salin ulang file dan ganti blok yang telah ditempel.
 
 </details>
 
 > Kerangka edukatif, bukan saran keuangan yang dipersonalisasi. Tidak menyebut sekuritas tertentu.
 
----
+### 📄 Physical Way — baca whitepapernya
 
-## 📖 Baca Sekarang
-
-Pilih bahasamu — setiap file adalah PDF siap cetak:
+Bacaan 2 halaman. Cetak, tempel di tempat yang sering kamu lihat setiap hari, dan bagikan kepada orang-orang yang kamu sayangi.
 
 | Bahasa | Unduh |
 |---|---|

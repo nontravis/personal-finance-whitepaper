@@ -56,11 +56,24 @@
 
 ---
 
-## 🤖 在你的 AI 中使用此框架
+## ✨ 安装后你的 AI 会发生什么变化
 
-本白皮书同样以 **AI skill** 的形式发布——一个推理镜头，让任何有能力的 AI 都能通过三支柱体系（`收入 − 支出 = 自由基金`，分配至 Cashflow / Investment / Savings，以纪律优先于策略）提供建议。同一来源，两种安装方式：**Auto**（一条命令，适用于 Claude Code 和 CLI agent）或 **Manual**（粘贴一个文件，适用于任何聊天机器人）。
+安装 skill 后，你的 AI 将不再给出泛泛而论的理财建议，而是通过三支柱体系进行推理：
 
-### ⚡ Auto install（一条命令）
+- 在给出任何建议之前，始终以你的真实数字为基础——`收入 − 支出 = 自由基金`。
+- 拒绝炒作：不会推荐你不了解的资产。
+- 始终在计划中同时保留进攻（**Investment**）与防守（**Savings**）。
+- 注重纪律与 5–10 年的长期视野，而非追求精准的市场时机。
+
+**你的提问将获得更精准、更一致、更有针对性的理财指导。**
+
+---
+
+## 🛠️ 如何使用
+
+### 🤖 AI Way — 安装 skill
+
+本白皮书以 **AI skill** 的形式发布——一个推理镜头。两种安装方式：**Auto**（一条命令，适用于 Claude Code 和 CLI agent）或 **Manual**（粘贴一个文件，适用于任何聊天机器人）。
 
 <details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
@@ -110,45 +123,17 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 
 </details>
 
-### ✋ Manual install（复制粘贴）
+<details><summary><b>claude.ai / ChatGPT / Gemini / API（手动粘贴）</b></summary>
 
-对于无法读取文件的聊天机器人，将单个平铺文件
-[`three-pillar-lens.md`](../three-pillar-lens.md) 直接粘贴进去。如需日后更新，重新复制并替换已粘贴的内容即可。
-
-<details><summary><b>claude.ai（Project）</b></summary>
-
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 创建或打开一个 Project，将其粘贴到 Project 的 custom instructions 中。
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 将其粘贴到「设置 ▸ 个性化 ▸ Custom Instructions」、Project 的说明，或自定义 GPT 的知识库中。
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 将其粘贴到 Gem 的说明中，或粘贴到 Saved Info 中。
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-将 [`three-pillar-lens.md`](../three-pillar-lens.md) 置于 system prompt 的开头。
+复制 [`three-pillar-lens.md`](../three-pillar-lens.md)，粘贴到 Project 的 custom instructions、ChatGPT Custom Instructions、Gem 的说明，或 system prompt 中。如需更新，重新复制文件并替换已粘贴的内容即可。
 
 </details>
 
 > 教育性框架，非个人化财务建议，不涉及任何具体证券。
 
----
+### 📄 Physical Way — 阅读白皮书
 
-## 📖 立即阅读
-
-选择你的语言——每个文件均为可打印的 PDF：
+仅需 2 页。打印出来，贴在每天都能看到的地方，并分享给你在乎的人。
 
 | 语言 | 下载 |
 |---|---|
