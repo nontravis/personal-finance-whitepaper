@@ -56,6 +56,59 @@ Kemudian salurkan "Dana Kebebasan" ke dalam **3 pilar** yang bekerja bersama-sam
 
 ---
 
+## 🤖 Gunakan Kerangka Ini di AI-mu
+
+Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang membuat AI mana pun memberikan saran melalui Sistem Tiga Pilar (`Pendapatan − Pengeluaran = Dana Kebebasan`, dialokasikan ke Cashflow / Investment / Savings, dengan disiplin di atas strategi). Dua versi, satu sumber: folder [`skill/`](../skill/) untuk agen yang dapat membaca file, dan [`three-pillar-lens.md`](../three-pillar-lens.md) — satu file yang ditempelkan ke chatbot mana pun.
+
+| Platform | Cara memuatnya | Perilaku |
+|---|---|---|
+| Claude Code | Salin folder `skill/` | Aktif otomatis saat membahas topik keuangan |
+| claude.ai (Project) | Tempel `three-pillar-lens.md` | Selalu aktif untuk Project tersebut |
+| ChatGPT | Tempel `three-pillar-lens.md` | Selalu aktif dalam konteks tersebut |
+| Gemini | Tempel `three-pillar-lens.md` | Selalu aktif untuk Gem tersebut |
+| Any API / CLI agent | Tambahkan di awal system prompt | Selalu aktif |
+
+<details><summary><b>Claude Code</b></summary>
+
+1. Unduh atau clone repositori ini.
+2. Salin folder `skill/` ke `.claude/skills/three-pillar-finance/` di proyekmu, atau `~/.claude/skills/three-pillar-finance/` untuk semua proyek.
+3. Mulai sesi. Saat kamu membahas anggaran, tabungan, atau investasi, lensa akan diterapkan secara otomatis.
+
+</details>
+
+<details><summary><b>claude.ai (Project)</b></summary>
+
+1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
+2. Di claude.ai, buat atau buka sebuah Project.
+3. Tempelkan ke custom instructions Project tersebut. Setiap chat di Project itu akan menggunakan lensa ini.
+
+</details>
+
+<details><summary><b>ChatGPT</b></summary>
+
+1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
+2. Tempelkan ke Pengaturan ▸ Personalisasi ▸ Custom Instructions, atau ke instruksi sebuah Project, atau ke pengetahuan custom GPT.
+
+</details>
+
+<details><summary><b>Gemini</b></summary>
+
+1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
+2. Tempelkan ke instruksi sebuah Gem, atau ke Saved Info.
+
+</details>
+
+<details><summary><b>Any API / CLI agent</b></summary>
+
+1. Tambahkan [`three-pillar-lens.md`](../three-pillar-lens.md) di awal system prompt-mu.
+2. Untuk CLI agent berbasis file (Gemini CLI, Copilot CLI), letakkan di direktori adapter agen atau di `AGENTS.md`.
+
+</details>
+
+> Kerangka edukatif, bukan saran keuangan yang dipersonalisasi. Tidak menyebut sekuritas tertentu.
+
+---
+
 ## 📖 Baca Sekarang
 
 Pilih bahasamu — setiap file adalah PDF siap cetak:

@@ -56,6 +56,59 @@
 
 ---
 
+## 🤖 นำเฟรมเวิร์กไปใช้กับ AI ของคุณ
+
+ไวต์เปเปอร์นี้มาพร้อมกับ **AI skill** — เลนส์ความคิดที่ทำให้ AI ที่มีความสามารถสูงให้คำแนะนำผ่านระบบ 3 เสา (`รายรับ − รายจ่าย = ทุนสู่อิสรภาพ` กระจายเข้า Cashflow / Investment / Savings โดยเน้นวินัยมากกว่ากลยุทธ์) มีสองเวอร์ชันจากแหล่งเดียวกัน: โฟลเดอร์ [`skill/`](../skill/) สำหรับ agent ที่อ่านไฟล์ได้ และ [`three-pillar-lens.md`](../three-pillar-lens.md) — ไฟล์เดียวที่วางลงใน chatbot ใดก็ได้
+
+| แพลตฟอร์ม | วิธีโหลด | ลักษณะการทำงาน |
+|---|---|---|
+| Claude Code | คัดลอกโฟลเดอร์ `skill/` | ทำงานอัตโนมัติเมื่อพูดคุยเรื่องเงิน |
+| claude.ai (Project) | วาง `three-pillar-lens.md` | ใช้งานตลอดสำหรับ Project นั้น |
+| ChatGPT | วาง `three-pillar-lens.md` | ใช้งานตลอดในบริบทนั้น |
+| Gemini | วาง `three-pillar-lens.md` | ใช้งานตลอดสำหรับ Gem นั้น |
+| Any API / CLI agent | เพิ่มไว้ต้น system prompt | ใช้งานตลอด |
+
+<details><summary><b>Claude Code</b></summary>
+
+1. ดาวน์โหลดหรือ clone repo นี้
+2. คัดลอกโฟลเดอร์ `skill/` ไปที่ `.claude/skills/three-pillar-finance/` ในโปรเจกต์ของคุณ หรือ `~/.claude/skills/three-pillar-finance/` เพื่อใช้กับทุกโปรเจกต์
+3. เริ่ม session เมื่อคุณพูดคุยเรื่องงบประมาณ การออม หรือการลงทุน เลนส์จะทำงานอัตโนมัติ
+
+</details>
+
+<details><summary><b>claude.ai (Project)</b></summary>
+
+1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
+2. ใน claude.ai สร้างหรือเปิด Project
+3. วางลงใน custom instructions ของ Project ทุกแชทใน Project นั้นจะใช้เลนส์นี้
+
+</details>
+
+<details><summary><b>ChatGPT</b></summary>
+
+1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
+2. วางลงใน Settings ▸ Personalization ▸ Custom Instructions หรือใน instructions ของ Project หรือ knowledge ของ custom GPT
+
+</details>
+
+<details><summary><b>Gemini</b></summary>
+
+1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
+2. วางลงใน instructions ของ Gem หรือใน Saved Info
+
+</details>
+
+<details><summary><b>Any API / CLI agent</b></summary>
+
+1. เพิ่ม [`three-pillar-lens.md`](../three-pillar-lens.md) ไว้ต้น system prompt
+2. สำหรับ CLI agent ที่อ่านไฟล์ได้ (Gemini CLI, Copilot CLI) ให้วางไว้ใน adapter directory ของ agent หรือใน `AGENTS.md`
+
+</details>
+
+> เฟรมเวิร์กเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล ไม่มีการระบุหลักทรัพย์เฉพาะเจาะจง
+
+---
+
 ## 📖 อ่านเลย
 
 เลือกภาษาของคุณ — แต่ละไฟล์เป็น PDF พร้อมปริ้นต์:

@@ -56,6 +56,59 @@
 
 ---
 
+## 🤖 AI でこのフレームワークを使う
+
+本ホワイトペーパーは **AI skill** としても提供されています。三支柱システム（`収入 − 支出 = 自由基金`、Cashflow / Investment / Savings に配分し、戦略よりも規律を重視）を通じて、あらゆる高性能 AI が助言できるようにする推論レンズです。ソースは一つ、バージョンは二つ：ファイルを読み込めるエージェント向けの [`skill/`](../skill/) フォルダーと、任意のチャットボットに貼り付けられる単一ファイル [`three-pillar-lens.md`](../three-pillar-lens.md) です。
+
+| プラットフォーム | 読み込み方法 | 動作 |
+|---|---|---|
+| Claude Code | `skill/` フォルダーをコピー | お金の話題で自動的に適用 |
+| claude.ai (Project) | `three-pillar-lens.md` を貼り付け | その Project で常時有効 |
+| ChatGPT | `three-pillar-lens.md` を貼り付け | そのコンテキストで常時有効 |
+| Gemini | `three-pillar-lens.md` を貼り付け | その Gem で常時有効 |
+| Any API / CLI agent | system prompt の先頭に追加 | 常時有効 |
+
+<details><summary><b>Claude Code</b></summary>
+
+1. このリポジトリをダウンロードまたはクローンします。
+2. `skill/` フォルダーをプロジェクトの `.claude/skills/three-pillar-finance/`、またはすべてのプロジェクトで使う場合は `~/.claude/skills/three-pillar-finance/` にコピーします。
+3. セッションを開始します。予算、貯蓄、投資について話すと、レンズが自動的に適用されます。
+
+</details>
+
+<details><summary><b>claude.ai (Project)</b></summary>
+
+1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
+2. claude.ai で Project を作成または開きます。
+3. Project の custom instructions に貼り付けます。その Project のすべてのチャットでレンズが使われます。
+
+</details>
+
+<details><summary><b>ChatGPT</b></summary>
+
+1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
+2. 設定 ▸ パーソナライズ ▸ Custom Instructions、または Project の指示、もしくはカスタム GPT のナレッジに貼り付けます。
+
+</details>
+
+<details><summary><b>Gemini</b></summary>
+
+1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
+2. Gem の指示、または Saved Info に貼り付けます。
+
+</details>
+
+<details><summary><b>Any API / CLI agent</b></summary>
+
+1. [`three-pillar-lens.md`](../three-pillar-lens.md) を system prompt の先頭に追加します。
+2. ファイルツール対応の CLI エージェント（Gemini CLI、Copilot CLI）の場合は、エージェントのアダプターディレクトリまたは `AGENTS.md` に配置します。
+
+</details>
+
+> 教育目的のフレームワークであり、個別の金融アドバイスではありません。特定の有価証券には言及していません。
+
+---
+
 ## 📖 読む
 
 お好みの言語を選んでください — どのファイルも印刷対応PDFです：
