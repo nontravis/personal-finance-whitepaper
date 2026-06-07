@@ -56,14 +56,24 @@ Then allocate that "Freedom Fund" across **3 pillars** that work together:
 
 ---
 
-## 🤖 Use the Framework in Your AI
+## ✨ What Installing This Does to Your AI
 
-This whitepaper also ships as an **AI skill** — a reasoning lens that makes any capable AI advise
-through the Three-Pillar System (`Income − Expenses = Freedom Fund`, allocated across Cashflow /
-Investment / Savings, discipline over strategy). One source, two install styles: **Auto** (one
-command, for Claude Code and CLI agents) or **Manual** (paste one file, for any chatbot).
+With the skill installed, your AI stops giving generic money tips and reasons through the Three-Pillar System:
 
-### ⚡ Auto install (one command)
+- Anchors every answer on your real numbers — `Income − Expenses = Freedom Fund` — before advising.
+- Refuses hype: it won't endorse an asset you don't understand.
+- Always keeps both offense (**Investment**) and defense (**Savings**) in the plan.
+- Pushes discipline and a 5–10 year horizon over clever timing.
+
+**Your prompts return sharper, more consistent, less generic financial guidance.**
+
+---
+
+## 🛠️ How to Use It
+
+### 🤖 AI Way — install the skill
+
+This whitepaper ships as an **AI skill** — a reasoning lens. Two install styles: **Auto** (one command, Claude Code / CLI agents) or **Manual** (paste one file, any chatbot).
 
 <details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
@@ -113,48 +123,19 @@ Update: re-run with `--force`.
 
 </details>
 
-### ✋ Manual install (copy-paste)
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (manual paste)</b></summary>
 
-For chatbots that cannot read files, paste the single flat file
-[`three-pillar-lens.md`](three-pillar-lens.md). To update later, re-copy it and replace the pasted block.
-
-<details><summary><b>claude.ai (Project)</b></summary>
-
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. Create or open a Project, and paste it into the Project's custom instructions.
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. Paste it into Settings ▸ Personalization ▸ Custom Instructions, a Project's instructions, or a
-   custom GPT's knowledge.
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. Paste it into a Gem's instructions, or into Saved Info.
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-Prepend [`three-pillar-lens.md`](three-pillar-lens.md) as the system prompt.
+Copy [`three-pillar-lens.md`](three-pillar-lens.md) and paste it into the Project's custom instructions, ChatGPT Custom Instructions, a Gem, or the system prompt. To update, re-copy the file and replace the pasted block.
 
 </details>
 
 > Educational framework, not personalized financial advice. It names no specific securities.
 
----
+### 📄 Physical Way — read the whitepaper
 
-## 📖 Read Now
+A 2-page read. Print it, post it where you read every day, and share it with people you care about.
 
-Choose your language — each file is a print-ready PDF:
-
-| Language | Download |
+| Language | PDF |
 |---|---|
 | 🇹🇭 ไทย | [whitepaper-th.pdf](whitepaper-th.pdf) |
 | 🇬🇧 English | [whitepaper-en.pdf](whitepaper-en.pdf) |
@@ -172,18 +153,6 @@ Choose your language — each file is a print-ready PDF:
 &nbsp;&nbsp;
 <img src="readme/assets/cover-en-page2.png" width="46%" alt="Page 2" />
 </div>
-
----
-
-## 🚀 How to Use It
-
-**1. Print it and put it somewhere you see every day** 🖨️
-Download the PDF → print it → stick it on your desk, mirror, or fridge.
-Finances change through "repeated exposure" until good habits form.
-
-**2. Share this mindset with someone you love** ❤️
-Send this link to family, friends, or anyone just getting started.
-One of the best gifts you can give is a "way of thinking" that stays with them for life.
 
 ---
 
