@@ -7,4 +7,4 @@
 - [ ] Targets `develop` (not `main`)
 - [ ] If a new/edited edition: `tectonic whitepaper-<lang>.tex` compiles cleanly
 - [ ] New language added to `latex/build.sh` and given a `readme/README-<lang>.md`
-- [ ] I agree to release this under CC BY 4.0
+- [ ] I agree to release this under the MIT License
