@@ -56,62 +56,84 @@
 
 ---
 
-## 🤖 在你的 AI 中使用此框架
+## ✨ 安装后你的 AI 会发生什么变化
 
-本白皮书同样以 **AI skill** 的形式发布——一个推理镜头，让任何有能力的 AI 都能通过三支柱体系（`收入 − 支出 = 自由基金`，分配至 Cashflow / Investment / Savings，以纪律优先于策略）提供建议。两个版本，同一来源：供能读取文件的 agent 使用的 [`skill/`](../skill/) 文件夹，以及可粘贴进任意聊天机器人的单文件 [`three-pillar-lens.md`](../three-pillar-lens.md)。
+安装 skill 后，你的 AI 将不再给出泛泛而论的理财建议，而是通过三支柱体系进行推理：
 
-| 平台 | 加载方式 | 行为 |
-|---|---|---|
-| Claude Code | 复制 `skill/` 文件夹 | 讨论理财话题时自动生效 |
-| claude.ai (Project) | 粘贴 `three-pillar-lens.md` | 在该 Project 中始终生效 |
-| ChatGPT | 粘贴 `three-pillar-lens.md` | 在该上下文中始终生效 |
-| Gemini | 粘贴 `three-pillar-lens.md` | 在该 Gem 中始终生效 |
-| Any API / CLI agent | 置于 system prompt 开头 | 始终生效 |
+- 在给出任何建议之前，始终以你的真实数字为基础——`收入 − 支出 = 自由基金`。
+- 拒绝炒作：不会推荐你不了解的资产。
+- 始终在计划中同时保留进攻（**Investment**）与防守（**Savings**）。
+- 注重纪律与 5–10 年的长期视野，而非追求精准的市场时机。
 
-<details><summary><b>Claude Code</b></summary>
+**你的提问将获得更精准、更一致、更有针对性的理财指导。**
 
-1. 下载或克隆本仓库。
-2. 将 `skill/` 文件夹复制到项目中的 `.claude/skills/three-pillar-finance/`，或复制到 `~/.claude/skills/three-pillar-finance/` 以供所有项目使用。
-3. 启动会话。当你讨论预算、储蓄或投资时，镜头将自动生效。
+---
 
-</details>
+## 🛠️ 如何使用
 
-<details><summary><b>claude.ai (Project)</b></summary>
+### 🤖 AI Way — 安装 skill
 
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 在 claude.ai 中创建或打开一个 Project。
-3. 将其粘贴到 Project 的 custom instructions 中。该 Project 中的每个对话都将使用此镜头。
+本白皮书以 **AI skill** 的形式发布——一个推理镜头。两种安装方式：**Auto**（一条命令，适用于 Claude Code 和 CLI agent）或 **Manual**（粘贴一个文件，适用于任何聊天机器人）。
 
-</details>
+<details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
-<details><summary><b>ChatGPT</b></summary>
+安装：
 
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 将其粘贴到「设置 ▸ 个性化 ▸ Custom Instructions」、Project 的说明，或自定义 GPT 的知识库中。
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
 
-</details>
+更新至最新版本：
 
-<details><summary><b>Gemini</b></summary>
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
 
-1. 打开 [`three-pillar-lens.md`](../three-pillar-lens.md) 并复制整个文件。
-2. 将其粘贴到 Gem 的说明中，或粘贴到 Saved Info 中。
+该 plugin 不锁定版本，因此每次推送到本仓库都会作为最新版本提供。
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Claude Code — degit（不使用 marketplace）</b></summary>
 
-1. 将 [`three-pillar-lens.md`](../three-pillar-lens.md) 置于 system prompt 的开头。
-2. 对于支持文件工具的 CLI agent（Gemini CLI、Copilot CLI），将其放入 agent 的 adapter 目录或 `AGENTS.md` 中。
+安装：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+更新至最新版本——加上 `--force` 重新运行：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents（Gemini CLI、Copilot CLI）</b></summary>
+
+将 skill 放入 agent 的 adapter 目录或 `AGENTS.md`：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+更新：加上 `--force` 重新运行。
+
+</details>
+
+<details><summary><b>claude.ai / ChatGPT / Gemini / API（手动粘贴）</b></summary>
+
+复制 [`three-pillar-lens.md`](../three-pillar-lens.md)，粘贴到 Project 的 custom instructions、ChatGPT Custom Instructions、Gem 的说明，或 system prompt 中。如需更新，重新复制文件并替换已粘贴的内容即可。
 
 </details>
 
 > 教育性框架，非个人化财务建议，不涉及任何具体证券。
 
----
+### 📄 Physical Way — 阅读白皮书
 
-## 📖 立即阅读
-
-选择你的语言——每个文件均为可打印的 PDF：
+仅需 2 页。打印出来，贴在每天都能看到的地方，并分享给你在乎的人。
 
 | 语言 | 下载 |
 |---|---|
@@ -131,18 +153,6 @@
 &nbsp;&nbsp;
 <img src="assets/cover-zh-page2.png" width="46%" alt="第2页" />
 </div>
-
----
-
-## 🚀 如何使用
-
-**1. 打印出来，放在每天都能看到的地方** 🖨️
-下载 PDF → 打印 → 贴在书桌旁、镜子前或冰箱上
-理财的改变来自"反复看见"，直到它成为一种习惯
-
-**2. 把这份好思维分享给你在乎的人** ❤️
-把链接发给家人、朋友，或者正在起步的人
-最好的礼物之一，是一套能陪伴他们一生的"思维体系"
 
 ---
 

@@ -56,62 +56,84 @@
 
 ---
 
-## 🤖 AI でこのフレームワークを使う
+## ✨ インストールすると AI がどう変わるか
 
-本ホワイトペーパーは **AI skill** としても提供されています。三支柱システム（`収入 − 支出 = 自由基金`、Cashflow / Investment / Savings に配分し、戦略よりも規律を重視）を通じて、あらゆる高性能 AI が助言できるようにする推論レンズです。ソースは一つ、バージョンは二つ：ファイルを読み込めるエージェント向けの [`skill/`](../skill/) フォルダーと、任意のチャットボットに貼り付けられる単一ファイル [`three-pillar-lens.md`](../three-pillar-lens.md) です。
+skill をインストールすると、AI は一般的なお金のアドバイスをやめ、三支柱システムを通じて推論するようになります：
 
-| プラットフォーム | 読み込み方法 | 動作 |
-|---|---|---|
-| Claude Code | `skill/` フォルダーをコピー | お金の話題で自動的に適用 |
-| claude.ai (Project) | `three-pillar-lens.md` を貼り付け | その Project で常時有効 |
-| ChatGPT | `three-pillar-lens.md` を貼り付け | そのコンテキストで常時有効 |
-| Gemini | `three-pillar-lens.md` を貼り付け | その Gem で常時有効 |
-| Any API / CLI agent | system prompt の先頭に追加 | 常時有効 |
+- アドバイスの前に必ず、あなたの実際の数字——`収入 − 支出 = 自由資金`——を基点に置く。
+- ハイプを拒否：あなたが理解していない資産は勧めない。
+- 計画に常に攻め（**Investment**）と守り（**Savings**）の両方を保持する。
+- 絶妙なタイミングよりも、規律と 5〜10 年の長期視点を重視する。
 
-<details><summary><b>Claude Code</b></summary>
+**あなたのプロンプトは、より鋭く、一貫性のある、ありきたりでない財務ガイダンスを受け取れるようになります。**
 
-1. このリポジトリをダウンロードまたはクローンします。
-2. `skill/` フォルダーをプロジェクトの `.claude/skills/three-pillar-finance/`、またはすべてのプロジェクトで使う場合は `~/.claude/skills/three-pillar-finance/` にコピーします。
-3. セッションを開始します。予算、貯蓄、投資について話すと、レンズが自動的に適用されます。
+---
 
-</details>
+## 🛠️ 使い方
 
-<details><summary><b>claude.ai (Project)</b></summary>
+### 🤖 AI Way — skill をインストールする
 
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. claude.ai で Project を作成または開きます。
-3. Project の custom instructions に貼り付けます。その Project のすべてのチャットでレンズが使われます。
+本ホワイトペーパーは **AI skill**——推論レンズ——として提供されています。インストール方法は二つ：**Auto**（コマンド一つ、Claude Code および CLI エージェント向け）または **Manual**（ファイルを一つ貼り付け、あらゆるチャットボット向け）。
 
-</details>
+<details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
-<details><summary><b>ChatGPT</b></summary>
+インストール：
 
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. 設定 ▸ パーソナライズ ▸ Custom Instructions、または Project の指示、もしくはカスタム GPT のナレッジに貼り付けます。
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
 
-</details>
+最新版に更新：
 
-<details><summary><b>Gemini</b></summary>
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
 
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. Gem の指示、または Saved Info に貼り付けます。
+このプラグインはバージョンを固定していないため、このリポジトリへのプッシュのたびに最新版として提供されます。
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Claude Code — degit（marketplace を使わない場合）</b></summary>
 
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を system prompt の先頭に追加します。
-2. ファイルツール対応の CLI エージェント（Gemini CLI、Copilot CLI）の場合は、エージェントのアダプターディレクトリまたは `AGENTS.md` に配置します。
+インストール：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+最新版に更新 — `--force` を付けて再実行：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents（Gemini CLI、Copilot CLI）</b></summary>
+
+エージェントのアダプターディレクトリまたは `AGENTS.md` に skill を配置：
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+更新：`--force` を付けて再実行。
+
+</details>
+
+<details><summary><b>claude.ai / ChatGPT / Gemini / API（手動で貼り付け）</b></summary>
+
+[`three-pillar-lens.md`](../three-pillar-lens.md) をコピーし、Project の custom instructions、ChatGPT Custom Instructions、Gem の指示、または system prompt に貼り付けます。更新する際は、ファイルを再度コピーして貼り付け済みのブロックを置き換えてください。
 
 </details>
 
 > 教育目的のフレームワークであり、個別の金融アドバイスではありません。特定の有価証券には言及していません。
 
----
+### 📄 Physical Way — ホワイトペーパーを読む
 
-## 📖 読む
-
-お好みの言語を選んでください — どのファイルも印刷対応PDFです：
+2 ページで読み切れます。印刷して毎日目に入る場所に貼り、大切な人とシェアしてください。
 
 | 言語 | ダウンロード |
 |---|---|
@@ -131,18 +153,6 @@
 &nbsp;&nbsp;
 <img src="assets/cover-ja-page2.png" width="46%" alt="2ページ目" />
 </div>
-
----
-
-## 🚀 活用方法
-
-**1. 印刷して毎日目に入る場所に貼る** 🖨️
-PDFをダウンロード → 印刷 → デスクの横、鏡の前、冷蔵庫などに貼り付けましょう。
-財務は「繰り返し目にすること」で、習慣として身についていきます。
-
-**2. 大切な人とシェアする** ❤️
-このリンクを家族や友人、財務を一から始めたい人に送りましょう。
-最高のプレゼントのひとつは、その人の人生に根付く「思考のシステム」です。
 
 ---
 

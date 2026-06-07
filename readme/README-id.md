@@ -56,62 +56,84 @@ Kemudian salurkan "Dana Kebebasan" ke dalam **3 pilar** yang bekerja bersama-sam
 
 ---
 
-## 🤖 Gunakan Kerangka Ini di AI-mu
+## ✨ Apa yang Berubah di AI-mu Setelah Menginstal Ini
 
-Whitepaper ini juga hadir sebagai **skill AI** — sebuah lensa penalaran yang membuat AI mana pun memberikan saran melalui Sistem Tiga Pilar (`Pendapatan − Pengeluaran = Dana Kebebasan`, dialokasikan ke Cashflow / Investment / Savings, dengan disiplin di atas strategi). Dua versi, satu sumber: folder [`skill/`](../skill/) untuk agen yang dapat membaca file, dan [`three-pillar-lens.md`](../three-pillar-lens.md) — satu file yang ditempelkan ke chatbot mana pun.
+Dengan skill terpasang, AI-mu berhenti memberi saran keuangan generik dan mulai bernalar melalui Sistem Tiga Pilar:
 
-| Platform | Cara memuatnya | Perilaku |
-|---|---|---|
-| Claude Code | Salin folder `skill/` | Aktif otomatis saat membahas topik keuangan |
-| claude.ai (Project) | Tempel `three-pillar-lens.md` | Selalu aktif untuk Project tersebut |
-| ChatGPT | Tempel `three-pillar-lens.md` | Selalu aktif dalam konteks tersebut |
-| Gemini | Tempel `three-pillar-lens.md` | Selalu aktif untuk Gem tersebut |
-| Any API / CLI agent | Tambahkan di awal system prompt | Selalu aktif |
+- Mendasarkan setiap jawaban pada angka nyatamu — `Pemasukan − Pengeluaran = Dana Kebebasan` — sebelum memberi saran.
+- Menolak hype: tidak akan merekomendasikan aset yang tidak kamu pahami.
+- Selalu menjaga keseimbangan antara serangan (**Investment**) dan pertahanan (**Savings**) dalam rencana.
+- Mengutamakan disiplin dan cakrawala 5–10 tahun daripada mencari timing yang sempurna.
 
-<details><summary><b>Claude Code</b></summary>
+**Prompt-mu akan mendapat panduan keuangan yang lebih tajam, konsisten, dan tidak generik.**
 
-1. Unduh atau clone repositori ini.
-2. Salin folder `skill/` ke `.claude/skills/three-pillar-finance/` di proyekmu, atau `~/.claude/skills/three-pillar-finance/` untuk semua proyek.
-3. Mulai sesi. Saat kamu membahas anggaran, tabungan, atau investasi, lensa akan diterapkan secara otomatis.
+---
 
-</details>
+## 🛠️ Cara Menggunakannya
 
-<details><summary><b>claude.ai (Project)</b></summary>
+### 🤖 AI Way — instal skill-nya
 
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Di claude.ai, buat atau buka sebuah Project.
-3. Tempelkan ke custom instructions Project tersebut. Setiap chat di Project itu akan menggunakan lensa ini.
+Whitepaper ini hadir sebagai **skill AI** — sebuah lensa penalaran. Dua gaya instalasi: **Auto** (satu perintah, untuk Claude Code dan CLI agent) atau **Manual** (tempel satu file, untuk chatbot apa pun).
 
-</details>
+<details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
-<details><summary><b>ChatGPT</b></summary>
+Instal:
 
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Tempelkan ke Pengaturan ▸ Personalisasi ▸ Custom Instructions, atau ke instruksi sebuah Project, atau ke pengetahuan custom GPT.
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
 
-</details>
+Perbarui ke versi terbaru:
 
-<details><summary><b>Gemini</b></summary>
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
 
-1. Buka [`three-pillar-lens.md`](../three-pillar-lens.md) dan salin seluruh file.
-2. Tempelkan ke instruksi sebuah Gem, atau ke Saved Info.
+Plugin ini tidak memiliki versi tetap, sehingga setiap push ke repo ini akan ditawarkan sebagai versi terbaru.
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Claude Code — degit (tanpa marketplace)</b></summary>
 
-1. Tambahkan [`three-pillar-lens.md`](../three-pillar-lens.md) di awal system prompt-mu.
-2. Untuk CLI agent berbasis file (Gemini CLI, Copilot CLI), letakkan di direktori adapter agen atau di `AGENTS.md`.
+Instal:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+Perbarui ke versi terbaru — jalankan ulang dengan `--force`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary>
+
+Letakkan skill ke direktori adapter agen atau di `AGENTS.md`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+Perbarui: jalankan ulang dengan `--force`.
+
+</details>
+
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (tempel manual)</b></summary>
+
+Salin [`three-pillar-lens.md`](../three-pillar-lens.md) dan tempelkan ke custom instructions Project, ChatGPT Custom Instructions, sebuah Gem, atau system prompt. Untuk memperbarui, salin ulang file dan ganti blok yang telah ditempel.
 
 </details>
 
 > Kerangka edukatif, bukan saran keuangan yang dipersonalisasi. Tidak menyebut sekuritas tertentu.
 
----
+### 📄 Physical Way — baca whitepapernya
 
-## 📖 Baca Sekarang
-
-Pilih bahasamu — setiap file adalah PDF siap cetak:
+Bacaan 2 halaman. Cetak, tempel di tempat yang sering kamu lihat setiap hari, dan bagikan kepada orang-orang yang kamu sayangi.
 
 | Bahasa | Unduh |
 |---|---|
@@ -131,18 +153,6 @@ Pilih bahasamu — setiap file adalah PDF siap cetak:
 &nbsp;&nbsp;
 <img src="assets/cover-id-page2.png" width="46%" alt="Halaman 2" />
 </div>
-
----
-
-## 🚀 Cara Menggunakannya
-
-**1. Cetak dan tempel di tempat yang sering kamu lihat** 🖨️
-Unduh PDF → cetak → tempel di samping meja kerja, depan cermin, atau pintu kulkas.
-Keuangan berubah lewat "melihat berulang kali" hingga menjadi kebiasaan.
-
-**2. Bagikan cara berpikir ini kepada orang yang kamu sayangi** ❤️
-Kirimkan tautan ini kepada keluarga, teman, atau siapa pun yang baru memulai.
-Salah satu hadiah terbaik adalah "sistem berpikir" yang menemaninya seumur hidup.
 
 ---
 

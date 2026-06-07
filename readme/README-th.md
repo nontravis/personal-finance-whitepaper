@@ -56,62 +56,84 @@
 
 ---
 
-## 🤖 นำเฟรมเวิร์กไปใช้กับ AI ของคุณ
+## ✨ ติดตั้งแล้ว AI ของคุณจะเปลี่ยนไปอย่างไร
 
-ไวต์เปเปอร์นี้มาพร้อมกับ **AI skill** — เลนส์ความคิดที่ทำให้ AI ที่มีความสามารถสูงให้คำแนะนำผ่านระบบ 3 เสา (`รายรับ − รายจ่าย = ทุนสู่อิสรภาพ` กระจายเข้า Cashflow / Investment / Savings โดยเน้นวินัยมากกว่ากลยุทธ์) มีสองเวอร์ชันจากแหล่งเดียวกัน: โฟลเดอร์ [`skill/`](../skill/) สำหรับ agent ที่อ่านไฟล์ได้ และ [`three-pillar-lens.md`](../three-pillar-lens.md) — ไฟล์เดียวที่วางลงใน chatbot ใดก็ได้
+เมื่อติดตั้ง skill แล้ว AI จะหยุดให้คำแนะนำทางการเงินแบบทั่วไป และเริ่มใช้เหตุผลผ่านระบบ 3 เสา:
 
-| แพลตฟอร์ม | วิธีโหลด | ลักษณะการทำงาน |
-|---|---|---|
-| Claude Code | คัดลอกโฟลเดอร์ `skill/` | ทำงานอัตโนมัติเมื่อพูดคุยเรื่องเงิน |
-| claude.ai (Project) | วาง `three-pillar-lens.md` | ใช้งานตลอดสำหรับ Project นั้น |
-| ChatGPT | วาง `three-pillar-lens.md` | ใช้งานตลอดในบริบทนั้น |
-| Gemini | วาง `three-pillar-lens.md` | ใช้งานตลอดสำหรับ Gem นั้น |
-| Any API / CLI agent | เพิ่มไว้ต้น system prompt | ใช้งานตลอด |
+- ยึดทุกคำตอบบนตัวเลขจริงของคุณ — `รายรับ − รายจ่าย = ทุนสู่อิสรภาพ` — ก่อนให้คำแนะนำเสมอ
+- ปฏิเสธกระแสฮือฮา: จะไม่แนะนำสินทรัพย์ที่คุณไม่เข้าใจ
+- รักษาสมดุลทั้งฝ่ายรุก (**Investment**) และฝ่ายรับ (**Savings**) ไว้ในแผนเสมอ
+- เน้นวินัยและขอบฟ้า 5–10 ปี มากกว่าการจับจังหวะตลาดให้แม่นยำ
 
-<details><summary><b>Claude Code</b></summary>
+**พรอมต์ของคุณจะได้รับคำแนะนำทางการเงินที่คมชัด สม่ำเสมอ และไม่ซ้ำแบบใครมากขึ้น**
 
-1. ดาวน์โหลดหรือ clone repo นี้
-2. คัดลอกโฟลเดอร์ `skill/` ไปที่ `.claude/skills/three-pillar-finance/` ในโปรเจกต์ของคุณ หรือ `~/.claude/skills/three-pillar-finance/` เพื่อใช้กับทุกโปรเจกต์
-3. เริ่ม session เมื่อคุณพูดคุยเรื่องงบประมาณ การออม หรือการลงทุน เลนส์จะทำงานอัตโนมัติ
+---
 
-</details>
+## 🛠️ วิธีใช้งาน
 
-<details><summary><b>claude.ai (Project)</b></summary>
+### 🤖 AI Way — ติดตั้ง skill
 
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. ใน claude.ai สร้างหรือเปิด Project
-3. วางลงใน custom instructions ของ Project ทุกแชทใน Project นั้นจะใช้เลนส์นี้
+ไวต์เปเปอร์นี้มาพร้อมกับ **AI skill** — เลนส์ความคิดสำหรับการให้เหตุผล รองรับสองสไตล์การติดตั้ง: **Auto** (คำสั่งเดียว สำหรับ Claude Code และ CLI agent) หรือ **Manual** (วางไฟล์เดียว สำหรับ chatbot ทุกชนิด)
 
-</details>
+<details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
-<details><summary><b>ChatGPT</b></summary>
+ติดตั้ง:
 
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. วางลงใน Settings ▸ Personalization ▸ Custom Instructions หรือใน instructions ของ Project หรือ knowledge ของ custom GPT
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
 
-</details>
+อัปเดตเป็นเวอร์ชันล่าสุด:
 
-<details><summary><b>Gemini</b></summary>
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
 
-1. เปิด [`three-pillar-lens.md`](../three-pillar-lens.md) แล้วคัดลอกทั้งไฟล์
-2. วางลงใน instructions ของ Gem หรือใน Saved Info
+plugin นี้ไม่ได้ระบุเวอร์ชัน ดังนั้นทุก push ไปยัง repo นี้จะถูกเสนอเป็นเวอร์ชันล่าสุดเสมอ
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>Claude Code — degit (ไม่ใช้ marketplace)</b></summary>
 
-1. เพิ่ม [`three-pillar-lens.md`](../three-pillar-lens.md) ไว้ต้น system prompt
-2. สำหรับ CLI agent ที่อ่านไฟล์ได้ (Gemini CLI, Copilot CLI) ให้วางไว้ใน adapter directory ของ agent หรือใน `AGENTS.md`
+ติดตั้ง:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+อัปเดตเป็นเวอร์ชันล่าสุด — รันซ้ำพร้อม `--force`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
+
+</details>
+
+<details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary>
+
+วาง skill ลงใน adapter directory ของ agent หรือใน `AGENTS.md`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+อัปเดต: รันซ้ำพร้อม `--force`
+
+</details>
+
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (วางด้วยตนเอง)</b></summary>
+
+คัดลอก [`three-pillar-lens.md`](../three-pillar-lens.md) แล้ววางลงใน custom instructions ของ Project, ChatGPT Custom Instructions, Gem, หรือ system prompt หากต้องการอัปเดต ให้คัดลอกไฟล์ใหม่แล้วแทนที่บล็อกเดิม
 
 </details>
 
 > เฟรมเวิร์กเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล ไม่มีการระบุหลักทรัพย์เฉพาะเจาะจง
 
----
+### 📄 Physical Way — อ่านไวต์เปเปอร์
 
-## 📖 อ่านเลย
-
-เลือกภาษาของคุณ — แต่ละไฟล์เป็น PDF พร้อมปริ้นต์:
+อ่านจบใน 2 หน้า ปริ้นต์ แปะไว้ที่ที่คุณอ่านทุกวัน และแชร์ให้คนที่คุณรัก
 
 | ภาษา | ดาวน์โหลด |
 |---|---|
@@ -131,18 +153,6 @@
 &nbsp;&nbsp;
 <img src="assets/cover-th-page2.png" width="46%" alt="หน้า 2" />
 </div>
-
----
-
-## 🚀 วิธีใช้งาน
-
-**1. ปริ้นต์ไปแปะไว้ที่อ่านทุกวัน** 🖨️
-ดาวน์โหลด PDF → สั่งปริ้นต์ → แปะไว้ข้างโต๊ะทำงาน หน้ากระจก หรือตู้เย็น
-การเงินเปลี่ยนได้ด้วย “การเห็นซ้ำ ๆ” จนกลายเป็นนิสัย
-
-**2. แชร์ mindset ดี ๆ นี้ให้คนที่คุณรัก** ❤️
-ส่งลิงก์นี้ให้ครอบครัว เพื่อน หรือคนที่กำลังเริ่มต้น
-ของขวัญที่ดีที่สุดอย่างหนึ่งคือ “ระบบคิด” ที่ติดตัวเขาไปตลอดชีวิต
 
 ---
 

@@ -56,71 +56,86 @@ Then allocate that "Freedom Fund" across **3 pillars** that work together:
 
 ---
 
-## 🤖 Use the Framework in Your AI
+## ✨ What Installing This Does to Your AI
 
-This whitepaper also ships as an **AI skill** — a reasoning lens that makes any capable AI advise
-through the Three-Pillar System (`Income − Expenses = Freedom Fund`, allocated across Cashflow /
-Investment / Savings, discipline over strategy). Two versions, one source: the [`skill/`](skill/)
-folder for agents that read files, and [`three-pillar-lens.md`](three-pillar-lens.md) — a single
-file you paste into any chatbot.
+With the skill installed, your AI stops giving generic money tips and reasons through the Three-Pillar System:
 
-| Platform | How it loads | Behavior |
-|---|---|---|
-| Claude Code | Copy the `skill/` folder | Auto-fires on money topics |
-| claude.ai (Project) | Paste `three-pillar-lens.md` | Always-on for the Project |
-| ChatGPT | Paste `three-pillar-lens.md` | Always-on for that context |
-| Gemini | Paste `three-pillar-lens.md` | Always-on for the Gem |
-| Any API / CLI agent | Prepend as system prompt | Always-on |
+- Anchors every answer on your real numbers — `Income − Expenses = Freedom Fund` — before advising.
+- Refuses hype: it won't endorse an asset you don't understand.
+- Always keeps both offense (**Investment**) and defense (**Savings**) in the plan.
+- Pushes discipline and a 5–10 year horizon over clever timing.
 
-<details><summary><b>Claude Code</b></summary>
+**Your prompts return sharper, more consistent, less generic financial guidance.**
 
-1. Download or clone this repo.
-2. Copy the `skill/` folder to `.claude/skills/three-pillar-finance/` in your project, or
-   `~/.claude/skills/three-pillar-finance/` for all projects.
-3. Start a session. When you discuss budgeting, saving, or investing, the lens applies automatically.
+---
 
-</details>
+## 🛠️ How to Use It
 
-<details><summary><b>claude.ai (Project)</b></summary>
+### 🤖 AI Way — install the skill
 
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. In claude.ai, create or open a Project.
-3. Paste it into the Project's custom instructions. Every chat in that Project now uses the lens.
+This whitepaper ships as an **AI skill** — a reasoning lens. Two install styles: **Auto** (one command, Claude Code / CLI agents) or **Manual** (paste one file, any chatbot).
 
-</details>
+<details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
-<details><summary><b>ChatGPT</b></summary>
+Install:
 
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. Paste it into Settings ▸ Personalization ▸ Custom Instructions, or a Project's instructions,
-   or a custom GPT's knowledge.
+```
+/plugin marketplace add nontravis/personal-finance-whitepaper
+/plugin install three-pillar-finance@nontravis
+```
+
+Update to the latest:
+
+```
+/plugin marketplace update nontravis
+/reload-plugins
+```
+
+The plugin is unversioned, so every push to this repo is offered as the latest.
 
 </details>
 
-<details><summary><b>Gemini</b></summary>
+<details><summary><b>Claude Code — degit (no marketplace)</b></summary>
 
-1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
-2. Paste it into a Gem's instructions, or into Saved Info.
+Install:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+```
+
+Update to the latest — re-run with `--force`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+```
 
 </details>
 
-<details><summary><b>Any API / CLI agent</b></summary>
+<details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary>
 
-1. Prepend [`three-pillar-lens.md`](three-pillar-lens.md) to your system prompt.
-2. For file-tool CLI agents (Gemini CLI, Copilot CLI), drop it into the agent's adapter directory
-   or `AGENTS.md`.
+Drop the skill into the agent's adapter directory or `AGENTS.md`:
+
+```
+npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+```
+
+Update: re-run with `--force`.
+
+</details>
+
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (manual paste)</b></summary>
+
+Copy [`three-pillar-lens.md`](three-pillar-lens.md) and paste it into the Project's custom instructions, ChatGPT Custom Instructions, a Gem, or the system prompt. To update, re-copy the file and replace the pasted block.
 
 </details>
 
 > Educational framework, not personalized financial advice. It names no specific securities.
 
----
+### 📄 Physical Way — read the whitepaper
 
-## 📖 Read Now
+A 2-page read. Print it, post it where you read every day, and share it with people you care about.
 
-Choose your language — each file is a print-ready PDF:
-
-| Language | Download |
+| Language | PDF |
 |---|---|
 | 🇹🇭 ไทย | [whitepaper-th.pdf](whitepaper-th.pdf) |
 | 🇬🇧 English | [whitepaper-en.pdf](whitepaper-en.pdf) |
@@ -138,18 +153,6 @@ Choose your language — each file is a print-ready PDF:
 &nbsp;&nbsp;
 <img src="readme/assets/cover-en-page2.png" width="46%" alt="Page 2" />
 </div>
-
----
-
-## 🚀 How to Use It
-
-**1. Print it and put it somewhere you see every day** 🖨️
-Download the PDF → print it → stick it on your desk, mirror, or fridge.
-Finances change through "repeated exposure" until good habits form.
-
-**2. Share this mindset with someone you love** ❤️
-Send this link to family, friends, or anyone just getting started.
-One of the best gifts you can give is a "way of thinking" that stays with them for life.
 
 ---
 
