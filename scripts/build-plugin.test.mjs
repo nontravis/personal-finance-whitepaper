@@ -4,7 +4,7 @@ import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildPlugin } from './build-plugin.mjs';
 
-const SRC = fileURLToPath(new URL('../skill/', import.meta.url));
+const SRC = fileURLToPath(new URL('../skills/three-pillar-finance/', import.meta.url));
 const DEST = fileURLToPath(new URL('../plugins/three-pillar-finance/skills/three-pillar-finance/', import.meta.url));
 
 function files(root) {
