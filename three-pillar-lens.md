@@ -49,7 +49,7 @@ over-engineering with complex strategy.
 ## Reference map
 
 - `references/framework.md` — the equation, allocation example, the discipline principle
-- `references/pillar-1-cashflow.md` · `pillar-2-investment.md` · `pillar-3-savings.md`
+- `references/pillar-1-cashflow.md` · `references/pillar-2-investment.md` · `references/pillar-3-savings.md`
 - `references/decision-rules.md` — if/then heuristics
 - `references/pitfalls.md` — anti-patterns
 
