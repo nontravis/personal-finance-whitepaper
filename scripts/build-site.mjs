@@ -168,6 +168,30 @@ const READROWS = [
 const DLICON = '<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg>';
 const esc = s => s.replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 
+const HAND = {
+  en:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
+  es:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
+  id:{ fam:'Shantell Sans', fams:['Shantell+Sans:wght@600;700'], subset:false },
+  th:{ fam:'Itim',          fams:['Itim','Shantell+Sans:wght@600;700'], subset:false },
+  ja:{ fam:'Klee One',      fams:['Klee+One:wght@600'], subset:true },
+  zh:{ fam:'Ma Shan Zheng', fams:['Ma+Shan+Zheng'], subset:true },
+};
+
+function fontHead(lang, t){
+  const h = HAND[lang];
+  const links = [`<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>`];
+  if (h.subset){
+    const display = [t.title, t.eq, t.p1t, t.p2t, t.p3t, t.quote].join('');
+    const chars = [...new Set(Array.from(display))].join('');
+    links.push(`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=${h.fams[0]}&text=${encodeURIComponent(chars)}&display=swap">`);
+  } else {
+    const fam = h.fams.map(f => `family=${f}`).join('&');
+    links.push(`<link rel="stylesheet" href="https://fonts.googleapis.com/css2?${fam}&display=swap">`);
+  }
+  links.push(`<style>:root{ --hand:'${h.fam}',var(--sans); }</style>`);
+  return links.join('\n  ');
+}
+
 function page(lang){
   const t = T[lang];
   const canonical = BASE + (lang==='en' ? '/' : `/${lang}/`);
@@ -212,6 +236,7 @@ ${hreflang}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  ${fontHead(lang, t)}
 <style>
   @view-transition { navigation: auto; }
   :root{ --ink:#1b1b19; --muted:#6f6c64; --faint:#9a978d; --line:#e8e4da; --line-strong:#d3cec1; --paper:#fefdfb; --desk:#cbc7bd; --maxw:880px;
