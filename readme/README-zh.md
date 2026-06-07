@@ -100,13 +100,13 @@
 安装：
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance
 ```
 
 更新至最新版本——加上 `--force` 重新运行：
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance --force
 ```
 
 </details>
@@ -116,7 +116,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pil
 将 skill 放入 agent 的 adapter 目录或 `AGENTS.md`：
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ./.gemini/skills/three-pillar-finance
 ```
 
 更新：加上 `--force` 重新运行。
