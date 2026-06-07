@@ -26,14 +26,16 @@ const T = {
     quote:'“Start with a simple system, then do it consistently.”', quoteSub:"Time and consistency are every investor's most powerful allies.", ghtext:'View on GitHub',
     footLead:'By', footTail:'Released for the public good under',
     ai:{ head:'Use it in your AI',
-      lede:'This whitepaper also ships as an AI skill — a reasoning lens any capable AI can apply. Paste one file, or drop in the skill folder.',
-      repo:'Get the skill on GitHub', note:'Educational framework, not personalized financial advice.',
-      p:[
-        {n:'Claude Code', s:'Copy the skill/ folder into .claude/skills/. It auto-applies when you discuss money.'},
-        {n:'claude.ai', s:"Paste three-pillar-lens.md into a Project's custom instructions."},
-        {n:'ChatGPT', s:'Paste three-pillar-lens.md into Custom Instructions, a Project, or a GPT.'},
-        {n:'Gemini', s:'Paste three-pillar-lens.md into a Gem or Saved Info.'},
-        {n:'Any API / CLI agent', s:'Prepend three-pillar-lens.md as the system prompt, or add it to AGENTS.md.'},
+      lede:'This whitepaper also ships as an AI skill — a reasoning lens any capable AI can apply. Install with one command, or paste one file.',
+      autoHead:'⚡ Auto install (one command)', manualHead:'✋ Manual (copy-paste)',
+      repo:'Full guide on GitHub', note:'Educational framework, not personalized financial advice.',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> then <code>/plugin install three-pillar-finance@nontravis</code>. Update: <code>/plugin marketplace update nontravis</code> then <code>/reload-plugins</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Update: re-run with <code>--force</code>.'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"degit the skill/ folder into the agent's adapter directory or AGENTS.md; update with <code>--force</code>."},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'Paste three-pillar-lens.md into the Project, Custom Instructions, a Gem, or the system prompt. To update, re-paste the latest file.'},
       ]},
   },
   th:{ langlbl:'ภาษา', seoTitle:'รากฐานระบบการเงินส่วนบุคคล 3 เสา — Nonthawit Doungsodsri',
@@ -48,14 +50,16 @@ const T = {
     quote:'“เริ่มต้นด้วยระบบที่เรียบง่าย แล้วทำมันอย่างสม่ำเสมอ”', quoteSub:'เวลาและความสม่ำเสมอ คือพันธมิตรที่ทรงพลังที่สุดของนักลงทุนทุกคน', ghtext:'ดูบน GitHub',
     footLead:'โดย', footTail:'เผยแพร่เพื่อประโยชน์สาธารณะ ภายใต้',
     ai:{ head:'ใช้งานใน AI ของคุณ',
-      lede:'ไวต์เปเปอร์นี้มาพร้อมกับ AI skill — เลนส์ให้เหตุผลที่ AI ที่มีความสามารถทุกตัวนำไปใช้ได้ วางไฟล์เดียว หรือวาง skill folder ลงไปได้เลย',
-      repo:'รับ skill บน GitHub', note:'กรอบแนวคิดเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล',
-      p:[
-        {n:'Claude Code', s:'คัดลอกโฟลเดอร์ skill/ ไปไว้ใน .claude/skills/ มันจะทำงานอัตโนมัติเมื่อคุณพูดถึงเรื่องเงิน'},
-        {n:'claude.ai', s:'วาง three-pillar-lens.md ลงใน custom instructions ของ Project'},
-        {n:'ChatGPT', s:'วาง three-pillar-lens.md ลงใน Custom Instructions, Project หรือ GPT'},
-        {n:'Gemini', s:'วาง three-pillar-lens.md ลงใน Gem หรือ Saved Info'},
-        {n:'Any API / CLI agent', s:'แนบ three-pillar-lens.md ไว้ต้น system prompt หรือเพิ่มใน AGENTS.md'},
+      lede:'ไวต์เปเปอร์นี้มาพร้อมกับ AI skill — เลนส์ให้เหตุผลที่ AI ที่มีความสามารถทุกตัวนำไปใช้ได้ ติดตั้งด้วยคำสั่งเดียว หรือวางไฟล์เดียว',
+      autoHead:'⚡ ติดตั้งอัตโนมัติ (หนึ่งคำสั่ง)', manualHead:'✋ ติดตั้งแบบ manual (copy-paste)',
+      repo:'ดูคู่มือเต็มบน GitHub', note:'กรอบแนวคิดเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> แล้ว <code>/plugin install three-pillar-finance@nontravis</code>. อัปเดต: <code>/plugin marketplace update nontravis</code> แล้ว <code>/reload-plugins</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. อัปเดต: รันคำสั่งเดิมพร้อม <code>--force</code>.'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"วาง skill/ folder ลงในไดเรกทอรี adapter ของ agent หรือ AGENTS.md แล้วอัปเดตด้วย <code>--force</code>."},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'วาง three-pillar-lens.md ลงใน Project, Custom Instructions, Gem หรือ system prompt หากต้องการอัปเดต ให้วางไฟล์ล่าสุดทับ'},
       ]},
   },
   es:{ langlbl:'Idioma', seoTitle:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares — Nonthawit Doungsodsri',
@@ -70,14 +74,16 @@ const T = {
     quote:'«Comienza con un sistema simple y aplícalo con constancia.»', quoteSub:'El tiempo y la constancia son los aliados más poderosos de todo inversor.', ghtext:'Ver en GitHub',
     footLead:'Por', footTail:'Publicado para el bien público bajo',
     ai:{ head:'Úsalo en tu IA',
-      lede:'Este documento también viene como un AI skill — un lente de razonamiento que cualquier IA capaz puede aplicar. Pega un archivo o coloca la carpeta del skill.',
-      repo:'Obtén el skill en GitHub', note:'Marco educativo, no asesoramiento financiero personalizado.',
-      p:[
-        {n:'Claude Code', s:'Copia la carpeta skill/ en .claude/skills/. Se aplica automáticamente cuando hablas de dinero.'},
-        {n:'claude.ai', s:'Pega three-pillar-lens.md en las instrucciones personalizadas de un Project.'},
-        {n:'ChatGPT', s:'Pega three-pillar-lens.md en Custom Instructions, un Project o un GPT.'},
-        {n:'Gemini', s:'Pega three-pillar-lens.md en un Gem o en Saved Info.'},
-        {n:'Any API / CLI agent', s:'Antepón three-pillar-lens.md como system prompt o agrégalo a AGENTS.md.'},
+      lede:'Este documento también viene como un AI skill — un lente de razonamiento que cualquier IA capaz puede aplicar. Instala con un comando o pega un archivo.',
+      autoHead:'⚡ Instalación automática (un comando)', manualHead:'✋ Manual (copy-paste)',
+      repo:'Guía completa en GitHub', note:'Marco educativo, no asesoramiento financiero personalizado.',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> y luego <code>/plugin install three-pillar-finance@nontravis</code>. Actualizar: <code>/plugin marketplace update nontravis</code> y luego <code>/reload-plugins</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Actualizar: vuelve a ejecutar con <code>--force</code>.'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"Copia la carpeta skill/ al directorio del adaptador del agente o a AGENTS.md; actualiza con <code>--force</code>."},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'Pega three-pillar-lens.md en el Project, Custom Instructions, un Gem o el system prompt. Para actualizar, vuelve a pegar el archivo más reciente.'},
       ]},
   },
   id:{ langlbl:'Bahasa', seoTitle:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar — Nonthawit Doungsodsri',
@@ -92,14 +98,16 @@ const T = {
     quote:'“Mulailah dengan sistem yang sederhana, lalu jalankan secara konsisten.”', quoteSub:'Waktu dan konsistensi adalah sekutu terkuat setiap investor.', ghtext:'Lihat di GitHub',
     footLead:'Oleh', footTail:'Dirilis untuk kepentingan publik di bawah',
     ai:{ head:'Gunakan di AI Anda',
-      lede:'Whitepaper ini juga hadir sebagai AI skill — lensa penalaran yang dapat diterapkan oleh AI mana pun. Tempelkan satu file, atau masukkan folder skill-nya.',
-      repo:'Dapatkan skill di GitHub', note:'Kerangka edukasi, bukan saran keuangan pribadi.',
-      p:[
-        {n:'Claude Code', s:'Salin folder skill/ ke .claude/skills/. Otomatis aktif saat Anda membahas soal uang.'},
-        {n:'claude.ai', s:'Tempel three-pillar-lens.md ke custom instructions sebuah Project.'},
-        {n:'ChatGPT', s:'Tempel three-pillar-lens.md ke Custom Instructions, sebuah Project, atau GPT.'},
-        {n:'Gemini', s:'Tempel three-pillar-lens.md ke dalam Gem atau Saved Info.'},
-        {n:'Any API / CLI agent', s:'Tambahkan three-pillar-lens.md di awal system prompt, atau masukkan ke AGENTS.md.'},
+      lede:'Whitepaper ini juga hadir sebagai AI skill — lensa penalaran yang dapat diterapkan oleh AI mana pun. Instal dengan satu perintah, atau tempelkan satu file.',
+      autoHead:'⚡ Instal otomatis (satu perintah)', manualHead:'✋ Manual (copy-paste)',
+      repo:'Panduan lengkap di GitHub', note:'Kerangka edukasi, bukan saran keuangan pribadi.',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> lalu <code>/plugin install three-pillar-finance@nontravis</code>. Perbarui: <code>/plugin marketplace update nontravis</code> lalu <code>/reload-plugins</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Perbarui: jalankan ulang dengan <code>--force</code>.'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'Salin folder skill/ ke direktori adapter agen atau ke AGENTS.md; perbarui dengan <code>--force</code>.'},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'Tempel three-pillar-lens.md ke dalam Project, Custom Instructions, Gem, atau system prompt. Untuk memperbarui, tempel ulang file terbaru.'},
       ]},
   },
   zh:{ langlbl:'语言', seoTitle:'个人理财系统的基石：三大支柱 — Nonthawit Doungsodsri',
@@ -114,14 +122,16 @@ const T = {
     quote:'“从简单的体系开始，然后坚持去做。”', quoteSub:'时间与坚持，是每一位投资者最强大的盟友。', ghtext:'在 GitHub 查看',
     footLead:'作者', footTail:'以下许可为公共利益发布：',
     ai:{ head:'在你的 AI 中使用',
-      lede:'本白皮书同时提供 AI skill —— 一套推理框架，任何有能力的 AI 都可以应用。粘贴一个文件，或直接放入 skill 文件夹。',
-      repo:'在 GitHub 获取 skill', note:'教育性框架，不构成个性化财务建议。',
-      p:[
-        {n:'Claude Code', s:'将 skill/ 文件夹复制到 .claude/skills/。当你讨论理财时，它会自动生效。'},
-        {n:'claude.ai', s:'将 three-pillar-lens.md 粘贴到 Project 的自定义指令中。'},
-        {n:'ChatGPT', s:'将 three-pillar-lens.md 粘贴到 Custom Instructions、Project 或 GPT 中。'},
-        {n:'Gemini', s:'将 three-pillar-lens.md 粘贴到 Gem 或 Saved Info 中。'},
-        {n:'Any API / CLI agent', s:'将 three-pillar-lens.md 作为 system prompt 前置，或添加到 AGENTS.md。'},
+      lede:'本白皮书同时提供 AI skill —— 一套推理框架，任何有能力的 AI 都可以应用。一条命令即可安装，或粘贴一个文件。',
+      autoHead:'⚡ 自动安装（一条命令）', manualHead:'✋ 手动安装（copy-paste）',
+      repo:'在 GitHub 查看完整指南', note:'教育性框架，不构成个性化财务建议。',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>，然后 <code>/plugin install three-pillar-finance@nontravis</code>。更新：<code>/plugin marketplace update nontravis</code>，然后 <code>/reload-plugins</code>。'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新：加上 <code>--force</code> 重新运行。'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'将 skill/ 文件夹复制到 agent 的适配器目录或 AGENTS.md；加上 <code>--force</code> 更新。'},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'将 three-pillar-lens.md 粘贴到 Project、Custom Instructions、Gem 或 system prompt 中。如需更新，重新粘贴最新文件。'},
       ]},
   },
   ja:{ langlbl:'言語', seoTitle:'パーソナルファイナンス・システムの基盤：3本の柱 — Nonthawit Doungsodsri',
@@ -136,14 +146,16 @@ const T = {
     quote:'「シンプルな仕組みから始め、それを一貫して続けよ。」', quoteSub:'時間と一貫性は、すべての投資家にとって最も強力な味方である。', ghtext:'GitHub で見る',
     footLead:'著者', footTail:'次のライセンスのもと公共の利益のために公開：',
     ai:{ head:'AIで使う',
-      lede:'この白書は AI skill としても提供されています —— あらゆる有能な AI が適用できる推論レンズです。ファイルを一枚貼るか、skill フォルダをそのまま置くだけ。',
-      repo:'GitHub で skill を入手', note:'教育的フレームワークであり、個別の財務アドバイスではありません。',
-      p:[
-        {n:'Claude Code', s:'skill/ フォルダを .claude/skills/ にコピーする。お金の話をすると自動で適用される。'},
-        {n:'claude.ai', s:'three-pillar-lens.md を Project のカスタム指示に貼り付ける。'},
-        {n:'ChatGPT', s:'three-pillar-lens.md を Custom Instructions、Project、または GPT に貼り付ける。'},
-        {n:'Gemini', s:'three-pillar-lens.md を Gem または Saved Info に貼り付ける。'},
-        {n:'Any API / CLI agent', s:'three-pillar-lens.md を system prompt の先頭に付加するか、AGENTS.md に追加する。'},
+      lede:'この白書は AI skill としても提供されています —— あらゆる有能な AI が適用できる推論レンズです。コマンド一つでインストールするか、ファイルを一枚貼るだけ。',
+      autoHead:'⚡ 自動インストール（コマンド一つ）', manualHead:'✋ 手動インストール（copy-paste）',
+      repo:'GitHub で完全ガイドを見る', note:'教育的フレームワークであり、個別の財務アドバイスではありません。',
+      auto:[
+        {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>、次に <code>/plugin install three-pillar-finance@nontravis</code>。更新: <code>/plugin marketplace update nontravis</code>、次に <code>/reload-plugins</code>。'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新: <code>--force</code> を付けて再実行。'},
+        {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'skill/ フォルダを agent のアダプタディレクトリまたは AGENTS.md に配置する。更新は <code>--force</code> を付けて再実行。'},
+      ],
+      manual:[
+        {n:'claude.ai / ChatGPT / Gemini / API', s:'three-pillar-lens.md を Project のカスタム指示、Custom Instructions、Gem、または system prompt に貼り付ける。更新するには最新ファイルを貼り直す。'},
       ]},
   },
 };
@@ -298,7 +310,10 @@ ${readlist}
   <div class="sechead"><h2>${t.ai.head}</h2></div>
   <div class="use">
     <p>${t.ai.lede}</p>
-    ${t.ai.p.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
+    <p><b>${t.ai.autoHead}</b></p>
+    ${t.ai.auto.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
+    <p><b>${t.ai.manualHead}</b></p>
+    ${t.ai.manual.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
     <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">${t.ai.repo}</a></p>
     <p><small>${t.ai.note}</small></p>
   </div>
