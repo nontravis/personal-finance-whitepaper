@@ -56,11 +56,24 @@ Luego distribuyes ese "Fondo de Libertad" en **3 pilares** que trabajan juntos:
 
 ---
 
-## 🤖 Usa el marco en tu IA
+## ✨ Qué cambia en tu IA al instalar esto
 
-Este whitepaper también se distribuye como una **skill de IA** — una lente de razonamiento que hace que cualquier IA capaz asesore a través del Sistema de Tres Pilares (`Ingresos − Gastos = Fondo de Libertad`, distribuido entre Cashflow / Investment / Savings, con disciplina sobre estrategia). Una sola fuente, dos estilos de instalación: **Auto** (un comando, para Claude Code y agentes CLI) o **Manual** (pega un archivo, para cualquier chatbot).
+Con la skill instalada, tu IA deja de dar consejos financieros genéricos y razona a través del Sistema de Tres Pilares:
 
-### ⚡ Auto install (un comando)
+- Ancla cada respuesta en tus números reales — `Ingresos − Gastos = Fondo de Libertad` — antes de asesorar.
+- Rechaza el hype: no recomendará un activo que no entiendes.
+- Mantiene siempre tanto el ataque (**Investment**) como la defensa (**Savings**) en el plan.
+- Prioriza la disciplina y un horizonte de 5–10 años sobre el timing inteligente.
+
+**Tus prompts recibirán orientación financiera más precisa, consistente y menos genérica.**
+
+---
+
+## 🛠️ Cómo usarlo
+
+### 🤖 AI Way — instala la skill
+
+Este whitepaper se distribuye como una **skill de IA** — una lente de razonamiento. Dos estilos de instalación: **Auto** (un comando, para Claude Code y agentes CLI) o **Manual** (pega un archivo, para cualquier chatbot).
 
 <details><summary><b>Claude Code — plugin (recommended)</b></summary>
 
@@ -110,45 +123,17 @@ Actualizar: vuelve a ejecutar con `--force`.
 
 </details>
 
-### ✋ Manual install (copiar y pegar)
+<details><summary><b>claude.ai / ChatGPT / Gemini / API (pegado manual)</b></summary>
 
-Para chatbots que no pueden leer archivos, pega el archivo plano único
-[`three-pillar-lens.md`](../three-pillar-lens.md). Para actualizar más adelante, vuelve a copiarlo y reemplaza el bloque pegado.
-
-<details><summary><b>claude.ai (Project)</b></summary>
-
-1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
-2. Crea o abre un Project, y pégalo en las custom instructions del Project.
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
-2. Pégalo en Configuración ▸ Personalización ▸ Custom Instructions, en las instrucciones de un Project, o en el conocimiento de un GPT personalizado.
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
-2. Pégalo en las instrucciones de un Gem, o en Saved Info.
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-Antepón [`three-pillar-lens.md`](../three-pillar-lens.md) como system prompt.
+Copia [`three-pillar-lens.md`](../three-pillar-lens.md) y pégalo en las custom instructions del Project, ChatGPT Custom Instructions, un Gem, o el system prompt. Para actualizar, vuelve a copiar el archivo y reemplaza el bloque pegado.
 
 </details>
 
 > Marco educativo, no asesoramiento financiero personalizado. No menciona valores específicos.
 
----
+### 📄 Physical Way — lee el whitepaper
 
-## 📖 Léelo ahora
-
-Elige tu idioma — cada archivo es un PDF listo para imprimir:
+Una lectura de 2 páginas. Imprímelo, ponlo donde lo veas cada día y compártelo con las personas que quieres.
 
 | Idioma | Descarga |
 |---|---|
@@ -168,18 +153,6 @@ Elige tu idioma — cada archivo es un PDF listo para imprimir:
 &nbsp;&nbsp;
 <img src="assets/cover-es-page2.png" width="46%" alt="Página 2" />
 </div>
-
----
-
-## 🚀 Cómo usarlo
-
-**1. Imprímelo y ponlo donde lo veas cada día** 🖨️
-Descarga el PDF → imprime → pégalo junto a tu escritorio, en el espejo o en la nevera.
-Las finanzas cambian gracias a la "exposición repetida" hasta que se convierte en hábito.
-
-**2. Comparte este mindset con las personas que quieres** ❤️
-Envía este enlace a tu familia, amigos o a alguien que está empezando.
-Uno de los mejores regalos es un "sistema de pensamiento" que los acompañe toda la vida.
 
 ---
 

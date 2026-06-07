@@ -56,11 +56,24 @@
 
 ---
 
-## 🤖 AI でこのフレームワークを使う
+## ✨ インストールすると AI がどう変わるか
 
-本ホワイトペーパーは **AI skill** としても提供されています。三支柱システム（`収入 − 支出 = 自由基金`、Cashflow / Investment / Savings に配分し、戦略よりも規律を重視）を通じて、あらゆる高性能 AI が助言できるようにする推論レンズです。ソースは一つ、インストール方法は二つ：**Auto**（コマンド一つ、Claude Code および CLI エージェント向け）または **Manual**（ファイルを一つ貼り付け、あらゆるチャットボット向け）。
+skill をインストールすると、AI は一般的なお金のアドバイスをやめ、三支柱システムを通じて推論するようになります：
 
-### ⚡ Auto install（コマンド一つ）
+- アドバイスの前に必ず、あなたの実際の数字——`収入 − 支出 = 自由資金`——を基点に置く。
+- ハイプを拒否：あなたが理解していない資産は勧めない。
+- 計画に常に攻め（**Investment**）と守り（**Savings**）の両方を保持する。
+- 絶妙なタイミングよりも、規律と 5〜10 年の長期視点を重視する。
+
+**あなたのプロンプトは、より鋭く、一貫性のある、ありきたりでない財務ガイダンスを受け取れるようになります。**
+
+---
+
+## 🛠️ 使い方
+
+### 🤖 AI Way — skill をインストールする
+
+本ホワイトペーパーは **AI skill**——推論レンズ——として提供されています。インストール方法は二つ：**Auto**（コマンド一つ、Claude Code および CLI エージェント向け）または **Manual**（ファイルを一つ貼り付け、あらゆるチャットボット向け）。
 
 <details><summary><b>Claude Code — plugin（recommended）</b></summary>
 
@@ -110,45 +123,17 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 
 </details>
 
-### ✋ Manual install（コピー＆ペースト）
+<details><summary><b>claude.ai / ChatGPT / Gemini / API（手動で貼り付け）</b></summary>
 
-ファイルを読み込めないチャットボットには、単一のフラットファイル
-[`three-pillar-lens.md`](../three-pillar-lens.md) をそのまま貼り付けてください。後で更新する場合は、再度コピーして貼り付け済みのブロックを置き換えてください。
-
-<details><summary><b>claude.ai（Project）</b></summary>
-
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. Project を作成または開き、Project の custom instructions に貼り付けます。
-
-</details>
-
-<details><summary><b>ChatGPT</b></summary>
-
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. 設定 ▸ パーソナライズ ▸ Custom Instructions、Project の指示、またはカスタム GPT のナレッジに貼り付けます。
-
-</details>
-
-<details><summary><b>Gemini</b></summary>
-
-1. [`three-pillar-lens.md`](../three-pillar-lens.md) を開き、ファイル全体をコピーします。
-2. Gem の指示、または Saved Info に貼り付けます。
-
-</details>
-
-<details><summary><b>Any API / app</b></summary>
-
-[`three-pillar-lens.md`](../three-pillar-lens.md) を system prompt の先頭に追加します。
+[`three-pillar-lens.md`](../three-pillar-lens.md) をコピーし、Project の custom instructions、ChatGPT Custom Instructions、Gem の指示、または system prompt に貼り付けます。更新する際は、ファイルを再度コピーして貼り付け済みのブロックを置き換えてください。
 
 </details>
 
 > 教育目的のフレームワークであり、個別の金融アドバイスではありません。特定の有価証券には言及していません。
 
----
+### 📄 Physical Way — ホワイトペーパーを読む
 
-## 📖 読む
-
-お好みの言語を選んでください — どのファイルも印刷対応PDFです：
+2 ページで読み切れます。印刷して毎日目に入る場所に貼り、大切な人とシェアしてください。
 
 | 言語 | ダウンロード |
 |---|---|
@@ -168,18 +153,6 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 &nbsp;&nbsp;
 <img src="assets/cover-ja-page2.png" width="46%" alt="2ページ目" />
 </div>
-
----
-
-## 🚀 活用方法
-
-**1. 印刷して毎日目に入る場所に貼る** 🖨️
-PDFをダウンロード → 印刷 → デスクの横、鏡の前、冷蔵庫などに貼り付けましょう。
-財務は「繰り返し目にすること」で、習慣として身についていきます。
-
-**2. 大切な人とシェアする** ❤️
-このリンクを家族や友人、財務を一から始めたい人に送りましょう。
-最高のプレゼントのひとつは、その人の人生に根付く「思考のシステム」です。
 
 ---
 

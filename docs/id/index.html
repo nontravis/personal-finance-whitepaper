@@ -31,6 +31,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@600;700&display=swap">
+  <style>:root{ --hand:'Shantell Sans',var(--sans); }</style>
 <style>
   @view-transition { navigation: auto; }
   :root{ --ink:#1b1b19; --muted:#6f6c64; --faint:#9a978d; --line:#e8e4da; --line-strong:#d3cec1; --paper:#fefdfb; --desk:#cbc7bd; --maxw:880px;
@@ -54,19 +57,19 @@
   .langbtn[aria-current="true"]{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
   a{color:inherit;}
   .kicker{ font-size:.74rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--faint); margin:0 0 16px; }
-  h1{ font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.1; font-weight:700; letter-spacing:-.02em; margin:0; overflow-wrap:break-word; }
+  h1{ font-family:var(--hand,var(--sans)); font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.12; font-weight:700; letter-spacing:-.01em; margin:0; overflow-wrap:break-word; }
   .lede{ font-size:clamp(1.05rem,2.4vw,1.26rem); color:var(--muted); max-width:50ch; margin:18px 0 0; }
   .rule{ height:1px; background:var(--line-strong); border:0; margin:34px 0; }
   .sechead{ display:flex; align-items:center; gap:18px; margin:46px 0 24px; }
   .sechead h2{ font-size:.82rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); white-space:nowrap; margin:0; }
   .sechead::after{ content:""; flex:1; height:1px; background:var(--line); }
   .eq{ display:flex; justify-content:center; margin:6px 0 4px; }
-  .eq span{ border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
+  .eq span{ font-family:var(--hand,var(--sans)); border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
   .pillars{ display:grid; grid-template-columns:1fr; }
   .pillar{ padding:22px 0; border-top:1px solid var(--line); }
   .pillar:first-child{ border-top:0; }
   .pnum{ font-size:.78rem; font-weight:600; letter-spacing:.16em; color:var(--faint); }
-  .pillar h3{ font-size:1.2rem; margin:6px 0 6px; font-weight:700; }
+  .pillar h3{ font-family:var(--hand,var(--sans)); font-size:1.28rem; margin:6px 0 6px; font-weight:700; }
   .pillar p{ margin:0; color:var(--muted); }
   @media(min-width:720px){ .pillars{ grid-template-columns:repeat(3,1fr); column-gap:34px; } .pillar{ border-top:0; border-left:1px solid var(--line); padding:4px 0 4px 26px; } .pillar:first-child{ padding-left:0; border-left:0; } }
   .dl{ list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
@@ -80,7 +83,17 @@
   .dl a:hover .get{ color:var(--ink); }
   .ico{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .use p{ margin:0 0 18px; } .use b{ font-weight:600; }
-  blockquote{ margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.35; letter-spacing:-.01em; }
+  .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
+  .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .benefits{ margin:0; }
+  .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+  .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
+  .benefits li::before{ content:"✓"; position:absolute; left:2px; top:11px; color:var(--ink); font-weight:700; }
+  .benefits .bfoot{ margin:16px 0 0; font-weight:600; color:var(--ink); }
+  .wayhead{ font-family:var(--hand,var(--sans)); font-size:1.32rem; font-weight:700; margin:28px 0 14px; }
+  .warn{ margin:9px 0 0; font-size:.93rem; }
+  blockquote{ font-family:var(--hand,var(--sans)); margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.4; letter-spacing:0; }
   blockquote small{ display:block; margin-top:12px; font-size:.92rem; font-weight:400; color:var(--muted); letter-spacing:0; }
   .btn{ display:inline-flex; align-items:center; gap:9px; margin-top:30px; background:var(--ink); color:var(--paper); text-decoration:none; cursor:pointer; padding:13px 22px; border-radius:6px; font-weight:600; font-size:.98rem; transition:transform .18s ease, opacity .18s ease; }
   .btn:hover{ opacity:.88; transform:translateY(-1px); }
@@ -115,28 +128,20 @@
   <h1>Fondasi Sistem Keuangan Pribadi: Tiga Pilar</h1>
   <p class="lede">Bangun keuangan pribadi yang kokoh dengan satu sistem sederhana seumur hidup — dalam whitepaper singkat dan gratis. Tersedia dalam enam bahasa.</p>
   <hr class="rule">
-  <div class="eq"><span>Pemasukan − Pengeluaran = Dana Kebebasan</span></div>
+  <div class="eq"><span class="hl-y">Pemasukan − Pengeluaran = Dana Kebebasan</span></div>
   <div class="sechead"><h2>Tiga pilar</h2></div>
   <div class="pillars">
-    <div class="pillar"><div class="pnum">01</div><h3>Arus Kas</h3><p>Ketahui uang masuk dan keluar — fondasi yang mengungkap Dana Kebebasan Anda.</p></div>
-    <div class="pillar"><div class="pnum">02</div><h3>Investasi</h3><p>Biarkan uang bekerja untuk Anda dan tumbuh lewat bunga majemuk.</p></div>
-    <div class="pillar"><div class="pnum">03</div><h3>Menabung</h3><p>Simpan aset yang menjaga nilai untuk melawan inflasi dan mengurangi risiko.</p></div>
+    <div class="pillar"><div class="pnum">01</div><h3>Arus Kas</h3><p>Ketahui uang masuk dan keluar — fondasi yang mengungkap <span class="hl-b">Dana Kebebasan</span> Anda.</p></div>
+    <div class="pillar"><div class="pnum">02</div><h3>Investasi</h3><p>Biarkan uang bekerja untuk Anda dan tumbuh lewat <span class="hl-b">bunga majemuk</span>.</p><p class="warn"><span class="hl-r">Investasikan hanya pada apa yang Anda pahami.</span></p></div>
+    <div class="pillar"><div class="pnum">03</div><h3>Menabung</h3><p>Simpan aset yang menjaga nilai untuk melawan <span class="hl-b">inflasi</span> dan mengurangi risiko.</p></div>
   </div>
-  <div class="sechead"><h2>Baca sekarang — gratis</h2></div>
-  <ul class="dl">
-    <li><a href="/personal-finance-whitepaper/whitepaper-th.pdf" target="_blank" rel="noopener"><span class="name">ไทย <em>Thai</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-en.pdf" target="_blank" rel="noopener"><span class="name">English</span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-es.pdf" target="_blank" rel="noopener"><span class="name">Español <em>Spanish</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-id.pdf" target="_blank" rel="noopener"><span class="name">Bahasa Indonesia</span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-zh.pdf" target="_blank" rel="noopener"><span class="name">简体中文 <em>Chinese</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-ja.pdf" target="_blank" rel="noopener"><span class="name">日本語 <em>Japanese</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-  </ul>
+  <div class="sechead"><h2>Apa yang berubah pada AI Anda setelah menginstal ini</h2></div>
+  <div class="benefits">
+    <ul><li>Mendasarkan setiap jawaban pada angka nyata Anda — Pemasukan − Pengeluaran = Dana Kebebasan — sebelum memberi saran.</li><li>Menolak hype: tidak akan merekomendasikan aset yang tidak Anda pahami.</li><li>Selalu menjaga keseimbangan antara ofensif (Investasi) dan defensif (Menabung) dalam rencana.</li><li>Mengutamakan disiplin dan cakrawala 5–10 tahun daripada menebak waktu pasar.</li></ul>
+    <p class="bfoot">Pertanyaan Anda akan mendapat panduan keuangan yang lebih tajam, konsisten, dan tidak generik.</p>
+  </div>
   <div class="sechead"><h2>Cara menggunakannya</h2></div>
-  <div class="use">
-    <p><b>Cetak dan tempel di tempat Anda membaca setiap hari.</b> Keuangan berubah lewat paparan berulang, hingga sistem menjadi kebiasaan.</p>
-    <p><b>Bagikan pola pikir ini kepada orang yang Anda cintai.</b> Salah satu hadiah terbaik adalah cara berpikir yang menemani seseorang seumur hidup.</p>
-  </div>
-  <div class="sechead"><h2>Gunakan di AI Anda</h2></div>
+  <h3 class="wayhead">🤖 Cara AI — instal skill-nya</h3>
   <div class="use">
     <p>Whitepaper ini juga hadir sebagai AI skill — lensa penalaran yang dapat diterapkan oleh AI mana pun. Instal dengan satu perintah, atau tempelkan satu file.</p>
     <p><b>⚡ Instal otomatis (satu perintah)</b></p>
@@ -145,11 +150,24 @@
     <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>Salin folder skill/ ke direktori adapter agen atau ke AGENTS.md; perbarui dengan <code>--force</code>.</p></details>
     <p><b>✋ Manual (copy-paste)</b></p>
     <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>Tempel three-pillar-lens.md ke dalam Project, Custom Instructions, Gem, atau system prompt. Untuk memperbarui, tempel ulang file terbaru.</p></details>
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">Panduan lengkap di GitHub</a></p>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-how-to-use-it" target="_blank" rel="noopener">Panduan lengkap di GitHub</a></p>
     <p><small>Kerangka edukasi, bukan saran keuangan pribadi.</small></p>
   </div>
+  <h3 class="wayhead">📄 Cara fisik — baca whitepaper-nya</h3>
+  <ul class="dl">
+    <li><a href="/personal-finance-whitepaper/whitepaper-th.pdf" target="_blank" rel="noopener"><span class="name">ไทย <em>Thai</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-en.pdf" target="_blank" rel="noopener"><span class="name">English</span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-es.pdf" target="_blank" rel="noopener"><span class="name">Español <em>Spanish</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-id.pdf" target="_blank" rel="noopener"><span class="name">Bahasa Indonesia</span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-zh.pdf" target="_blank" rel="noopener"><span class="name">简体中文 <em>Chinese</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-ja.pdf" target="_blank" rel="noopener"><span class="name">日本語 <em>Japanese</em></span><span class="get">Baca<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+  </ul>
+  <div class="use">
+    <p><b>Cetak dan tempel di tempat Anda membaca setiap hari.</b> Keuangan berubah lewat paparan berulang, hingga sistem menjadi kebiasaan.</p>
+    <p><b>Bagikan pola pikir ini kepada orang yang Anda cintai.</b> Salah satu hadiah terbaik adalah cara berpikir yang menemani seseorang seumur hidup.</p>
+  </div>
   <div class="sechead"><h2>Satu prinsip</h2></div>
-  <blockquote>“Mulailah dengan sistem yang sederhana, lalu jalankan secara konsisten.”<small>Waktu dan konsistensi adalah sekutu terkuat setiap investor.</small></blockquote>
+  <blockquote><span class="hl-y">“Mulailah dengan sistem yang sederhana, lalu jalankan secara konsisten.”</span><small>Waktu dan konsistensi adalah sekutu terkuat setiap investor.</small></blockquote>
   <div>
     <a class="btn" href="https://github.com/nontravis/personal-finance-whitepaper" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" style="fill:currentColor;width:18px;height:18px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
