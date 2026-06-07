@@ -27,7 +27,10 @@ function stripFrontmatter(md) {
   // remove a leading YAML block delimited by --- ... ---
   if (md.startsWith('---')) {
     const end = md.indexOf('\n---', 3);
-    if (end !== -1) return md.slice(md.indexOf('\n', end + 1) + 1).trimStart();
+    if (end !== -1) {
+      const nl = md.indexOf('\n', end + 1);
+      return nl === -1 ? '' : md.slice(nl + 1).trimStart();
+    }
   }
   return md;
 }
