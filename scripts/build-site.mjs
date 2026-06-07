@@ -15,7 +15,7 @@ const fileFor = l => l === 'en' ? `${OUT}index.html` : `${OUT}${l}/index.html`;
 
 const T = {
   en:{ langlbl:'Language', seoTitle:'The Three-Pillar Personal Finance System — Nonthawit Doungsodsri',
-    kicker:'Personal Finance Whitepaper · Free · CC BY 4.0', title:'The Three-Pillar Personal Finance System',
+    kicker:'Personal Finance Whitepaper · Free · MIT', title:'The Three-Pillar Personal Finance System',
     lede:'Build lasting personal finances with one simple, lifelong system — explained in a short, free whitepaper. Available in six languages.',
     eq:'Income − Expenses = Freedom Fund', pillarsHead:'The three pillars', readHead:'Read it now — free', howHead:'How to Use It', principleHead:'The one principle',
     p1t:'Cashflow', p1d:'Know what comes in and out — the foundation that reveals your true Freedom Fund.',
@@ -48,7 +48,7 @@ const T = {
       ]},
   },
   th:{ langlbl:'ภาษา', seoTitle:'รากฐานระบบการเงินส่วนบุคคล 3 เสา — Nonthawit Doungsodsri',
-    kicker:'ไวต์เปเปอร์การเงินส่วนบุคคล · ฟรี · CC BY 4.0', title:'รากฐานระบบการเงินส่วนบุคคล 3 เสา',
+    kicker:'ไวต์เปเปอร์การเงินส่วนบุคคล · ฟรี · MIT', title:'รากฐานระบบการเงินส่วนบุคคล 3 เสา',
     lede:'สร้างการเงินส่วนบุคคลที่มั่นคงด้วยระบบเดียวที่เรียบง่าย ใช้ได้ทั้งชีวิต — สรุปในไวต์เปเปอร์สั้น ๆ มีครบ 6 ภาษา',
     eq:'รายรับ − รายจ่าย = ทุนสู่อิสรภาพ', pillarsHead:'สามเสาหลัก', readHead:'อ่านเลย — ฟรี', howHead:'วิธีใช้งาน', principleHead:'หลักการเดียว',
     p1t:'กระแสเงินสด', p1d:'รู้ว่าเงินเข้า-ออกเท่าไร รากฐานที่บอกทุนสู่อิสรภาพที่แท้จริง',
@@ -81,7 +81,7 @@ const T = {
       ]},
   },
   es:{ langlbl:'Idioma', seoTitle:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares — Nonthawit Doungsodsri',
-    kicker:'Documento de Finanzas Personales · Gratis · CC BY 4.0', title:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares',
+    kicker:'Documento de Finanzas Personales · Gratis · MIT', title:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares',
     lede:'Construye finanzas personales duraderas con un sistema simple para toda la vida — en un breve documento gratuito. Disponible en seis idiomas.',
     eq:'Ingresos − Gastos = Fondo de Libertad', pillarsHead:'Los tres pilares', readHead:'Léelo ahora — gratis', howHead:'Cómo usarlo', principleHead:'El único principio',
     p1t:'Flujo de caja', p1d:'Conoce lo que entra y sale — la base que revela tu verdadero Fondo de Libertad.',
@@ -114,7 +114,7 @@ const T = {
       ]},
   },
   id:{ langlbl:'Bahasa', seoTitle:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar — Nonthawit Doungsodsri',
-    kicker:'Whitepaper Keuangan Pribadi · Gratis · CC BY 4.0', title:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar',
+    kicker:'Whitepaper Keuangan Pribadi · Gratis · MIT', title:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar',
     lede:'Bangun keuangan pribadi yang kokoh dengan satu sistem sederhana seumur hidup — dalam whitepaper singkat dan gratis. Tersedia dalam enam bahasa.',
     eq:'Pemasukan − Pengeluaran = Dana Kebebasan', pillarsHead:'Tiga pilar', readHead:'Baca sekarang — gratis', howHead:'Cara menggunakannya', principleHead:'Satu prinsip',
     p1t:'Arus Kas', p1d:'Ketahui uang masuk dan keluar — fondasi yang mengungkap Dana Kebebasan Anda.',
@@ -147,7 +147,7 @@ const T = {
       ]},
   },
   zh:{ langlbl:'语言', seoTitle:'个人理财系统的基石：三大支柱 — Nonthawit Doungsodsri',
-    kicker:'个人理财白皮书 · 免费 · CC BY 4.0', title:'个人理财系统的基石：三大支柱',
+    kicker:'个人理财白皮书 · 免费 · MIT', title:'个人理财系统的基石：三大支柱',
     lede:'用一套简单、可用一生的系统，构建稳健的个人财务 —— 浓缩于一份简短的免费白皮书。提供六种语言。',
     eq:'收入 − 支出 = 自由基金', pillarsHead:'三大支柱', readHead:'立即阅读 — 免费', howHead:'如何使用', principleHead:'唯一的原则',
     p1t:'现金流', p1d:'掌握收支，揭示你真正的自由基金这一根基。',
@@ -180,7 +180,7 @@ const T = {
       ]},
   },
   ja:{ langlbl:'言語', seoTitle:'パーソナルファイナンス・システムの基盤：3本の柱 — Nonthawit Doungsodsri',
-    kicker:'パーソナルファイナンス白書 · 無料 · CC BY 4.0', title:'パーソナルファイナンス・システムの基盤：3本の柱',
+    kicker:'パーソナルファイナンス白書 · 無料 · MIT', title:'パーソナルファイナンス・システムの基盤：3本の柱',
     lede:'シンプルで一生使える一つの仕組みで、揺るがない家計を築く —— 短い無料の白書にまとめました。6言語で提供。',
     eq:'収入 − 支出 = 自由資金', pillarsHead:'3本の柱', readHead:'今すぐ読む — 無料', howHead:'使い方', principleHead:'たった一つの原則',
     p1t:'キャッシュフロー', p1d:'収支を把握し、本当の自由資金という土台を明らかにする。',
@@ -274,7 +274,7 @@ function page(lang){
   const readlist = READROWS.map(r =>
     `    <li><a href="${ROOT}/whitepaper-${r.f}.pdf" target="_blank" rel="noopener"><span class="name">${r.name}${r.en?` <em>${r.en}</em>`:''}</span><span class="get">${t.rd}${DLICON}</span></a></li>`
   ).join('\n');
-  const foot = `${t.footLead} <strong>Nonthawit Doungsodsri</strong> · <a href="https://nonthawit.com" target="_blank" rel="noopener">nonthawit.com</a><br>${t.footTail} <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>.`;
+  const foot = `${t.footLead} <strong>Nonthawit Doungsodsri</strong> · <a href="https://nonthawit.com" target="_blank" rel="noopener">nonthawit.com</a><br>${t.footTail} <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">the MIT License</a>.`;
 
   return `<!DOCTYPE html>
 <html lang="${lang}">
@@ -298,7 +298,7 @@ ${hreflang}
 <meta name="twitter:description" content="${esc(t.lede)}">
 <meta name="twitter:image" content="${IMG}">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"CreativeWork","name":${JSON.stringify(t.title)},"description":${JSON.stringify(t.lede)},"author":{"@type":"Person","name":"Nonthawit Doungsodsri","url":"https://nonthawit.com"},"license":"https://creativecommons.org/licenses/by/4.0/","inLanguage":"${lang}","version":"1.0.0","url":"https://github.com/nontravis/personal-finance-whitepaper"}
+{"@context":"https://schema.org","@type":"CreativeWork","name":${JSON.stringify(t.title)},"description":${JSON.stringify(t.lede)},"author":{"@type":"Person","name":"Nonthawit Doungsodsri","url":"https://nonthawit.com"},"license":"https://opensource.org/licenses/MIT","inLanguage":"${lang}","version":"1.0.0","url":"https://github.com/nontravis/personal-finance-whitepaper"}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

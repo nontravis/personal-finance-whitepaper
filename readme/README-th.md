@@ -14,7 +14,7 @@
 
 **ไวต์เปเปอร์สั้น ๆ ที่สอนวิธีสร้างการเงินส่วนบุคคลด้วย “ระบบ 3 เสา” ที่เรียบง่าย ใช้ได้ทั้งชีวิต**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](../LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 ![Languages](https://img.shields.io/badge/ภาษา-6-orange.svg)
 ![Pages](https://img.shields.io/badge/ความยาว-2%20หน้า-green.svg)
 
@@ -181,7 +181,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 ## 📜 ลิขสิทธิ์
 
 เนื้อหาไวต์เปเปอร์ (ข้อความ ซอร์ส LaTeX และ PDF) เผยแพร่ภายใต้
-**[Creative Commons Attribution 4.0 (CC BY 4.0)](../LICENSE)** — แชร์/ดัดแปลง/ใช้เชิงพาณิชย์ได้ เพียงให้เครดิตผู้เขียน
+**[MIT License](../LICENSE)** — ใช้ แชร์ ดัดแปลง และเผยแพร่ได้ โดยให้เครดิตผู้เขียน
 
 ฟอนต์ที่แนบมาใน `latex/fonts/` เป็นของบุคคลที่สาม มีสัญญาอนุญาตแยกต่างหาก (SIL OFL, GUST, SIPA) —
 ดู [`latex/fonts/LICENSES/NOTICE.md`](../latex/fonts/LICENSES/NOTICE.md)

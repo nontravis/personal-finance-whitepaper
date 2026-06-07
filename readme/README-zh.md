@@ -14,7 +14,7 @@
 
 **一本简洁的白皮书，教你用"三大支柱体系"构建一生受用的个人理财基础**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](../LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 ![Languages](https://img.shields.io/badge/语言-6-orange.svg)
 ![Pages](https://img.shields.io/badge/页数-2-green.svg)
 
@@ -181,7 +181,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 ## 📜 版权声明
 
 白皮书内容（文本、LaTeX 源码与 PDF）以
-**[Creative Commons Attribution 4.0（CC BY 4.0）](../LICENSE)** 协议发布——可分享、改编、商业使用，仅需注明作者。
+**[MIT License](../LICENSE)** 发布——可使用、分享、改编、分发，仅需注明作者。
 
 `latex/fonts/` 目录下附带的字体为第三方资源，各有独立许可协议（SIL OFL、GUST、SIPA）——
 详见 [`latex/fonts/LICENSES/NOTICE.md`](../latex/fonts/LICENSES/NOTICE.md)

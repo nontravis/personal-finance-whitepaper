@@ -14,7 +14,7 @@
 
 **Un white paper conciso que enseña cómo construir tus finanzas personales con un sencillo "Sistema de Tres Pilares" que funciona toda la vida**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](../LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 ![Idiomas](https://img.shields.io/badge/Idiomas-6-orange.svg)
 ![Páginas](https://img.shields.io/badge/P%C3%A1ginas-2-green.svg)
 
@@ -181,7 +181,7 @@ Si este documento te ha sido útil, deja una ⭐ como muestra de apoyo.
 ## 📜 Licencia
 
 El contenido del white paper (texto, fuente LaTeX y PDFs) se publica bajo
-**[Creative Commons Attribution 4.0 (CC BY 4.0)](../LICENSE)** — puedes compartir, adaptar y usar con fines comerciales siempre que cites al autor.
+**[la licencia MIT](../LICENSE)** — puedes usar, compartir, adaptar y distribuir, siempre que cites al autor.
 
 Las fuentes incluidas en `latex/fonts/` son de terceros y tienen licencias independientes (SIL OFL, GUST, SIPA) —
 consulta [`latex/fonts/LICENSES/NOTICE.md`](../latex/fonts/LICENSES/NOTICE.md)

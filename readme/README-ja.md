@@ -14,7 +14,7 @@
 
 **シンプルで一生使える「3本の柱システム」で、自分だけの個人財務を設計するための短いホワイトペーパー**
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](../LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](../LICENSE)
 ![Languages](https://img.shields.io/badge/言語-6-orange.svg)
 ![Pages](https://img.shields.io/badge/ページ-2-green.svg)
 
@@ -180,7 +180,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pil
 
 ## 📜 ライセンス
 
-ホワイトペーパーの本文、LaTeXソース、PDFは **[Creative Commons Attribution 4.0 (CC BY 4.0)](../LICENSE)** のもとで公開されています — 著者をクレジットすれば、シェア・改変・商用利用が可能です。
+ホワイトペーパーの本文、LaTeXソース、PDFは **[MIT License](../LICENSE)** のもとで公開されています — 著者をクレジットすれば、使用・シェア・改変・配布が可能です。
 
 `latex/fonts/` に同梱されているフォントは第三者のものであり、個別のライセンス（SIL OFL、GUST、SIPA）が適用されます —
 [`latex/fonts/LICENSES/NOTICE.md`](../latex/fonts/LICENSES/NOTICE.md) をご覧ください。
