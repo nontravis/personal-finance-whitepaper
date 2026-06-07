@@ -40,7 +40,7 @@
     --sans:'Google Sans','Google Sans Text','Product Sans','DM Sans','Sarabun','Noto Sans SC','Noto Sans JP','PingFang SC','Hiragino Sans','Microsoft YaHei',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
   *{box-sizing:border-box;}
   html{ -webkit-text-size-adjust:100%; }
-  body{ margin:0; font-family:var(--sans); color:var(--ink); background:var(--desk);
+  body{ margin:0; font-family:var(--hand,var(--sans)); color:var(--ink); background:var(--desk);
     background-image:radial-gradient(rgba(0,0,0,.04) 1px, transparent 1px); background-size:4px 4px;
     line-height:1.62; font-size:17px; letter-spacing:.005em; padding:clamp(0px,4vw,56px) clamp(0px,4vw,40px); }
   .sheet{ max-width:var(--maxw); margin:0 auto; background:var(--paper);
@@ -83,6 +83,20 @@
   .dl a:hover .get{ color:var(--ink); }
   .ico{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .use p{ margin:0 0 18px; } .use b{ font-weight:600; }
+  code,kbd,samp,pre{ font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; }
+  .langbar,.langbtn,.dl,.dl *{ font-family:var(--sans); }
+  .use details{ border:1px solid var(--line); border-radius:10px; margin:0 0 10px; overflow:hidden; background:#fff; transition:border-color .18s, box-shadow .18s; }
+  .use details[open]{ border-color:var(--line-strong); box-shadow:0 6px 20px -12px rgba(0,0,0,.25); }
+  .use summary{ list-style:none; cursor:pointer; padding:14px 18px; font-weight:700; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .use summary::-webkit-details-marker{ display:none; }
+  .use summary:hover{ background:rgba(0,0,0,.025); }
+  .use .acbody{ padding:0 18px 14px; color:var(--muted); }
+  .use .acbody p{ margin:0; }
+  .use .acbody code{ font-size:.86em; background:rgba(0,0,0,.05); padding:.1em .35em; border-radius:4px; }
+  .chev{ flex:none; width:26px; height:26px; display:grid; place-items:center; border-radius:50%; background:rgba(0,0,0,.05); transition:transform .22s ease, background .18s; }
+  .chev svg{ width:15px; height:15px; stroke:var(--muted); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
+  .use details[open] .chev{ transform:rotate(180deg); background:rgba(255,221,64,.55); }
+  .use details[open] .chev svg{ stroke:var(--ink); }
   .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
   .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
   .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
@@ -145,11 +159,11 @@
   <div class="use">
     <p>This whitepaper also ships as an AI skill — a reasoning lens any capable AI can apply. Install with one command, or paste one file.</p>
     <p><b>⚡ Auto install (one command)</b></p>
-    <details><summary><b>Claude Code — plugin</b></summary><p><code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> then <code>/plugin install three-pillar-finance@nontravis</code>. Update: <code>/plugin marketplace update nontravis</code> then <code>/reload-plugins</code>.</p></details>
-    <details><summary><b>Claude Code — degit</b></summary><p><code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Update: re-run with <code>--force</code>.</p></details>
-    <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>degit the skill/ folder into the agent's adapter directory or AGENTS.md; update with <code>--force</code>.</p></details>
+    <details><summary>Claude Code — plugin<span class="chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></summary><div class="acbody"><p><code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> then <code>/plugin install three-pillar-finance@nontravis</code>. Update: <code>/plugin marketplace update nontravis</code> then <code>/reload-plugins</code>.</p></div></details>
+    <details><summary>Claude Code — degit<span class="chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></summary><div class="acbody"><p><code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Update: re-run with <code>--force</code>.</p></div></details>
+    <details><summary>CLI agents (Gemini CLI, Copilot CLI)<span class="chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></summary><div class="acbody"><p>degit the skill/ folder into the agent's adapter directory or AGENTS.md; update with <code>--force</code>.</p></div></details>
     <p><b>✋ Manual (copy-paste)</b></p>
-    <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>Paste three-pillar-lens.md into the Project, Custom Instructions, a Gem, or the system prompt. To update, re-paste the latest file.</p></details>
+    <details><summary>claude.ai / ChatGPT / Gemini / API<span class="chev"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span></summary><div class="acbody"><p>Paste three-pillar-lens.md into the Project, Custom Instructions, a Gem, or the system prompt. To update, re-paste the latest file.</p></div></details>
     <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-how-to-use-it" target="_blank" rel="noopener">Full guide on GitHub</a></p>
     <p><small>Educational framework, not personalized financial advice.</small></p>
   </div>
