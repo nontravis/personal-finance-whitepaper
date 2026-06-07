@@ -100,13 +100,13 @@ plugin นี้ไม่ได้ระบุเวอร์ชัน ดัง
 ติดตั้ง:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance
 ```
 
 อัปเดตเป็นเวอร์ชันล่าสุด — รันซ้ำพร้อม `--force`:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance --force
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance --force
 ```
 
 </details>
@@ -116,7 +116,7 @@ npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pil
 วาง skill ลงใน adapter directory ของ agent หรือใน `AGENTS.md`:
 
 ```
-npx degit nontravis/personal-finance-whitepaper/skill ./.gemini/skills/three-pillar-finance
+npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ./.gemini/skills/three-pillar-finance
 ```
 
 อัปเดต: รันซ้ำพร้อม `--force`

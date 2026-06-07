@@ -40,7 +40,7 @@ const T = {
       repo:'Full guide on GitHub', note:'Educational framework, not personalized financial advice.',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> then <code>/plugin install three-pillar-finance@nontravis</code>. Update: <code>/plugin marketplace update nontravis</code> then <code>/reload-plugins</code>.'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Update: re-run with <code>--force</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>. Update: re-run with <code>--force</code>.'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"degit the skill/ folder into the agent's adapter directory or AGENTS.md; update with <code>--force</code>."},
       ],
       manual:[
@@ -73,7 +73,7 @@ const T = {
       repo:'ดูคู่มือเต็มบน GitHub', note:'กรอบแนวคิดเพื่อการศึกษา ไม่ใช่คำแนะนำทางการเงินส่วนบุคคล',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> แล้ว <code>/plugin install three-pillar-finance@nontravis</code>. อัปเดต: <code>/plugin marketplace update nontravis</code> แล้ว <code>/reload-plugins</code>.'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. อัปเดต: รันคำสั่งเดิมพร้อม <code>--force</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>. อัปเดต: รันคำสั่งเดิมพร้อม <code>--force</code>.'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"วาง skill/ folder ลงในไดเรกทอรี adapter ของ agent หรือ AGENTS.md แล้วอัปเดตด้วย <code>--force</code>."},
       ],
       manual:[
@@ -106,7 +106,7 @@ const T = {
       repo:'Guía completa en GitHub', note:'Marco educativo, no asesoramiento financiero personalizado.',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> y luego <code>/plugin install three-pillar-finance@nontravis</code>. Actualizar: <code>/plugin marketplace update nontravis</code> y luego <code>/reload-plugins</code>.'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Actualizar: vuelve a ejecutar con <code>--force</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>. Actualizar: vuelve a ejecutar con <code>--force</code>.'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:"Copia la carpeta skill/ al directorio del adaptador del agente o a AGENTS.md; actualiza con <code>--force</code>."},
       ],
       manual:[
@@ -139,7 +139,7 @@ const T = {
       repo:'Panduan lengkap di GitHub', note:'Kerangka edukasi, bukan saran keuangan pribadi.',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code> lalu <code>/plugin install three-pillar-finance@nontravis</code>. Perbarui: <code>/plugin marketplace update nontravis</code> lalu <code>/reload-plugins</code>.'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>. Perbarui: jalankan ulang dengan <code>--force</code>.'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>. Perbarui: jalankan ulang dengan <code>--force</code>.'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'Salin folder skill/ ke direktori adapter agen atau ke AGENTS.md; perbarui dengan <code>--force</code>.'},
       ],
       manual:[
@@ -172,7 +172,7 @@ const T = {
       repo:'在 GitHub 查看完整指南', note:'教育性框架，不构成个性化财务建议。',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>，然后 <code>/plugin install three-pillar-finance@nontravis</code>。更新：<code>/plugin marketplace update nontravis</code>，然后 <code>/reload-plugins</code>。'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新：加上 <code>--force</code> 重新运行。'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>。更新：加上 <code>--force</code> 重新运行。'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'将 skill/ 文件夹复制到 agent 的适配器目录或 AGENTS.md；加上 <code>--force</code> 更新。'},
       ],
       manual:[
@@ -205,7 +205,7 @@ const T = {
       repo:'GitHub で完全ガイドを見る', note:'教育的フレームワークであり、個別の財務アドバイスではありません。',
       auto:[
         {n:'Claude Code — plugin', s:'<code>/plugin marketplace add nontravis/personal-finance-whitepaper</code>、次に <code>/plugin install three-pillar-finance@nontravis</code>。更新: <code>/plugin marketplace update nontravis</code>、次に <code>/reload-plugins</code>。'},
-        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skill ~/.claude/skills/three-pillar-finance</code>。更新: <code>--force</code> を付けて再実行。'},
+        {n:'Claude Code — degit', s:'<code>npx degit nontravis/personal-finance-whitepaper/skills/three-pillar-finance ~/.claude/skills/three-pillar-finance</code>。更新: <code>--force</code> を付けて再実行。'},
         {n:'CLI agents (Gemini CLI, Copilot CLI)', s:'skill/ フォルダを agent のアダプタディレクトリまたは AGENTS.md に配置する。更新は <code>--force</code> を付けて再実行。'},
       ],
       manual:[
