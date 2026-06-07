@@ -31,6 +31,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&text=%E4%B8%AA%E4%BA%BA%E7%90%86%E8%B4%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%9F%BA%E7%9F%B3%EF%BC%9A%E4%B8%89%E5%A4%A7%E6%94%AF%E6%9F%B1%E6%94%B6%E5%85%A5%20%E2%88%92%E5%87%BA%3D%E8%87%AA%E7%94%B1%E9%87%91%E7%8E%B0%E6%B5%81%E6%8A%95%E8%B5%84%E5%82%A8%E8%93%84%E2%80%9C%E4%BB%8E%E7%AE%80%E5%8D%95%E4%BD%93%E5%BC%80%E5%A7%8B%EF%BC%8C%E7%84%B6%E5%90%8E%E5%9D%9A%E6%8C%81%E5%8E%BB%E5%81%9A%E3%80%82%E2%80%9D&display=swap">
+  <style>:root{ --hand:'Ma Shan Zheng',var(--sans); }</style>
 <style>
   @view-transition { navigation: auto; }
   :root{ --ink:#1b1b19; --muted:#6f6c64; --faint:#9a978d; --line:#e8e4da; --line-strong:#d3cec1; --paper:#fefdfb; --desk:#cbc7bd; --maxw:880px;
@@ -54,19 +57,19 @@
   .langbtn[aria-current="true"]{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
   a{color:inherit;}
   .kicker{ font-size:.74rem; font-weight:600; letter-spacing:.22em; text-transform:uppercase; color:var(--faint); margin:0 0 16px; }
-  h1{ font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.1; font-weight:700; letter-spacing:-.02em; margin:0; overflow-wrap:break-word; }
+  h1{ font-family:var(--hand,var(--sans)); font-size:clamp(1.9rem,5.6vw,3.1rem); line-height:1.12; font-weight:700; letter-spacing:-.01em; margin:0; overflow-wrap:break-word; }
   .lede{ font-size:clamp(1.05rem,2.4vw,1.26rem); color:var(--muted); max-width:50ch; margin:18px 0 0; }
   .rule{ height:1px; background:var(--line-strong); border:0; margin:34px 0; }
   .sechead{ display:flex; align-items:center; gap:18px; margin:46px 0 24px; }
   .sechead h2{ font-size:.82rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); white-space:nowrap; margin:0; }
   .sechead::after{ content:""; flex:1; height:1px; background:var(--line); }
   .eq{ display:flex; justify-content:center; margin:6px 0 4px; }
-  .eq span{ border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
+  .eq span{ font-family:var(--hand,var(--sans)); border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
   .pillars{ display:grid; grid-template-columns:1fr; }
   .pillar{ padding:22px 0; border-top:1px solid var(--line); }
   .pillar:first-child{ border-top:0; }
   .pnum{ font-size:.78rem; font-weight:600; letter-spacing:.16em; color:var(--faint); }
-  .pillar h3{ font-size:1.2rem; margin:6px 0 6px; font-weight:700; }
+  .pillar h3{ font-family:var(--hand,var(--sans)); font-size:1.28rem; margin:6px 0 6px; font-weight:700; }
   .pillar p{ margin:0; color:var(--muted); }
   @media(min-width:720px){ .pillars{ grid-template-columns:repeat(3,1fr); column-gap:34px; } .pillar{ border-top:0; border-left:1px solid var(--line); padding:4px 0 4px 26px; } .pillar:first-child{ padding-left:0; border-left:0; } }
   .dl{ list-style:none; margin:0; padding:0; border-top:1px solid var(--line); }
@@ -80,7 +83,17 @@
   .dl a:hover .get{ color:var(--ink); }
   .ico{ width:16px; height:16px; stroke:currentColor; fill:none; stroke-width:1.9; stroke-linecap:round; stroke-linejoin:round; flex:none; }
   .use p{ margin:0 0 18px; } .use b{ font-weight:600; }
-  blockquote{ margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.35; letter-spacing:-.01em; }
+  .hl-y{ background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-b{ background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
+  .hl-r{ background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .benefits{ margin:0; }
+  .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
+  .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
+  .benefits li::before{ content:"✓"; position:absolute; left:2px; top:11px; color:var(--ink); font-weight:700; }
+  .benefits .bfoot{ margin:16px 0 0; font-weight:600; color:var(--ink); }
+  .wayhead{ font-family:var(--hand,var(--sans)); font-size:1.32rem; font-weight:700; margin:28px 0 14px; }
+  .warn{ margin:9px 0 0; font-size:.93rem; }
+  blockquote{ font-family:var(--hand,var(--sans)); margin:6px 0 0; padding:4px 0 4px 24px; border-left:3px solid var(--ink); font-size:clamp(1.22rem,3vw,1.55rem); font-weight:600; line-height:1.4; letter-spacing:0; }
   blockquote small{ display:block; margin-top:12px; font-size:.92rem; font-weight:400; color:var(--muted); letter-spacing:0; }
   .btn{ display:inline-flex; align-items:center; gap:9px; margin-top:30px; background:var(--ink); color:var(--paper); text-decoration:none; cursor:pointer; padding:13px 22px; border-radius:6px; font-weight:600; font-size:.98rem; transition:transform .18s ease, opacity .18s ease; }
   .btn:hover{ opacity:.88; transform:translateY(-1px); }
@@ -115,28 +128,20 @@
   <h1>个人理财系统的基石：三大支柱</h1>
   <p class="lede">用一套简单、可用一生的系统，构建稳健的个人财务 —— 浓缩于一份简短的免费白皮书。提供六种语言。</p>
   <hr class="rule">
-  <div class="eq"><span>收入 − 支出 = 自由基金</span></div>
+  <div class="eq"><span class="hl-y">收入 − 支出 = 自由基金</span></div>
   <div class="sechead"><h2>三大支柱</h2></div>
   <div class="pillars">
     <div class="pillar"><div class="pnum">01</div><h3>现金流</h3><p>掌握收支，揭示你真正的自由基金这一根基。</p></div>
-    <div class="pillar"><div class="pnum">02</div><h3>投资</h3><p>让金钱为你工作，借助复利随时间增长。</p></div>
+    <div class="pillar"><div class="pnum">02</div><h3>投资</h3><p>让金钱为你工作，借助复利随时间增长。</p><p class="warn"><span class="hl-r">Invest only in what you understand.</span></p></div>
     <div class="pillar"><div class="pnum">03</div><h3>储蓄</h3><p>持有保值资产，对抗通胀、降低人生风险。</p></div>
   </div>
-  <div class="sechead"><h2>立即阅读 — 免费</h2></div>
-  <ul class="dl">
-    <li><a href="/personal-finance-whitepaper/whitepaper-th.pdf" target="_blank" rel="noopener"><span class="name">ไทย <em>Thai</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-en.pdf" target="_blank" rel="noopener"><span class="name">English</span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-es.pdf" target="_blank" rel="noopener"><span class="name">Español <em>Spanish</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-id.pdf" target="_blank" rel="noopener"><span class="name">Bahasa Indonesia</span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-zh.pdf" target="_blank" rel="noopener"><span class="name">简体中文 <em>Chinese</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-    <li><a href="/personal-finance-whitepaper/whitepaper-ja.pdf" target="_blank" rel="noopener"><span class="name">日本語 <em>Japanese</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
-  </ul>
-  <div class="sechead"><h2>如何使用</h2></div>
-  <div class="use">
-    <p><b>打印出来，贴在你每天阅读的地方。</b> 财务因反复看见而改变，直到体系成为习惯。</p>
-    <p><b>把这套思维分享给你爱的人。</b> 最好的礼物之一，是一种陪伴一生的思维方式。</p>
+  <div class="sechead"><h2>What installing this does to your AI</h2></div>
+  <div class="benefits">
+    <ul><li>Anchors every answer on your real numbers — Income − Expenses = Freedom Fund — before advising.</li><li>Refuses hype: it won't endorse an asset you don't understand.</li><li>Always keeps both offense (Investment) and defense (Savings) in the plan.</li><li>Pushes discipline and a 5–10 year horizon over clever timing.</li></ul>
+    <p class="bfoot">Your prompts return sharper, more consistent, less generic financial guidance.</p>
   </div>
-  <div class="sechead"><h2>在你的 AI 中使用</h2></div>
+  <div class="sechead"><h2>如何使用</h2></div>
+  <h3 class="wayhead">🤖 AI Way — install the skill</h3>
   <div class="use">
     <p>本白皮书同时提供 AI skill —— 一套推理框架，任何有能力的 AI 都可以应用。一条命令即可安装，或粘贴一个文件。</p>
     <p><b>⚡ 自动安装（一条命令）</b></p>
@@ -145,11 +150,24 @@
     <details><summary><b>CLI agents (Gemini CLI, Copilot CLI)</b></summary><p>将 skill/ 文件夹复制到 agent 的适配器目录或 AGENTS.md；加上 <code>--force</code> 更新。</p></details>
     <p><b>✋ 手动安装（copy-paste）</b></p>
     <details><summary><b>claude.ai / ChatGPT / Gemini / API</b></summary><p>将 three-pillar-lens.md 粘贴到 Project、Custom Instructions、Gem 或 system prompt 中。如需更新，重新粘贴最新文件。</p></details>
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">在 GitHub 查看完整指南</a></p>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-how-to-use-it" target="_blank" rel="noopener">在 GitHub 查看完整指南</a></p>
     <p><small>教育性框架，不构成个性化财务建议。</small></p>
   </div>
+  <h3 class="wayhead">📄 Physical Way — read the whitepaper</h3>
+  <ul class="dl">
+    <li><a href="/personal-finance-whitepaper/whitepaper-th.pdf" target="_blank" rel="noopener"><span class="name">ไทย <em>Thai</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-en.pdf" target="_blank" rel="noopener"><span class="name">English</span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-es.pdf" target="_blank" rel="noopener"><span class="name">Español <em>Spanish</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-id.pdf" target="_blank" rel="noopener"><span class="name">Bahasa Indonesia</span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-zh.pdf" target="_blank" rel="noopener"><span class="name">简体中文 <em>Chinese</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+    <li><a href="/personal-finance-whitepaper/whitepaper-ja.pdf" target="_blank" rel="noopener"><span class="name">日本語 <em>Japanese</em></span><span class="get">阅读<svg class="ico" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14L21 3"/><path d="M21 14v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></span></a></li>
+  </ul>
+  <div class="use">
+    <p><b>打印出来，贴在你每天阅读的地方。</b> 财务因反复看见而改变，直到体系成为习惯。</p>
+    <p><b>把这套思维分享给你爱的人。</b> 最好的礼物之一，是一种陪伴一生的思维方式。</p>
+  </div>
   <div class="sechead"><h2>唯一的原则</h2></div>
-  <blockquote>“从简单的体系开始，然后坚持去做。”<small>时间与坚持，是每一位投资者最强大的盟友。</small></blockquote>
+  <blockquote><span class="hl-y">“从简单的体系开始，然后坚持去做。”</span><small>时间与坚持，是每一位投资者最强大的盟友。</small></blockquote>
   <div>
     <a class="btn" href="https://github.com/nontravis/personal-finance-whitepaper" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" style="fill:currentColor;width:18px;height:18px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>

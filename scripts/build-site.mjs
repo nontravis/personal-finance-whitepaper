@@ -208,7 +208,7 @@ function fontHead(lang, t){
 }
 
 function page(lang){
-  const t = T[lang];
+  const t = Object.assign({}, T.en, T[lang]);
   const canonical = BASE + (lang==='en' ? '/' : `/${lang}/`);
   const alts = LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${BASE}${pathFor(l)==='/'?'/':pathFor(l).replace(ROOT,'')}">`);
   // build hreflang with full URLs
@@ -341,34 +341,39 @@ ${switcher}
   <h1>${t.title}</h1>
   <p class="lede">${t.lede}</p>
   <hr class="rule">
-  <div class="eq"><span>${t.eq}</span></div>
+  <div class="eq"><span class="hl-y">${t.eq}</span></div>
   <div class="sechead"><h2>${t.pillarsHead}</h2></div>
   <div class="pillars">
-    <div class="pillar"><div class="pnum">01</div><h3>${t.p1t}</h3><p>${t.p1d}</p></div>
-    <div class="pillar"><div class="pnum">02</div><h3>${t.p2t}</h3><p>${t.p2d}</p></div>
-    <div class="pillar"><div class="pnum">03</div><h3>${t.p3t}</h3><p>${t.p3d}</p></div>
+    <div class="pillar"><div class="pnum">01</div><h3>${t.p1t}</h3><p>${mark(t.p1d,t.p1k)}</p></div>
+    <div class="pillar"><div class="pnum">02</div><h3>${t.p2t}</h3><p>${mark(t.p2d,t.p2k)}</p><p class="warn"><span class="hl-r">${t.warn}</span></p></div>
+    <div class="pillar"><div class="pnum">03</div><h3>${t.p3t}</h3><p>${mark(t.p3d,t.p3k)}</p></div>
   </div>
-  <div class="sechead"><h2>${t.readHead}</h2></div>
-  <ul class="dl">
-${readlist}
-  </ul>
+  <div class="sechead"><h2>${t.benefitsHead}</h2></div>
+  <div class="benefits">
+    <ul>${t.benefits.map(b=>`<li>${b}</li>`).join('')}</ul>
+    <p class="bfoot">${t.benefitsFoot}</p>
+  </div>
   <div class="sechead"><h2>${t.howHead}</h2></div>
-  <div class="use">
-    <p><b>${t.use1b}</b> ${t.use1t}</p>
-    <p><b>${t.use2b}</b> ${t.use2t}</p>
-  </div>
-  <div class="sechead"><h2>${t.ai.head}</h2></div>
+  <h3 class="wayhead">${t.aiWayHead}</h3>
   <div class="use">
     <p>${t.ai.lede}</p>
     <p><b>${t.ai.autoHead}</b></p>
     ${t.ai.auto.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
     <p><b>${t.ai.manualHead}</b></p>
     ${t.ai.manual.map(x=>`<details><summary><b>${x.n}</b></summary><p>${x.s}</p></details>`).join('\n    ')}
-    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-use-the-framework-in-your-ai" target="_blank" rel="noopener">${t.ai.repo}</a></p>
+    <p><a href="https://github.com/nontravis/personal-finance-whitepaper#-how-to-use-it" target="_blank" rel="noopener">${t.ai.repo}</a></p>
     <p><small>${t.ai.note}</small></p>
   </div>
+  <h3 class="wayhead">${t.physWayHead}</h3>
+  <ul class="dl">
+${readlist}
+  </ul>
+  <div class="use">
+    <p><b>${t.use1b}</b> ${t.use1t}</p>
+    <p><b>${t.use2b}</b> ${t.use2t}</p>
+  </div>
   <div class="sechead"><h2>${t.principleHead}</h2></div>
-  <blockquote>${t.quote}<small>${t.quoteSub}</small></blockquote>
+  <blockquote><span class="hl-y">${t.quote}</span><small>${t.quoteSub}</small></blockquote>
   <div>
     <a class="btn" href="https://github.com/nontravis/personal-finance-whitepaper" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" style="fill:currentColor;width:18px;height:18px"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
