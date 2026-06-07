@@ -56,6 +56,59 @@ Luego distribuyes ese "Fondo de Libertad" en **3 pilares** que trabajan juntos:
 
 ---
 
+## 🤖 Usa el marco en tu IA
+
+Este whitepaper también se distribuye como una **skill de IA** — una lente de razonamiento que hace que cualquier IA capaz asesore a través del Sistema de Tres Pilares (`Ingresos − Gastos = Fondo de Libertad`, distribuido entre Cashflow / Investment / Savings, con disciplina sobre estrategia). Dos versiones, una sola fuente: la carpeta [`skill/`](../skill/) para agentes que leen archivos, y [`three-pillar-lens.md`](../three-pillar-lens.md) — un único archivo que pegas en cualquier chatbot.
+
+| Plataforma | Cómo se carga | Comportamiento |
+|---|---|---|
+| Claude Code | Copia la carpeta `skill/` | Se activa automáticamente con temas de dinero |
+| claude.ai (Project) | Pega `three-pillar-lens.md` | Siempre activo para ese Project |
+| ChatGPT | Pega `three-pillar-lens.md` | Siempre activo en ese contexto |
+| Gemini | Pega `three-pillar-lens.md` | Siempre activo para ese Gem |
+| Any API / CLI agent | Antepón como system prompt | Siempre activo |
+
+<details><summary><b>Claude Code</b></summary>
+
+1. Descarga o clona este repositorio.
+2. Copia la carpeta `skill/` en `.claude/skills/three-pillar-finance/` dentro de tu proyecto, o en `~/.claude/skills/three-pillar-finance/` para todos los proyectos.
+3. Inicia una sesión. Cuando hables de presupuesto, ahorro o inversión, la lente se aplica automáticamente.
+
+</details>
+
+<details><summary><b>claude.ai (Project)</b></summary>
+
+1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
+2. En claude.ai, crea o abre un Project.
+3. Pégalo en las custom instructions del Project. Todos los chats de ese Project usarán la lente.
+
+</details>
+
+<details><summary><b>ChatGPT</b></summary>
+
+1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
+2. Pégalo en Configuración ▸ Personalización ▸ Custom Instructions, o en las instrucciones de un Project, o en el conocimiento de un GPT personalizado.
+
+</details>
+
+<details><summary><b>Gemini</b></summary>
+
+1. Abre [`three-pillar-lens.md`](../three-pillar-lens.md) y copia todo el archivo.
+2. Pégalo en las instrucciones de un Gem, o en Saved Info.
+
+</details>
+
+<details><summary><b>Any API / CLI agent</b></summary>
+
+1. Antepón [`three-pillar-lens.md`](../three-pillar-lens.md) a tu system prompt.
+2. Para agentes CLI con herramientas de archivo (Gemini CLI, Copilot CLI), colócalo en el directorio adaptador del agente o en `AGENTS.md`.
+
+</details>
+
+> Marco educativo, no asesoramiento financiero personalizado. No menciona valores específicos.
+
+---
+
 ## 📖 Léelo ahora
 
 Elige tu idioma — cada archivo es un PDF listo para imprimir:

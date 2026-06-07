@@ -56,6 +56,66 @@ Then allocate that "Freedom Fund" across **3 pillars** that work together:
 
 ---
 
+## 🤖 Use the Framework in Your AI
+
+This whitepaper also ships as an **AI skill** — a reasoning lens that makes any capable AI advise
+through the Three-Pillar System (`Income − Expenses = Freedom Fund`, allocated across Cashflow /
+Investment / Savings, discipline over strategy). Two versions, one source: the [`skill/`](skill/)
+folder for agents that read files, and [`three-pillar-lens.md`](three-pillar-lens.md) — a single
+file you paste into any chatbot.
+
+| Platform | How it loads | Behavior |
+|---|---|---|
+| Claude Code | Copy the `skill/` folder | Auto-fires on money topics |
+| claude.ai (Project) | Paste `three-pillar-lens.md` | Always-on for the Project |
+| ChatGPT | Paste `three-pillar-lens.md` | Always-on for that context |
+| Gemini | Paste `three-pillar-lens.md` | Always-on for the Gem |
+| Any API / CLI agent | Prepend as system prompt | Always-on |
+
+<details><summary><b>Claude Code</b></summary>
+
+1. Download or clone this repo.
+2. Copy the `skill/` folder to `.claude/skills/three-pillar-finance/` in your project, or
+   `~/.claude/skills/three-pillar-finance/` for all projects.
+3. Start a session. When you discuss budgeting, saving, or investing, the lens applies automatically.
+
+</details>
+
+<details><summary><b>claude.ai (Project)</b></summary>
+
+1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
+2. In claude.ai, create or open a Project.
+3. Paste it into the Project's custom instructions. Every chat in that Project now uses the lens.
+
+</details>
+
+<details><summary><b>ChatGPT</b></summary>
+
+1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
+2. Paste it into Settings ▸ Personalization ▸ Custom Instructions, or a Project's instructions,
+   or a custom GPT's knowledge.
+
+</details>
+
+<details><summary><b>Gemini</b></summary>
+
+1. Open [`three-pillar-lens.md`](three-pillar-lens.md) and copy the whole file.
+2. Paste it into a Gem's instructions, or into Saved Info.
+
+</details>
+
+<details><summary><b>Any API / CLI agent</b></summary>
+
+1. Prepend [`three-pillar-lens.md`](three-pillar-lens.md) to your system prompt.
+2. For file-tool CLI agents (Gemini CLI, Copilot CLI), drop it into the agent's adapter directory
+   or `AGENTS.md`.
+
+</details>
+
+> Educational framework, not personalized financial advice. It names no specific securities.
+
+---
+
 ## 📖 Read Now
 
 Choose your language — each file is a print-ready PDF:
