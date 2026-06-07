@@ -4,3 +4,5 @@ latex/*.aux
 latex/*.log
 latex/build.log
 .DS_Store
+
+.superpowers/
