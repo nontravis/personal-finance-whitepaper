@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" class="no-js">
 <head>
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>รากฐานระบบการเงินส่วนบุคคล 3 เสา — Nonthawit Doungsodsri</title>
@@ -64,7 +65,7 @@
   .sechead h2{ font-size:.82rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); white-space:nowrap; margin:0; }
   .sechead::after{ content:""; flex:1; height:1px; background:var(--line); }
   .eq{ display:flex; justify-content:center; margin:6px 0 4px; }
-  .eq span{ font-family:var(--hand,var(--sans)); border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
+  .eq>span{ font-family:var(--hand,var(--sans)); padding:15px 30px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; background:rgba(255,255,255,.5); box-shadow:0 1px 3px rgba(0,0,0,.10); transform:rotate(-.8deg); border-top:1px dashed rgba(0,0,0,.13); border-bottom:1px dashed rgba(0,0,0,.13); }
   .pillars{ display:grid; grid-template-columns:1fr; }
   .pillar{ padding:22px 0; border-top:1px solid var(--line); }
   .pillar:first-child{ border-top:0; }
@@ -97,9 +98,18 @@
   .chev svg{ width:15px; height:15px; stroke:var(--muted); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
   .use details[open] .chev{ transform:rotate(180deg); background:rgba(255,221,64,.55); }
   .use details[open] .chev svg{ stroke:var(--ink); }
-  .hl-y{ color:var(--ink); background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
-  .hl-b{ color:var(--ink); background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
-  .hl-r{ color:var(--ink); background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-y,.hl-b,.hl-r{ color:var(--ink); background-repeat:no-repeat; background-position:left center; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-y{ background-image:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; background-size:100% 100%; }
+  .hl-b{ background-image:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); background-size:100% 100%; }
+  .hl-r{ background-image:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; background-size:100% 100%; }
+  /* scroll-triggered swipe: hidden until .in (JS on); no-JS keeps highlights fully painted */
+  .js .hl-y,.js .hl-b,.js .hl-r{ background-size:0% 100%; }
+  .js .hl-y.in,.js .hl-b.in,.js .hl-r.in{ animation:hlswipe .7s cubic-bezier(.45,0,.15,1) forwards; }
+  .ff{ display:inline-block; }
+  .js .ff.in{ animation:hlswipe .6s cubic-bezier(.45,0,.15,1) forwards, ffpop .55s .5s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes hlswipe{ to{ background-size:100% 100%; } }
+  @keyframes ffpop{ 30%{ transform:scale(1.1); text-shadow:0 0 16px rgba(255,200,40,.7); } 100%{ transform:scale(1); text-shadow:none; } }
+  @media (prefers-reduced-motion: reduce){ .js .hl-y,.js .hl-b,.js .hl-r{ background-size:100% 100% !important; animation:none !important; } }
   .benefits{ margin:0; }
   .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
   .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
@@ -117,7 +127,7 @@
   footer a:hover{ border-color:var(--ink); }
   @media(max-width:600px){ body{ padding:0; background:var(--paper); background-image:none; overflow-x:hidden; }
     .sheet{ max-width:none; box-shadow:none; border-radius:0; min-height:100dvh; padding:26px 20px 44px; }
-    h1{ font-size:clamp(1.6rem,7vw,2.1rem); } .eq span{ font-size:1rem; padding:12px 16px; } .sechead{ margin:38px 0 20px; } }
+    h1{ font-size:clamp(1.6rem,7vw,2.1rem); } .eq>span{ font-size:1rem; padding:12px 16px; } .sechead{ margin:38px 0 20px; } }
   @media (prefers-reduced-motion: no-preference){
     ::view-transition-old(root){ animation:vtout .18s ease both; }
     ::view-transition-new(root){ animation:vtin .26s ease both; }
@@ -142,7 +152,7 @@
   <h1>รากฐานระบบการเงินส่วนบุคคล 3 เสา</h1>
   <p class="lede">สร้างการเงินส่วนบุคคลที่มั่นคงด้วยระบบเดียวที่เรียบง่าย ใช้ได้ทั้งชีวิต — สรุปในไวต์เปเปอร์สั้น ๆ มีครบ 6 ภาษา</p>
   <hr class="rule">
-  <div class="eq"><span class="hl-y">รายรับ − รายจ่าย = ทุนสู่อิสรภาพ</span></div>
+  <div class="eq"><span>รายรับ − รายจ่าย = <span class="ff hl-y">ทุนสู่อิสรภาพ</span></span></div>
   <div class="sechead"><h2>สามเสาหลัก</h2></div>
   <div class="pillars">
     <div class="pillar"><div class="pnum">01</div><h3>กระแสเงินสด</h3><p>รู้ว่าเงินเข้า-ออกเท่าไร รากฐานที่บอก<span class="hl-b">ทุนสู่อิสรภาพ</span>ที่แท้จริง</p></div>
@@ -190,5 +200,15 @@
   </div>
   <footer>โดย <strong>Nonthawit Doungsodsri</strong> · <a href="https://nonthawit.com" target="_blank" rel="noopener">nonthawit.com</a><br>เผยแพร่เพื่อประโยชน์สาธารณะ ภายใต้ <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">the MIT License</a>.</footer>
 </main>
+<script>
+(function(){
+  var els=document.querySelectorAll('.hl-y,.hl-b,.hl-r');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:0.6});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
 </body>
 </html>
