@@ -17,7 +17,7 @@ const T = {
   en:{ langlbl:'Language', seoTitle:'The Three-Pillar Personal Finance System — Nonthawit Doungsodsri',
     kicker:'Personal Finance Whitepaper · Free · MIT', title:'The Three-Pillar Personal Finance System',
     lede:'Build lasting personal finances with one simple, lifelong system — explained in a short, free whitepaper. Available in six languages.',
-    eq:'Income − Expenses = Freedom Fund', pillarsHead:'The three pillars', readHead:'Read it now — free', howHead:'How to Use It', principleHead:'The one principle',
+    eq:'Income − Expenses = Freedom Fund', eqHi:'Freedom Fund', pillarsHead:'The three pillars', readHead:'Read it now — free', howHead:'How to Use It', principleHead:'The one principle',
     p1t:'Cashflow', p1d:'Know what comes in and out — the foundation that reveals your true Freedom Fund.',
     p2t:'Investment', p2d:'Put money to work for you and grow it through compounding over time.',
     p3t:'Savings', p3d:"Hold value-preserving assets to beat inflation and reduce life's risks.", rd:'Read',
@@ -50,7 +50,7 @@ const T = {
   th:{ langlbl:'ภาษา', seoTitle:'รากฐานระบบการเงินส่วนบุคคล 3 เสา — Nonthawit Doungsodsri',
     kicker:'ไวต์เปเปอร์การเงินส่วนบุคคล · ฟรี · MIT', title:'รากฐานระบบการเงินส่วนบุคคล 3 เสา',
     lede:'สร้างการเงินส่วนบุคคลที่มั่นคงด้วยระบบเดียวที่เรียบง่าย ใช้ได้ทั้งชีวิต — สรุปในไวต์เปเปอร์สั้น ๆ มีครบ 6 ภาษา',
-    eq:'รายรับ − รายจ่าย = ทุนสู่อิสรภาพ', pillarsHead:'สามเสาหลัก', readHead:'อ่านเลย — ฟรี', howHead:'วิธีใช้งาน', principleHead:'หลักการเดียว',
+    eq:'รายรับ − รายจ่าย = ทุนสู่อิสรภาพ', eqHi:'ทุนสู่อิสรภาพ', pillarsHead:'สามเสาหลัก', readHead:'อ่านเลย — ฟรี', howHead:'วิธีใช้งาน', principleHead:'หลักการเดียว',
     p1t:'กระแสเงินสด', p1d:'รู้ว่าเงินเข้า-ออกเท่าไร รากฐานที่บอกทุนสู่อิสรภาพที่แท้จริง',
     p2t:'การลงทุน', p2d:'ให้เงินทำงานแทนเรา เติบโตด้วยการทบต้นตามเวลา',
     p3t:'การออมรักษามูลค่า', p3d:'ถือสินทรัพย์ที่รักษามูลค่า สู้เงินเฟ้อ ลดความเสี่ยงในชีวิต', rd:'อ่าน',
@@ -83,7 +83,7 @@ const T = {
   es:{ langlbl:'Idioma', seoTitle:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares — Nonthawit Doungsodsri',
     kicker:'Documento de Finanzas Personales · Gratis · MIT', title:'Fundamentos de un Sistema de Finanzas Personales: Los Tres Pilares',
     lede:'Construye finanzas personales duraderas con un sistema simple para toda la vida — en un breve documento gratuito. Disponible en seis idiomas.',
-    eq:'Ingresos − Gastos = Fondo de Libertad', pillarsHead:'Los tres pilares', readHead:'Léelo ahora — gratis', howHead:'Cómo usarlo', principleHead:'El único principio',
+    eq:'Ingresos − Gastos = Fondo de Libertad', eqHi:'Fondo de Libertad', pillarsHead:'Los tres pilares', readHead:'Léelo ahora — gratis', howHead:'Cómo usarlo', principleHead:'El único principio',
     p1t:'Flujo de caja', p1d:'Conoce lo que entra y sale — la base que revela tu verdadero Fondo de Libertad.',
     p2t:'Inversión', p2d:'Pon tu dinero a trabajar y hazlo crecer con el interés compuesto.',
     p3t:'Ahorro', p3d:'Mantén activos que preservan su valor para vencer la inflación y reducir riesgos.', rd:'Leer',
@@ -116,7 +116,7 @@ const T = {
   id:{ langlbl:'Bahasa', seoTitle:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar — Nonthawit Doungsodsri',
     kicker:'Whitepaper Keuangan Pribadi · Gratis · MIT', title:'Fondasi Sistem Keuangan Pribadi: Tiga Pilar',
     lede:'Bangun keuangan pribadi yang kokoh dengan satu sistem sederhana seumur hidup — dalam whitepaper singkat dan gratis. Tersedia dalam enam bahasa.',
-    eq:'Pemasukan − Pengeluaran = Dana Kebebasan', pillarsHead:'Tiga pilar', readHead:'Baca sekarang — gratis', howHead:'Cara menggunakannya', principleHead:'Satu prinsip',
+    eq:'Pemasukan − Pengeluaran = Dana Kebebasan', eqHi:'Dana Kebebasan', pillarsHead:'Tiga pilar', readHead:'Baca sekarang — gratis', howHead:'Cara menggunakannya', principleHead:'Satu prinsip',
     p1t:'Arus Kas', p1d:'Ketahui uang masuk dan keluar — fondasi yang mengungkap Dana Kebebasan Anda.',
     p2t:'Investasi', p2d:'Biarkan uang bekerja untuk Anda dan tumbuh lewat bunga majemuk.',
     p3t:'Menabung', p3d:'Simpan aset yang menjaga nilai untuk melawan inflasi dan mengurangi risiko.', rd:'Baca',
@@ -149,7 +149,7 @@ const T = {
   zh:{ langlbl:'语言', seoTitle:'个人理财系统的基石：三大支柱 — Nonthawit Doungsodsri',
     kicker:'个人理财白皮书 · 免费 · MIT', title:'个人理财系统的基石：三大支柱',
     lede:'用一套简单、可用一生的系统，构建稳健的个人财务 —— 浓缩于一份简短的免费白皮书。提供六种语言。',
-    eq:'收入 − 支出 = 自由基金', pillarsHead:'三大支柱', readHead:'立即阅读 — 免费', howHead:'如何使用', principleHead:'唯一的原则',
+    eq:'收入 − 支出 = 自由基金', eqHi:'自由基金', pillarsHead:'三大支柱', readHead:'立即阅读 — 免费', howHead:'如何使用', principleHead:'唯一的原则',
     p1t:'现金流', p1d:'掌握收支，揭示你真正的自由基金这一根基。',
     p2t:'投资', p2d:'让金钱为你工作，借助复利随时间增长。',
     p3t:'储蓄', p3d:'持有保值资产，对抗通胀、降低人生风险。', rd:'阅读',
@@ -182,7 +182,7 @@ const T = {
   ja:{ langlbl:'言語', seoTitle:'パーソナルファイナンス・システムの基盤：3本の柱 — Nonthawit Doungsodsri',
     kicker:'パーソナルファイナンス白書 · 無料 · MIT', title:'パーソナルファイナンス・システムの基盤：3本の柱',
     lede:'シンプルで一生使える一つの仕組みで、揺るがない家計を築く —— 短い無料の白書にまとめました。6言語で提供。',
-    eq:'収入 − 支出 = 自由資金', pillarsHead:'3本の柱', readHead:'今すぐ読む — 無料', howHead:'使い方', principleHead:'たった一つの原則',
+    eq:'収入 − 支出 = 自由資金', eqHi:'自由資金', pillarsHead:'3本の柱', readHead:'今すぐ読む — 無料', howHead:'使い方', principleHead:'たった一つの原則',
     p1t:'キャッシュフロー', p1d:'収支を把握し、本当の自由資金という土台を明らかにする。',
     p2t:'投資', p2d:'お金に働いてもらい、複利で時間をかけて育てる。',
     p3t:'貯蓄', p3d:'価値を保つ資産を持ち、インフレに対抗しリスクを減らす。', rd:'読む',
@@ -227,6 +227,13 @@ function mark(text, key){
   if(!key) return text;
   const i = text.indexOf(key);
   return i < 0 ? text : text.slice(0,i) + `<span class="hl-b">${key}</span>` + text.slice(i + key.length);
+}
+
+// wrap the "Freedom Fund" phrase in the equation for the scroll-in swipe + pop/glow
+function markFF(text, key){
+  if(!key) return text;
+  const i = text.indexOf(key);
+  return i < 0 ? text : text.slice(0,i) + `<span class="ff hl-y">${key}</span>` + text.slice(i + key.length);
 }
 
 const HAND = {
@@ -277,8 +284,9 @@ function page(lang){
   const foot = `${t.footLead} <strong>Nonthawit Doungsodsri</strong> · <a href="https://nonthawit.com" target="_blank" rel="noopener">nonthawit.com</a><br>${t.footTail} <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">the MIT License</a>.`;
 
   return `<!DOCTYPE html>
-<html lang="${lang}">
+<html lang="${lang}" class="no-js">
 <head>
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(t.seoTitle)}</title>
@@ -334,7 +342,7 @@ ${hreflang}
   .sechead h2{ font-size:.82rem; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); white-space:nowrap; margin:0; }
   .sechead::after{ content:""; flex:1; height:1px; background:var(--line); }
   .eq{ display:flex; justify-content:center; margin:6px 0 4px; }
-  .eq span{ font-family:var(--hand,var(--sans)); border:1.5px solid var(--ink); border-radius:6px; padding:14px 26px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; }
+  .eq>span{ font-family:var(--hand,var(--sans)); padding:15px 30px; font-size:clamp(1.02rem,2.6vw,1.32rem); font-weight:600; text-align:center; max-width:100%; background:rgba(255,255,255,.5); box-shadow:0 1px 3px rgba(0,0,0,.10); transform:rotate(-.8deg); border-top:1px dashed rgba(0,0,0,.13); border-bottom:1px dashed rgba(0,0,0,.13); }
   .pillars{ display:grid; grid-template-columns:1fr; }
   .pillar{ padding:22px 0; border-top:1px solid var(--line); }
   .pillar:first-child{ border-top:0; }
@@ -367,9 +375,18 @@ ${hreflang}
   .chev svg{ width:15px; height:15px; stroke:var(--muted); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round; }
   .use details[open] .chev{ transform:rotate(180deg); background:rgba(255,221,64,.55); }
   .use details[open] .chev svg{ stroke:var(--ink); }
-  .hl-y{ color:var(--ink); background:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
-  .hl-b{ color:var(--ink); background:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); }
-  .hl-r{ color:var(--ink); background:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-y,.hl-b,.hl-r{ color:var(--ink); background-repeat:no-repeat; background-position:left center; -webkit-box-decoration-break:clone; box-decoration-break:clone; }
+  .hl-y{ background-image:linear-gradient(104deg,rgba(255,221,64,0) .5%,rgba(255,221,64,.9) 2%,rgba(255,221,64,.78) 96%,rgba(255,221,64,0) 99%); padding:.02em .16em; background-size:100% 100%; }
+  .hl-b{ background-image:linear-gradient(transparent 60%, rgba(116,201,255,.9) 60%, rgba(116,201,255,.9) 92%, transparent 92%); background-size:100% 100%; }
+  .hl-r{ background-image:linear-gradient(104deg,rgba(255,138,128,0) .5%,rgba(255,138,128,.85) 2%,rgba(255,138,128,.72) 96%,rgba(255,138,128,0) 99%); padding:.02em .16em; background-size:100% 100%; }
+  /* scroll-triggered swipe: hidden until .in (JS on); no-JS keeps highlights fully painted */
+  .js .hl-y,.js .hl-b,.js .hl-r{ background-size:0% 100%; }
+  .js .hl-y.in,.js .hl-b.in,.js .hl-r.in{ animation:hlswipe .7s cubic-bezier(.45,0,.15,1) forwards; }
+  .ff{ display:inline-block; }
+  .js .ff.in{ animation:hlswipe .6s cubic-bezier(.45,0,.15,1) forwards, ffpop .55s .5s cubic-bezier(.34,1.56,.64,1); }
+  @keyframes hlswipe{ to{ background-size:100% 100%; } }
+  @keyframes ffpop{ 30%{ transform:scale(1.1); text-shadow:0 0 16px rgba(255,200,40,.7); } 100%{ transform:scale(1); text-shadow:none; } }
+  @media (prefers-reduced-motion: reduce){ .js .hl-y,.js .hl-b,.js .hl-r{ background-size:100% 100% !important; animation:none !important; } }
   .benefits{ margin:0; }
   .benefits ul{ margin:0; padding:0; list-style:none; border-top:1px solid var(--line); }
   .benefits li{ position:relative; padding:11px 0 11px 28px; color:var(--ink); border-bottom:1px solid var(--line); }
@@ -387,7 +404,7 @@ ${hreflang}
   footer a:hover{ border-color:var(--ink); }
   @media(max-width:600px){ body{ padding:0; background:var(--paper); background-image:none; overflow-x:hidden; }
     .sheet{ max-width:none; box-shadow:none; border-radius:0; min-height:100dvh; padding:26px 20px 44px; }
-    h1{ font-size:clamp(1.6rem,7vw,2.1rem); } .eq span{ font-size:1rem; padding:12px 16px; } .sechead{ margin:38px 0 20px; } }
+    h1{ font-size:clamp(1.6rem,7vw,2.1rem); } .eq>span{ font-size:1rem; padding:12px 16px; } .sechead{ margin:38px 0 20px; } }
   @media (prefers-reduced-motion: no-preference){
     ::view-transition-old(root){ animation:vtout .18s ease both; }
     ::view-transition-new(root){ animation:vtin .26s ease both; }
@@ -407,7 +424,7 @@ ${switcher}
   <h1>${t.title}</h1>
   <p class="lede">${t.lede}</p>
   <hr class="rule">
-  <div class="eq"><span class="hl-y">${t.eq}</span></div>
+  <div class="eq"><span>${markFF(t.eq, t.eqHi)}</span></div>
   <div class="sechead"><h2>${t.pillarsHead}</h2></div>
   <div class="pillars">
     <div class="pillar"><div class="pnum">01</div><h3>${t.p1t}</h3><p>${mark(t.p1d,t.p1k)}</p></div>
@@ -448,6 +465,16 @@ ${readlist}
   </div>
   <footer>${foot}</footer>
 </main>
+<script>
+(function(){
+  var els=document.querySelectorAll('.hl-y,.hl-b,.hl-r');
+  if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  },{threshold:0.6});
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
 </body>
 </html>
 `;
