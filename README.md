@@ -12,9 +12,10 @@
 
 # Foundations of a Personal Finance System: The Three Pillars
 
+![Visitor Count](https://komarev.com/ghpvc/?username=nontravis&repo=personal-finance-whitepaper&label=Views&color=blue)
+
 **A concise whitepaper that shows you how to build a personal finance system using the "Three-Pillar" framework — simple, and built to last a lifetime.**
 
-[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fnontravis%2Fpersonal-finance-whitepaper&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Languages](https://img.shields.io/badge/Languages-6-orange.svg)
 ![Pages](https://img.shields.io/badge/Pages-2-green.svg)
