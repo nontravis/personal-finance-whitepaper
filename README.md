@@ -176,7 +176,7 @@ Released for the public good.
 
 If this document has been useful to you, a ⭐ would mean a lot.
 
-[![Star History Chart](https://api.star-history.com/chart?repos=nontravis/personal-finance-whitepaper&type=date&legend=top-left&sealed_token=01Oq0VGn2OwKw_dl1MlJXe4-KRq9aLhT9qTMsQRysEM9F8tMep4_72GMJWHLjGhTSf9bO0gzoW-YChvboRCv8i6crbJR_HeHZEeC4gHGRbFmgMEK8utGyOwVtxzvE8yWMmJUV1g98VlqxUGiqGmyBn2_wmz0bg6grFu1tXsHJ0irkTm8d9QCJn13wgxT)](https://www.star-history.com/?repos=nontravis%2Fpersonal-finance-whitepaper&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/chart?repos=nontravis/personal-finance-whitepaper&type=date&legend=top-left&sealed_token=Z6NC9eA9JBNmZWx5B23Ci6PB8Em-iP-j4QDgmyT8FiMi8aN5ZzBtyPy6eV-8C6LkdFeBWA6yvqyyZEmssmyJ1S8Nu7n56mLQrNRQJor5MaDHxaibnGlF_dfquCmoNtuqbzgqKHHXdkeNM5xBV2OXvycam_2KEDEzSs7PwbEdWnp-bBpOxfZKFnSIBuXI)](https://www.star-history.com/?repos=nontravis%2Fpersonal-finance-whitepaper&type=date&legend=top-left)
 
 ---
 
